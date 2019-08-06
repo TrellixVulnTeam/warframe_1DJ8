@@ -1,0 +1,16 @@
+2019-07-17 15:34:19,021 logger INFO Start print log
+2019-07-17 15:34:19,021 logger DEBUG Do something
+2019-07-17 15:34:19,021 logger WARNING Something maybe fail.
+2019-07-17 15:34:19,022 logger INFO Finish
+2019-07-17 15:34:46,771 logger INFO Start print log
+2019-07-17 15:34:46,771 logger DEBUG Do something
+2019-07-17 15:34:46,771 logger WARNING Something maybe fail.
+2019-07-17 15:34:46,771 logger INFO Finish
+2019-07-17 15:34:49,755 logger INFO Start print log
+2019-07-17 15:34:49,756 logger DEBUG Do something
+2019-07-17 15:34:49,756 logger WARNING Something maybe fail.
+2019-07-17 15:34:49,756 logger INFO Finish
+2019-07-17 15:35:11,146 logger INFO Start print log
+2019-07-17 15:35:11,146 logger DEBUG Do something
+2019-07-17 15:35:11,146 logger WARNING Something maybe fail.
+2019-07-17 15:35:11,146 logger INFO Finish

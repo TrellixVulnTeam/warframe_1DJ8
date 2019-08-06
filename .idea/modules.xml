@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://F:/django_warframe/.idea/django_warframe.iml" filepath="F:/django_warframe/.idea/django_warframe.iml" />
+      <module fileurl="file://F:/jos-python-open-api-sdk-2.0/.idea/jos-python-open-api-sdk-2.0.iml" filepath="F:/jos-python-open-api-sdk-2.0/.idea/jos-python-open-api-sdk-2.0.iml" />
+      <module fileurl="file://F:/jumpser/jumpserver-master/.idea/jumpserver-master.iml" filepath="F:/jumpser/jumpserver-master/.idea/jumpserver-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/warframe.iml" filepath="$PROJECT_DIR$/.idea/warframe.iml" />
+    </modules>
+  </component>
+</project>

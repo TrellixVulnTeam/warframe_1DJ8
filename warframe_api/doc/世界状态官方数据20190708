@@ -1,0 +1,51 @@
+{
+	"WorldSeed": "MnJtpiTugy0arE8b4mVDC53UaGAeG2HYV1m51KknGpxuEM9yip8U4B+IlyY2U2heIOmSMe/LAP7du6Y/6KoGn8Kvd9vNkMx1b5vyQS/3VApUnBYVh9QJv1UQvUhmpdOoS9fwYpRNCGbrgamIv3Ksx3cit1nWHxMVnCK/nKLf0aJcC+nR8xv+p/03N05OGFdouRd51TNiDiOhMQhI+8u9jzqoXcHIpeZqof5qOwzi77qw5ekTGjLaayXUpWXg24SLA+lEaZRNUCem3ot990GIyDnNAdoUoaX2UqUHKPGTY+MsV2Yld7vAUIekK03XmattUAc4ZrpxH4DgNRxLH9Dc+g==",
+	"Version": 10,
+	"MobileVersion": "4.3.4.0",
+	"BuildLabel": "2019.06.21.10.47/NutVsNnediKSLBuTpe-14Q",
+	"Time": 1562579839,
+	"Date": 1562544000,
+	"Events": [
+		{"_id": {"$oid": "5cb5c6832239601ec8726e4f"},"Messages": [{"LanguageCode": "zh","Message": "齐天大圣与圣装瓦尔基里售卖已恢复"}],"Prop": "http://wf.changyou.com/wf/announce/20190418/135787.shtml","Date": {"$date": {"$numberLong": "1555416325000"}},"Priority": false,"MobileOnly": false}, 
+		{"_id": {"$oid": "5cb923fd2239607e1d5c154f"},"Messages": [{"LanguageCode": "zh","Message": "【星际战甲】“4•19爆肝节”正式开启"}],"Prop": "http://wf.changyou.com/wf/announce/20190419/135795.shtml","Date": {"$date": {"$numberLong": "1555637225000"}},"Priority": false,"MobileOnly": false},
+		{"_id": {"$oid": "5cff76432239602538541fc6"},"Messages": [{"LanguageCode": "zh","Message": "【星际战甲】WeGame上线百日纪念"}],"Prop": "http://wf.changyou.com/wf/announce/20190611/137008.shtml","Date": {"$date": {"$numberLong": "1560245814000"}},"Priority": false,"MobileOnly": false}
+	],
+	"Goals": [],
+	"Alerts": [
+		{"_id": {"$oid": "5d230a855b6bbe05dea9f97d"},"Activation": {"$date": {"$numberLong": "1562577803588"}},"Expiry": {"$date": {"$numberLong": "1562580932476"}},"MissionInfo": {"missionType": "MT_HIVE","faction": "FC_INFESTATION","location": "SolNode166","levelOverride": "/Lotus/Levels/Proc/Infestation/InfestedCorpusShipSabotage","enemySpec": "/Lotus/Types/Game/EnemySpecs/InfestedHiveSquadC","minEnemyLevel": 33,"maxEnemyLevel": 43,"difficulty": 0.77393046982167,"seed": 22330,"missionReward": {"credits": 13400}}}],
+	"Sorties": [
+		{"_id": {"$oid": "5d22bfc27f6d1f44ac47fff5"},"Activation": {"$date": {"$numberLong": "1562558402112"}},"Expiry": {"$date": {"$numberLong": "1562644740000"}},"Boss": "SORTIE_BOSS_KELA","Reward": "/Lotus/Types/Game/MissionDecks/SortieRewards","ExtraDrops": [],"Seed": 24884,"Variants": [{"missionType": "MT_RESCUE","modifierType": "SORTIE_MODIFIER_HAZARD_RADIATION","node": "SolNode122","tileset": "GrineerOceanTileset"}, {"missionType": "MT_INTEL","modifierType": "SORTIE_MODIFIER_EXIMUS","node": "SolNode225","tileset": "GrineerGalleonTileset"}, {"missionType": "MT_ASSASSINATION","modifierType": "SORTIE_MODIFIER_LOW_ENERGY","node": "SolNode193","tileset": "GrineerAsteroidTileset"}]}],
+	"SyndicateMissions": [
+		{"_id": {"$oid": "5d22bf857cb3b9c694f5c94d"},"Activation": {"$date": {"$numberLong": "1562558341736"}},"Expiry": {"$date": {"$numberLong": "1562644740000"}},"Tag": "NewLokaSyndicate","Seed": 49041,"Nodes": ["SolNode63", "SolNode128", "SolNode19", "SolNode73", "SolNode49", "SolNode106", "SolNode64"]}, 
+		{"_id": {"$oid": "5d2301d99ac6f21d3254cab1"},"Activation": {"$date": {"$numberLong": "1562575321239"}},"Expiry": {"$date": {"$numberLong": "1562584319362"}},"Tag": "CetusSyndicate","Seed": 34761,"Nodes": [],"Jobs": [{"jobType": "/Lotus/Types/Gameplay/Eidolon/Jobs/SabotageBountySab","rewards": "/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierATableARewards","masteryReq": 0,"minEnemyLevel": 5,"maxEnemyLevel": 15,"xpAmounts": [470, 470, 470]}, {"jobType": "/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyCap","rewards": "/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierBTableARewards","masteryReq": 1,"minEnemyLevel": 10,"maxEnemyLevel": 30,"xpAmounts": [740, 740, 740]}, {"jobType": "/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCache","rewards": "/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierCTableARewards","masteryReq": 2,"minEnemyLevel": 20,"maxEnemyLevel": 40,"xpAmounts": [610, 610, 610, 900]}, {"jobType": "/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountySab","rewards": "/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierDTableARewards","masteryReq": 3,"minEnemyLevel": 30,"maxEnemyLevel": 50,"xpAmounts": [590, 590, 590, 590, 1160]}, {"jobType": "/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyExt","rewards": "/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierETableARewards","masteryReq": 5,"minEnemyLevel": 40,"maxEnemyLevel": 60,"xpAmounts": [730, 730, 730, 730, 1430]}]}],
+	"ActiveMissions": [
+		{"_id": {"$oid": "5d22fb859b366b4317f4e7f2"},"Region": 3,"Seed": 50597,"Activation": {"$date": {"$numberLong": "1562573701513"}},"Expiry": {"$date": {"$numberLong": "1562580533060"}},"Node": "SolNode26","MissionType": "MT_DEFENSE","Modifier": "VoidT1"},
+		{"_id": {"$oid": "5d231205e358b31d2f7901c9"},"Region": 11,"Seed": 711,"Activation": {"$date": {"$numberLong": "1562579461447"}},"Expiry": {"$date": {"$numberLong": "1562583695190"}},"Node": "SolNode164","MissionType": "MT_DEFENSE","Modifier": "VoidT4"}],
+	"GlobalUpgrades": [],
+	"FlashSales": [
+		{"TypeName": "/Lotus/Types/Items/MiscItems/OrokinReactor","StartDate": {"$date": {"$numberLong": "1554134400000"}},"EndDate": {"$date": {"$numberLong": "1577808000000"}},"Featured": false,"Popular": true,"ShowInMarket": true,"BannerIndex": 999,"Discount": 0,"RegularOverride": 0,"PremiumOverride": 6,"BogoBuy": 0,"BogoGet": 0}, 
+		{"TypeName": "/Lotus/Types/StoreItems/Packages/GlyphsBundleB","StartDate": {"$date": {"$numberLong": "1562198400000"}},"EndDate": {"$date": {"$numberLong": "1563408000000"}},"Featured": true,"Popular": false,"ShowInMarket": true,"BannerIndex": 800,"Discount": 45,"RegularOverride": 0,"PremiumOverride": 23,"BogoBuy": 0,"BogoGet": 0}],
+	"Invasions": [
+		{"_id": {"$oid": "5d217c517aa3aef423339c4b"},"Faction": "FC_INFESTATION","Node": "SolNode144","Count": -25133,"Goal": 30000,"LocTag": "/Lotus/Language/Menu/InfestedInvasionBoss","Completed": false,"AttackerReward": [],"AttackerMissionInfo": {"seed": 415727,"faction": "FC_GRINEER"},"DefenderReward": {"countedItems": [{"ItemType": "/Lotus/Types/Items/Research/BioComponent","ItemCount": 1}]},"DefenderMissionInfo": {"seed": 896339,"faction": "FC_INFESTATION","missionReward": []},"Activation": {"$date": {"$numberLong": "1562475601554"}}}, 
+		{"_id": {"$oid": "5d229ef1f993d8d62657e222"},"Faction": "FC_INFESTATION","Node": "SettlementNode11","Count": -37203,"Goal": 37000,"LocTag": "/Lotus/Language/Menu/InfestedInvasionGeneric","Completed": true,"AttackerReward": [],"AttackerMissionInfo": {"seed": 88798,"faction": "FC_CORPUS"},"DefenderReward": {"countedItems": [{"ItemType": "/Lotus/Types/Items/Research/EnergyComponent","ItemCount": 3}]},"DefenderMissionInfo": {"seed": 129595,"faction": "FC_INFESTATION"},"Activation": {"$date": {"$numberLong": "1562553650340"}}}],
+	"HubEvents": [],
+	"NodeOverrides": [{"_id": {"$oid": "5bdb0fea6bf457d489afb42f"},"Node": "SolNode802","Seed": 7594035}],
+	"BadlandNodes": [
+		{"_id": {"$oid": "55c7a67b58b26305256da5c7"},"Node": "ClanNode25","DefenderInfo": {"IsAlliance": false,"Id": {"$oid": "55c5edf758b26368022d6e5f"},"Name": "星际战甲官方氏族","MOTD": "","DeployerName": "Sherry好开心","DeployerClan": "星际战甲官方氏族"}}, 
+		{"_id": {"$oid": "55c71a9a58b26340466d8eae"},"Node": "ClanNode24","DefenderInfo": {"IsAlliance": false,"Id": {"$oid": "55c5edf758b26368022d6e5f"},"Name": "星际战甲官方氏族","MOTD": "","DeployerName": "Sherry好开心","DeployerClan": "星际战甲官方氏族"}}],
+	"VoidTraders": [{"_id": {"$oid": "56aa1f2fd799510a547ab62b"},"Activation": {"$date": {"$numberLong": "1563530400000"}},"Expiry": {"$date": {"$numberLong": "1563703200000"}},"Character": "Baro'Ki Teel","Node": "SaturnHUB"}],
+	"PrimeAccessAvailability": {"State": "PRIME1"},
+	"PrimeVaultAvailabilities": [{"State": "COMING_SOON"}, {"State": "COMING_SOON"}, {"State": "COMING_SOON"}],
+	"DailyDeals": [{"StoreItem": "/Lotus/StoreItems/Upgrades/Skins/Ranger/UnlockRangerAgile","Activation": {"$date": {"$numberLong": "1562511000000"}},"Expiry": {"$date": {"$numberLong": "1562604600000"}},"Discount": 20,"OriginalPrice": 10,"SalePrice": 8,"AmountTotal": 500,"AmountSold": 6}],
+	"LibraryInfo": {"LastCompletedTargetType": "/Lotus/Types/Game/Library/Targets/Research7Target"},
+	"PVPChallengeInstances": [
+		{"_id": {"$oid": "5d1e98ddf45b213deb36f522"},"challengeTypeRefID": "/Lotus/PVPChallengeTypes/PVPTimedChallengeGameModeWins","startDate": {"$date": {"$numberLong": "1562286301582"}},"endDate": {"$date": {"$numberLong": "1562891101582"}},"params": [{"n": "ScriptParamValue","v": 6}],"isGenerated": true,"PVPMode": "PVPMODE_ALL","subChallenges": [],"Category": "PVPChallengeTypeCategory_WEEKLY"}, 
+		{"_id": {"$oid": "5d1e98ddf45b213deb36f523"},"challengeTypeRefID": "/Lotus/PVPChallengeTypes/PVPTimedChallengeGameModeComplete","startDate": {"$date": {"$numberLong": "1562286301582"}},"endDate": {"$date": {"$numberLong": "1562891101582"}},"params": [{"n": "ScriptParamValue","v": 20}],"isGenerated": true,"PVPMode": "PVPMODE_ALL","subChallenges": [],"Category": "PVPChallengeTypeCategory_WEEKLY"}],
+	"PersistentEnemies": [],
+	"PVPAlternativeModes": [],
+	"PVPActiveTournaments": [],
+	"ProjectPct": [504.55950523066, 591.18808752268, 0],
+	"ConstructionProjects": [],
+	"TwitchPromos": [],
+	"WeeklyChallenges": null
+}

@@ -1,0 +1,4 @@
+2019-07-17 15:35:25,926 logger INFO Start print log
+2019-07-17 15:35:25,926 logger DEBUG Do something
+2019-07-17 15:35:25,927 logger WARNING Something maybe fail.
+2019-07-17 15:35:25,927 logger INFO Finish
