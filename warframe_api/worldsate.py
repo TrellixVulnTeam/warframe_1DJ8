@@ -348,12 +348,12 @@ def worldstate_FlashSales():
 worldstate_FlashSales()
 
 #oid,activation_date,expiry_date,boss,reward,extradrops,seed,mission1_type,mission1_modifiertype,mission1_node,mission1_tilelset,mission2_type,mission2_modifiertype,mission2_node,mission2_tilelset,mission3_type,mission3_modifiertype,mission3_node,mission3_tilelset
-#wordstate_sorties()
-#worldstate_events()
-#wordstate_alerts()
-#worldstate_ActiveMissions()
-#wordstate_SyndicateMissions()
-
+wordstate_sorties()
+worldstate_events()
+wordstate_alerts()
+worldstate_ActiveMissions()
+wordstate_SyndicateMissions()
+##ssssssssssssss
 #if __name__ =# = '__main__':
 #    #申请资源
 #    opm = OPMysql()
