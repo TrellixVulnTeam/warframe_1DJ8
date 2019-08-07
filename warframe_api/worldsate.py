@@ -86,11 +86,11 @@ mysqlInfo = {
     "port": 3306
 }
 '''
-#world_state = requests.get('http://192.168.6.192:8080/test1.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
-world_state = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+world_state = requests.get('http://192.168.6.192:8080/test.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+#world_state = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
 
 world_state = world_state.json()
-logger.debug('world_state↓')
+logger.info('world_state↓')
 logger.debug(world_state)
 #飞船新闻 world_state['Events']
 #实时警报 world_state['Alerts']
@@ -345,14 +345,76 @@ def worldstate_FlashSales():
         if isinstance(res, tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
-worldstate_FlashSales()
+
+
+def worldstate_Invasions():
+    opm = OPMysql()
+    for _a in world_state['Invasions']:
+        Oid = _a['_id']['$oid']
+        Activation_Date = _a['Activation']['$date']['$numberLong']
+        Faction = _a['Faction']
+        Node = _a['Node']
+        Count = _a['Count']
+        Goal = _a['Goal']
+        LocTag = _a['LocTag']
+        Completed = _a['Completed']
+        try:
+            AttackerReward_countedItems_ItemType = _a['AttackerReward']['countedItems'][0]['ItemType']
+        except Exception as e:
+            logger.debug(e)
+            AttackerReward_countedItems_ItemType =''
+        try:
+            AttackerReward_countedItems_ItemCount = _a['AttackerReward']['countedItems'][0]['ItemCount']
+        except Exception as e:
+            logger.debug(e)
+            AttackerReward_countedItems_ItemCount = ''
+        AttackerMissionInfo_seed = _a['AttackerMissionInfo']['seed']
+        AttackerMissionInfo_faction = _a['AttackerMissionInfo']['faction']
+        DefenderReward_countedItems_ItemType = _a['DefenderReward']['countedItems'][0]['ItemType']
+        DefenderReward_countedItems_ItemCount = _a['DefenderReward']['countedItems'][0]['ItemCount']
+        DefenderMissionInfo_seed = _a['DefenderMissionInfo']['seed']
+        DefenderMissionInfo_faction = _a['DefenderMissionInfo']['faction']
+        select_sql = "SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_Invasions(Oid ,Activation_Date ,Faction ,Node ,Count ,Goal ,LocTag ,Completed ,AttackerReward_countedItems_ItemType ,AttackerReward_countedItems_ItemCount ,AttackerMissionInfo_seed ,AttackerMissionInfo_faction ,DefenderReward_countedItems_ItemType ,DefenderReward_countedItems_ItemCount ,DefenderMissionInfo_seed ,DefenderMissionInfo_faction) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (Oid ,Activation_Date ,Faction ,Node ,Count ,Goal ,LocTag ,Completed ,AttackerReward_countedItems_ItemType ,AttackerReward_countedItems_ItemCount ,AttackerMissionInfo_seed ,AttackerMissionInfo_faction ,DefenderReward_countedItems_ItemType ,DefenderReward_countedItems_ItemCount ,DefenderMissionInfo_seed ,DefenderMissionInfo_faction)
+        update_sql = "UPDATE warframe_worldstate_Invasions SET Activation_Date = '%s' ,Faction = '%s' ,Node = '%s' ,Count = '%s' ,Goal = '%s' ,LocTag = '%s' ,Completed = '%s' ,AttackerReward_countedItems_ItemType = '%s' ,AttackerReward_countedItems_ItemCount = '%s' ,AttackerMissionInfo_seed = '%s' ,AttackerMissionInfo_faction = '%s' ,DefenderReward_countedItems_ItemType = '%s' ,DefenderReward_countedItems_ItemCount = '%s' ,DefenderMissionInfo_seed = '%s' ,DefenderMissionInfo_faction = '%s' WHERE Oid = '%s'"% (Activation_Date ,Faction ,Node ,Count ,Goal ,LocTag ,Completed ,AttackerReward_countedItems_ItemType ,AttackerReward_countedItems_ItemCount ,AttackerMissionInfo_seed ,AttackerMissionInfo_faction ,DefenderReward_countedItems_ItemType ,DefenderReward_countedItems_ItemCount ,DefenderMissionInfo_seed ,DefenderMissionInfo_faction,Oid)
+        res = opm.op_select(select_sql)
+        if isinstance(res, tuple):
+            ree = opm.op_insert(insert_sql)
+        else:
+            ree = opm.op_insert(update_sql)
+    opm.dispose()
+
+def wordstate_VoidTraders():
+    logger.debug("world_state['VoidTraders']↓")
+    logger.debug(world_state['VoidTraders'])
+    opm = OPMysql()
+    for _a in world_state['VoidTraders']:
+        Oid = _a['_id']['$oid']
+        Activation_date = _a['Activation']['$date']['$numberLong']
+        Expiry_date = _a['Expiry']['$date']['$numberLong']
+        Characters = _a['Character']
+        print(Characters)
+        Characters = Characters.replace("'"," ")
+        Node = _a['Node']
+        select_sql = "SELECT Oid  from  warframe_worldstate_VoidTraders WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_VoidTraders(Oid,Activation_date,Expiry_date, Characters , Node ) VALUES ('%s', '%s', '%s', '%s', '%s' )" % (Oid,Activation_date,Expiry_date,Characters,Node)
+        res = opm.op_select(select_sql)
+        if isinstance(res, tuple):
+            ree = opm.op_insert(insert_sql)
+    opm.dispose()
+
+wordstate_VoidTraders()
+
 
 #oid,activation_date,expiry_date,boss,reward,extradrops,seed,mission1_type,mission1_modifiertype,mission1_node,mission1_tilelset,mission2_type,mission2_modifiertype,mission2_node,mission2_tilelset,mission3_type,mission3_modifiertype,mission3_node,mission3_tilelset
-wordstate_sorties()
-worldstate_events()
-wordstate_alerts()
-worldstate_ActiveMissions()
-wordstate_SyndicateMissions()
+#wordstate_sorties()
+#worldstate_events()
+#wordstate_alerts()
+#worldstate_ActiveMissions()
+#wordstate_SyndicateMissions()
+#worldstate_FlashSales()
+#wordstate_SyndicateMissions()
+#worldstate_Invasions()
 ##ssssssssssssss
 #if __name__ =# = '__main__':
 #    #申请资源

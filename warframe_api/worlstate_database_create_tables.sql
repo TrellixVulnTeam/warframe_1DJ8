@@ -105,3 +105,30 @@ CREATE TABLE `warframe_worldstate_FlashSales` (
 `BogoBuy` varchar(200) NOT NULL,
 `BogoGet` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='折扣销售';
+
+CREATE TABLE `warframe_worldstate_Invasions` (
+`Oid` varchar(200) NOT NULL ,
+`Activation_Date` varchar(200) NOT NULL ,
+`Faction` varchar(200) NOT NULL ,
+`Node` varchar(200) NOT NULL ,
+`Count` varchar(200) NOT NULL ,
+`Goal` varchar(200) NOT NULL ,
+`LocTag` varchar(200) NOT NULL ,
+`Completed` varchar(200) NOT NULL ,
+`AttackerReward_countedItems_ItemType` varchar(200) NOT NULL ,
+`AttackerReward_countedItems_ItemCount` varchar(200) NOT NULL ,
+`AttackerMissionInfo_seed` varchar(200) NOT NULL ,
+`AttackerMissionInfo_faction` varchar(200) NOT NULL ,
+`DefenderReward_countedItems_ItemType` varchar(200) NOT NULL ,
+`DefenderReward_countedItems_ItemCount` varchar(200) NOT NULL ,
+`DefenderMissionInfo_seed` varchar(200) NOT NULL ,
+`DefenderMissionInfo_faction` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='入侵';
+
+CREATE TABLE `warframe_worldstate_VoidTraders` (
+`Oid` varchar(200) NOT NULL ,
+`Activation_date` varchar(200) NOT NULL ,
+`Expiry_date` varchar(200) NOT NULL ,
+`Character` varchar(200) NOT NULL comment '人物',
+`Node` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='虚空商人';
