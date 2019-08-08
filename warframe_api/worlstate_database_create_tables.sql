@@ -11,47 +11,48 @@ CREATE TABLE `t_alerts_history_data` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='历史数据';
 
-CREATE TABLE `warframe_worldstate_alerts` (
-`oid` varchar(200) NOT NULL ,
-`activation_date` varchar(200) NOT NULL ,
-`expiry_date` varchar(200) NOT NULL ,
-`missiontype` varchar(200) NOT NULL ,
-`faction` varchar(200) NOT NULL ,
-`location` varchar(200) NOT NULL ,
-`leveloverride` varchar(200) NOT NULL ,
-`enemyspec` varchar(200) NOT NULL ,
-`minenemylevel` varchar(200) NOT NULL ,
-`maxenemylevel` varchar(200) NOT NULL ,
-`difficulty` varchar(200) NOT NULL ,
-`seed` varchar(200) NOT NULL ,
-`mission_reward_credits` varchar(200) NOT NULL ,
-`mission_reward_items` varchar(200) NOT NULL ,
-`mission_reward_itemtype` varchar(200) NOT NULL ,
-`mission_reward_itemcount` varchar(200) NOT NULL ,
-`nightmare` varchar(200) NOT NULL
+CREATE TABLE `warframe_worldstate_Alerts` (
+  `Oid` varchar(200) NOT NULL,
+  `Activation_date` varchar(200) NOT NULL,
+  `Expiry_date` varchar(200) NOT NULL,
+  `Missiontype` varchar(200) NOT NULL,
+  `Faction` varchar(200) NOT NULL,
+  `Location` varchar(200) NOT NULL,
+  `Leveloverride` varchar(200) NOT NULL,
+  `Enemyspec` varchar(200) NOT NULL,
+  `Minenemylevel` varchar(200) NOT NULL,
+  `Maxenemylevel` varchar(200) NOT NULL,
+  `Difficulty` varchar(200) NOT NULL,
+  `Seed` varchar(200) NOT NULL,
+  `Mission_reward_credits` varchar(200) NOT NULL,
+  `Mission_reward_items` varchar(200) NOT NULL,
+  `Mission_reward_itemtype` varchar(200) NOT NULL,
+  `Mission_reward_itemcount` varchar(200) NOT NULL,
+  `nightmare` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='警报';
 
-CREATE TABLE `warframe_worldstate_sorties` (
-`oid` varchar(200) NOT NULL ,
-`activation_date` varchar(200) NOT NULL ,
-`expiry_date` varchar(200) NOT NULL ,
-`boss` varchar(200) NOT NULL ,
-`reward` varchar(200) NOT NULL ,
-`extradrops` varchar(200) NOT NULL ,
-`seed` varchar(200) NOT NULL ,
-`mission1_type` varchar(200) NOT NULL ,
-`mission1_modifiertype` varchar(200) NOT NULL ,
-`mission1_node` varchar(200) NOT NULL ,
-`mission1_tileset` varchar(200) NOT NULL ,
-`mission2_type` varchar(200) NOT NULL ,
-`mission2_modifiertype` varchar(200) NOT NULL ,
-`mission2_node` varchar(200) NOT NULL ,
-`mission2_tileset` varchar(200) NOT NULL ,
-`mission3_type` varchar(200) NOT NULL ,
-`mission3_modifiertype` varchar(200) NOT NULL ,
-`mission3_node` varchar(200) NOT NULL ,
-`mission3_tileset` varchar(200) NOT NULL
+CREATE TABLE `warframe_worldstate_Sorties` (
+  `Oid` varchar(200) NOT NULL,
+  `Activation_date` varchar(200) NOT NULL,
+  `Expiry_date` varchar(200) NOT NULL,
+  `Boss` varchar(200) NOT NULL,
+  `Reward` varchar(200) NOT NULL,
+  `Extradrops` varchar(200) NOT NULL,
+  `Seed` varchar(200) NOT NULL,
+  `Mission1_type` varchar(200) NOT NULL,
+  `Mission1_modifiertype` varchar(200) NOT NULL,
+  `Mission1_node` varchar(200) NOT NULL,
+  `Mission1_tileset` varchar(200) NOT NULL,
+  `Mission2_type` varchar(200) NOT NULL,
+  `Mission2_modifiertype` varchar(200) NOT NULL,
+  `Mission2_node` varchar(200) NOT NULL,
+  `Mission2_tileset` varchar(200) NOT NULL,
+  `mission3_type` varchar(200) NOT NULL,
+  `mission3_modifiertype` varchar(200) NOT NULL,
+  `mission3_node` varchar(200) NOT NULL,
+  `mission3_tileset` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='突击';
+
 
 CREATE TABLE `warframe_worldstate_SyndicateMissions` (
 `oid` varchar(200) NOT NULL ,
@@ -132,3 +133,48 @@ CREATE TABLE `warframe_worldstate_VoidTraders` (
 `Character` varchar(200) NOT NULL comment '人物',
 `Node` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='虚空商人';
+
+
+CREATE TABLE `warframe_worldstate_Wordstate` (
+`WorldSeed` varchar(600) NOT NULL ,
+`Version` varchar(200) NOT NULL ,
+`MobileVersion` varchar(200) NOT NULL ,
+`BuildLabel` varchar(200) NOT NULL ,
+`Time` varchar(200) NOT NULL ,
+`Date` varchar(200) NOT NULL ,
+`Goals` varchar(200) NOT NULL ,
+`GlobalUpgrades` varchar(200) NOT NULL ,
+`HubEvents` varchar(200) NOT NULL ,
+`PrimeAccessAvailability_State` varchar(200) NOT NULL ,
+`PrimeVaultAvailabilities_State1` varchar(200) NOT NULL ,
+`PrimeVaultAvailabilities_State2` varchar(200) NOT NULL ,
+`PrimeVaultAvailabilities_State3` varchar(200) NOT NULL ,
+`LibraryInfo_LastCompletedTargetType` varchar(200) NOT NULL ,
+`PersistentEnemies` varchar(200) NOT NULL ,
+`PVPAlternativeModes` varchar(200) NOT NULL ,
+`PVPActiveTournaments` varchar(200) NOT NULL ,
+`ProjectPct` varchar(200) NOT NULL ,
+`TwitchPromos` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='状态信息';
+
+CREATE TABLE `warframe_worldstate_NodeOverrides` (
+`Oid` varchar(200) NOT NULL ,
+`Node` varchar(200) NOT NULL,
+`Seed` varchar(200) NOT NULL ,
+`Activation_date` varchar(200) NOT NULL ,
+`Hide` varchar(200) NOT NULL ,
+`LevelOverride` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='NodeOverrides';
+
+CREATE TABLE `warframe_worldstate_DailyDeals` (
+`StoreItem` varchar(200) NOT NULL ,
+`Activation_date` varchar(200) NOT NULL ,
+`Expiry_date` varchar(200) NOT NULL ,
+`Discount` varchar(200) NOT NULL ,
+`OriginalPrice` varchar(200) NOT NULL ,
+`SalePrice` varchar(200) NOT NULL ,
+`AmountTotal` varchar(200) NOT NULL ,
+`AmountSold` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='DailyDeals';
+
+

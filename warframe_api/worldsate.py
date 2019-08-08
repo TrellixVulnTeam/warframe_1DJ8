@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 handler1 = logging.StreamHandler()
 handler2 = logging.FileHandler(filename="../log/test.log", encoding = 'utf-8')
 handler2 = logging.handlers.TimedRotatingFileHandler("../log/test.log", when="H", interval=1, backupCount=1, encoding = 'utf-8')
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 handler1.setLevel(logging.WARNING)
 handler2.setLevel(logging.DEBUG)
 
@@ -22,10 +22,7 @@ handler2.setFormatter(formatter)
 
 logger.addHandler(handler1)
 logger.addHandler(handler2)
-logger.info("Start print log")
-logger.debug("Do something")
-logger.warning("Something maybe fail.")
-logger.info("Finish")
+
 
 class OPMysql(object):
 
@@ -86,245 +83,247 @@ mysqlInfo = {
     "port": 3306
 }
 '''
-world_state = requests.get('http://192.168.6.192:8080/test.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
-#world_state = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+world_State = requests.get('http://192.168.6.192:8080/test1.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+#world_State = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
 
-world_state = world_state.json()
-logger.info('world_state↓')
-logger.debug(world_state)
-#飞船新闻 world_state['Events']
-#实时警报 world_state['Alerts']
-#突击任务 world_state['Sorties']
-#入侵任务 world_state['Invasions']
-#虚空商人 world_state['VoidTraders']
-#集团任务world_state['SyndicateMissions']
-#world_state['PrimeAccessAvailability']
-#world_state['PrimeVaultAvailabilities']
-#world_state['PrimeAccessAvailability']
-#world_state['PrimeVaultAvailabilities']
-logger.debug(world_state['PrimeAccessAvailability'])
-logger.debug(world_state['PrimeVaultAvailabilities'])
-def worldstate_events():
+world_State = world_State.json()
+logger.info('world_State↓')
+logger.debug(world_State)
+#飞船新闻 world_State['Events']
+#实时警报 world_State['Alerts']
+#突击任务 world_State['Sorties']
+#入侵任务 world_State['Invasions']
+#虚空商人 world_State['VoidTraders']
+#集团任务world_State['SyndicateMissions']
+#world_State['PrimeAccessAvailability']
+#world_State['PrimeVaultAvailabilities']
+#world_State['PrimeAccessAvailability']
+#world_State['PrimeVaultAvailabilities']
+
+def worldstate_Events():
     opm = OPMysql()
-    for i in world_state['Events']:
-        oid = i['_id']['$oid']
-        message = i['Messages'][0]['Message']
-        prop= i['Prop']
-        date = i['Date']['$date']['$numberLong']
-        select_sql = "SELECT oid  from  warframe_worldstate_events WHERE oid = '%s' " % (oid)
-        insert_sql = "INSERT INTO warframe_worldstate_events(oid,message,prop,date) VALUES ('%s', '%s', '%s', '%s')" % (oid,message,prop,date)
+    for i in world_State['Events']:
+        Oid = i['_id']['$oid']
+        Message = i['Messages'][0]['Message']
+        Prop= i['Prop']
+        Date = i['Date']['$date']['$numberLong']
+        select_sql = "SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_Events(Oid,Message,Prop,Date) VALUES ('%s', '%s', '%s', '%s')" % (Oid,Message,Prop,Date)
         res = opm.op_select(select_sql)
         if isinstance(res,tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
+    logger.info('worldstate_Events')
 
-def wordstate_alerts():
+def wordstate_Alerts():
     opml = OPMysql()
-    logger.debug('world_state[\'Alerts\']')
-    logger.debug(world_state['Alerts'])
-    for _i in world_state['Alerts']:
-        oid = _i['_id']['$oid']
-        activation_date = _i['Activation']['$date']['$numberLong']
-        expiry_date = _i['Expiry']['$date']['$numberLong']
-        missiontype = _i['MissionInfo']['missionType']
-        faction = _i['MissionInfo']['faction']
-        location = _i['MissionInfo']['location']
-        leveloverride = _i['MissionInfo'][ 'levelOverride']
-        enemyspec = _i['MissionInfo'][ 'enemySpec']
-        minenemylevel =_i['MissionInfo']['minEnemyLevel']
-        maxenemylevel= _i['MissionInfo']['maxEnemyLevel']
-        difficulty = _i['MissionInfo']['difficulty']
-        seed = _i['MissionInfo']['seed']
-        mission_reward_credits = _i['MissionInfo']['missionReward']['credits']
+    logger.info('world_State[\'Alerts\']')
+    logger.debug(world_State['Alerts'])
+    for _i in world_State['Alerts']:
+        Oid = _i['_id']['$oid']
+        Activation_date = _i['Activation']['$date']['$numberLong']
+        Expiry_date = _i['Expiry']['$date']['$numberLong']
+        Missiontype = _i['MissionInfo']['missionType']
+        Faction = _i['MissionInfo']['faction']
+        Location = _i['MissionInfo']['location']
+        Leveloverride = _i['MissionInfo'][ 'levelOverride']
+        Enemyspec = _i['MissionInfo'][ 'enemySpec']
+        Minenemylevel =_i['MissionInfo']['minEnemyLevel']
+        Maxenemylevel= _i['MissionInfo']['maxEnemyLevel']
+        Difficulty = _i['MissionInfo']['difficulty']
+        Seed = _i['MissionInfo']['seed']
+        Mission_reward_credits = _i['MissionInfo']['missionReward']['credits']
         try:
-            mission_reward_items = _i['MissionInfo']['missionReward']['items'][0]
+            Mission_reward_items = _i['MissionInfo']['missionReward']['items'][0]
         except Exception as e:
-            logger.error(e)
-            mission_reward_items = ''
+            logger.debug(e)
+            Mission_reward_items = ''
         try:
-            mission_reward_itemtype = _i['MissionInfo']['missionReward']['countedItems']['ItemType']
+            Mission_reward_itemtype = _i['MissionInfo']['missionReward']['countedItems']['ItemType']
         except Exception as e:
-            logger.error(e)
-            mission_reward_itemtype = ''
+            logger.debug(e)
+            Mission_reward_itemtype = ''
         try:
-            mission_reward_itemcount = _i['MissionInfo']['missionReward']['countedItems']['ItemCount']
+            Mission_reward_itemcount = _i['MissionInfo']['missionReward']['countedItems']['ItemCount']
         except Exception as e:
-            logger.error(e)
-            mission_reward_itemcount = ''
+            logger.debug(e)
+            Mission_reward_itemcount = ''
         try:
-            nightmare = _i['MissionInfo']['nightmare']
+            Nightmare = _i['MissionInfo']['nightmare']
         except Exception as e:
-            logger.error(e)
-            nightmare = ''
-        select_sql = "SELECT oid  from  warframe_worldstate_alerts WHERE oid = '%s' " % (oid)
-        insert_sql = "INSERT INTO warframe_worldstate_alerts(oid,activation_date,expiry_date,missiontype,faction,location,leveloverride,enemyspec,minenemylevel,maxenemylevel,difficulty,seed,mission_reward_credits,mission_reward_items,mission_reward_itemtype,mission_reward_itemcount,nightmare) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s','%s', '%s', '%s','%s','%s')" % (oid,activation_date,expiry_date,missiontype,faction,location,leveloverride,enemyspec,minenemylevel,maxenemylevel,difficulty,seed,mission_reward_credits,mission_reward_items,mission_reward_itemtype,mission_reward_itemcount,nightmare)
+            logger.debug(e)
+            Nightmare = ''
+        select_sql = "SELECT Oid  from  warframe_worldstate_Alerts WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_Alerts(Oid,Activation_date,Expiry_date,Missiontype,Faction,Location,Leveloverride,Enemyspec,Minenemylevel,Maxenemylevel,Difficulty,Seed,Mission_reward_credits,Mission_reward_items,Mission_reward_itemtype,Mission_reward_itemcount,Nightmare) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s','%s', '%s', '%s','%s','%s')" % (Oid,Activation_date,Expiry_date,Missiontype,Faction,Location,Leveloverride,Enemyspec,Minenemylevel,Maxenemylevel,Difficulty,Seed,Mission_reward_credits,Mission_reward_items,Mission_reward_itemtype,Mission_reward_itemcount,Nightmare)
         res = opml.op_select(select_sql)
         if isinstance(res,tuple):
             ree = opml.op_insert(insert_sql)
     opml.dispose()
+    logger.info('worldstate_Alerts')
 
-def wordstate_sorties():
-    logger.debug("world_state['Sorties']↓")
-    logger.debug(world_state['Sorties'])
+def wordstate_Sorties():
+    logger.info("world_State['Sorties']↓")
+    logger.debug(world_State['Sorties'])
     opm = OPMysql()
-    for _a in world_state['Sorties']:
-        oid = _a['_id']['$oid']
-        activation_date = _a['Activation']['$date']['$numberLong']
-        expiry_date = _a['Expiry']['$date']['$numberLong']
-        boss = _a['Boss']
-        reward = _a['Reward']
-        extradrops = _a['ExtraDrops']
-        seed = _a['Seed']
-        mission1_type = _a['Variants'][0]['missionType']
-        mission1_modifiertype = _a['Variants'][0]['modifierType']
-        mission1_node = _a['Variants'][0]['node']
-        mission1_tileset = _a['Variants'][0]['tileset']
+    for _a in world_State['Sorties']:
+        Oid = _a['_id']['$oid']
+        Activation_date = _a['Activation']['$date']['$numberLong']
+        Expiry_date = _a['Expiry']['$date']['$numberLong']
+        Boss = _a['Boss']
+        Reward = _a['Reward']
+        Extradrops = _a['ExtraDrops']
+        Seed = _a['Seed']
+        Mission1_type = _a['Variants'][0]['missionType']
+        Mission1_modifiertype = _a['Variants'][0]['modifierType']
+        Mission1_node = _a['Variants'][0]['node']
+        Mission1_tileset = _a['Variants'][0]['tileset']
         logger.debug(_a['Variants'][0])
-        mission2_type = _a['Variants'][1]['missionType']
-        mission2_modifiertype = _a['Variants'][1]['modifierType']
-        mission2_node = _a['Variants'][1]['node']
-        mission2_tileset = _a['Variants'][1]['tileset']
-        mission3_type = _a['Variants'][2]['missionType']
-        mission3_modifiertype = _a['Variants'][2]['modifierType']
-        mission3_node = _a['Variants'][2]['node']
-        mission3_tileset = _a['Variants'][2]['tileset']
-        select_sql = "SELECT oid  from  warframe_worldstate_sorties WHERE oid = '%s' " % (oid)
-        insert_sql = "INSERT INTO warframe_worldstate_sorties(oid,activation_date,expiry_date,boss,reward,extradrops,seed,mission1_type,mission1_modifiertype,mission1_node,mission1_tileset,mission2_type,mission2_modifiertype,mission2_node,mission2_tileset,mission3_type,mission3_modifiertype,mission3_node,mission3_tileset) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (oid,activation_date,expiry_date,boss,reward,extradrops,seed,mission1_type,mission1_modifiertype,mission1_node,mission1_tileset,mission2_type,mission2_modifiertype,mission2_node,mission2_tileset,mission3_type,mission3_modifiertype,mission3_node,mission3_tileset)
+        Mission2_type = _a['Variants'][1]['missionType']
+        Mission2_modifiertype = _a['Variants'][1]['modifierType']
+        Mission2_node = _a['Variants'][1]['node']
+        Mission2_tileset = _a['Variants'][1]['tileset']
+        Mission3_type = _a['Variants'][2]['missionType']
+        Mission3_modifiertype = _a['Variants'][2]['modifierType']
+        Mission3_node = _a['Variants'][2]['node']
+        Mission3_tileset = _a['Variants'][2]['tileset']
+        select_sql = "SELECT Oid  from  warframe_worldstate_Sorties WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_Sorties(Oid,Activation_date,Expiry_date,Boss,Reward,Extradrops,Seed,Mission1_type,Mission1_modifiertype,Mission1_node,Mission1_tileset,Mission2_type,Mission2_modifiertype,Mission2_node,Mission2_tileset,Mission3_type,Mission3_modifiertype,Mission3_node,Mission3_tileset) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (Oid,Activation_date,Expiry_date,Boss,Reward,Extradrops,Seed,Mission1_type,Mission1_modifiertype,Mission1_node,Mission1_tileset,Mission2_type,Mission2_modifiertype,Mission2_node,Mission2_tileset,Mission3_type,Mission3_modifiertype,Mission3_node,Mission3_tileset)
         res = opm.op_select(select_sql)
         if isinstance(res, tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
-
+    logger.info('wordstate_Sorties')
 
 def wordstate_SyndicateMissions():
-    logger.debug("world_state['SyndicateMissions']↓")
-    logger.debug(world_state['SyndicateMissions'])
+    logger.debug(world_State['SyndicateMissions'])
     opm = OPMysql()
-    for _a in world_state['SyndicateMissions']:
-        oid = _a['_id']['$oid']
-        activation_date = _a['Activation']['$date']['$numberLong']
-        expiry_date = _a['Expiry']['$date']['$numberLong']
-        tag = _a['Tag']
-        seed = _a['Seed']
-        node = _a['Nodes']
-        node = ' '.join(node)
+    for _a in world_State['SyndicateMissions']:
+        Oid = _a['_id']['$oid']
+        Activation_date = _a['Activation']['$date']['$numberLong']
+        Expiry_date = _a['Expiry']['$date']['$numberLong']
+        Tag = _a['Tag']
+        Seed = _a['Seed']
+        Node = _a['Nodes']
+        Node = ' '.join(Node)
         try:
-            jobs1_type = _a['Jobs'][0]['jobType']
+            Jobs1_type = _a['Jobs'][0]['jobType']
         except Exception as e:
             logger.debug(e)
-            jobs1_type = ''
+            Jobs1_type = ''
         try:
-            jobs1_rewards = _a['Jobs'][0]['rewards']
+            Jobs1_rewards = _a['Jobs'][0]['rewards']
         except Exception as e:
             logger.debug(e)
-            jobs1_rewards =''
+            Jobs1_rewards =''
         try:
-            jobs1_masteryreq = _a['Jobs'][0]['masteryReq']
+            Jobs1_masteryreq = _a['Jobs'][0]['masteryReq']
         except Exception as e:
             logger.debug(e)
-            jobs1_masteryreq =''
+            Jobs1_masteryreq =''
         try:
-            jobs1_minenemylevel = _a['Jobs'][0]['minEnemyLevel']
+            Jobs1_minenemylevel = _a['Jobs'][0]['minEnemyLevel']
         except Exception as e:
             logger.debug(e)
-            jobs1_minenemylevel = ''
+            Jobs1_minenemylevel = ''
         try:
-            jobs1_maxenemylevel = _a['Jobs'][0]['maxEnemyLevel']
+            Jobs1_maxenemylevel = _a['Jobs'][0]['maxEnemyLevel']
         except Exception as e:
             logger.debug(e)
-            jobs1_maxenemylevel = ''
+            Jobs1_maxenemylevel = ''
         try:
-            jobs1_xpamounts = _a['Jobs'][0]['xpAmounts']
+            Jobs1_xpamounts = _a['Jobs'][0]['xpAmounts']
         except Exception as e:
             logger.debug(e)
-            jobs1_xpamounts =''
+            Jobs1_xpamounts =''
         try:
-            jobs2_type = _a['Jobs'][0]['jobType']
+            Jobs2_type = _a['Jobs'][0]['jobType']
         except Exception as e:
             logger.debug(e)
-            jobs2_type = ''
+            Jobs2_type = ''
         try:
-            jobs2_rewards = _a['Jobs'][0]['rewards']
+            Jobs2_rewards = _a['Jobs'][0]['rewards']
         except Exception as e:
             logger.debug(e)
-            jobs2_rewards =''
+            Jobs2_rewards =''
         try:
-            jobs2_masteryreq = _a['Jobs'][0]['masteryReq']
+            Jobs2_masteryreq = _a['Jobs'][0]['masteryReq']
         except Exception as e:
             logger.debug(e)
-            jobs2_masteryreq =''
+            Jobs2_masteryreq =''
         try:
-            jobs2_minenemylevel = _a['Jobs'][0]['minEnemyLevel']
+            Jobs2_minenemylevel = _a['Jobs'][0]['minEnemyLevel']
         except Exception as e:
             logger.debug(e)
-            jobs2_minenemylevel = ''
+            Jobs2_minenemylevel = ''
         try:
-            jobs2_maxenemylevel = _a['Jobs'][0]['maxEnemyLevel']
+            Jobs2_maxenemylevel = _a['Jobs'][0]['maxEnemyLevel']
         except Exception as e:
             logger.debug(e)
-            jobs2_maxenemylevel = ''
+            Jobs2_maxenemylevel = ''
         try:
-            jobs2_xpamounts = _a['Jobs'][0]['xpAmounts']
+            Jobs2_xpamounts = _a['Jobs'][0]['xpAmounts']
         except Exception as e:
             logger.debug(e)
-            jobs2_xpamounts =''
+            Jobs2_xpamounts =''
         try:
-            jobs3_type = _a['Jobs'][0]['jobType']
+            Jobs3_type = _a['Jobs'][0]['jobType']
         except Exception as e:
             logger.debug(e)
-            jobs3_type = ''
+            Jobs3_type = ''
         try:
-            jobs3_rewards = _a['Jobs'][0]['rewards']
+            Jobs3_rewards = _a['Jobs'][0]['rewards']
         except Exception as e:
             logger.debug(e)
-            jobs3_rewards =''
+            Jobs3_rewards =''
         try:
-            jobs3_masteryreq = _a['Jobs'][0]['masteryReq']
+            Jobs3_masteryreq = _a['Jobs'][0]['masteryReq']
         except Exception as e:
             logger.debug(e)
-            jobs3_masteryreq =''
+            Jobs3_masteryreq =''
         try:
-            jobs3_minenemylevel = _a['Jobs'][0]['minEnemyLevel']
+            Jobs3_minenemylevel = _a['Jobs'][0]['minEnemyLevel']
         except Exception as e:
             logger.debug(e)
-            jobs3_minenemylevel = ''
+            Jobs3_minenemylevel = ''
         try:
-            jobs3_maxenemylevel = _a['Jobs'][0]['maxEnemyLevel']
+            Jobs3_maxenemylevel = _a['Jobs'][0]['maxEnemyLevel']
         except Exception as e:
             logger.debug(e)
-            jobs3_maxenemylevel = ''
+            Jobs3_maxenemylevel = ''
         try:
-            jobs3_xpamounts = _a['Jobs'][0]['xpAmounts']
-            jobs3_xpamounts = ' '.join(jobs3_xpamounts)
+            Jobs3_xpamounts = _a['Jobs'][0]['xpAmounts']
+            Jobs3_xpamounts = ' '.join(Jobs3_xpamounts)
         except Exception as e:
             logger.debug(e)
-            jobs3_xpamounts =''
-        select_sql = "SELECT oid  from  warframe_worldstate_SyndicateMissions WHERE oid = '%s' " % (oid)
-        insert_sql = "INSERT INTO warframe_worldstate_SyndicateMissions(oid,activation_date,expiry_date,tag,seed,node,jobs1_type,jobs1_rewards,jobs1_masteryreq,jobs1_minenemylevel,jobs1_maxenemylevel,jobs1_xpamounts,jobs2_type,jobs2_rewards,jobs2_masteryreq,jobs2_minenemylevel,jobs2_maxenemylevel,jobs2_xpamounts,jobs3_type,jobs3_rewards,jobs3_masteryreq,jobs3_minenemylevel,jobs3_maxenemylevel,jobs3_xpamounts) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (oid,activation_date,expiry_date,tag,seed,node,jobs1_type,jobs1_rewards,jobs1_masteryreq,jobs1_minenemylevel,jobs1_maxenemylevel,jobs1_xpamounts,jobs2_type,jobs2_rewards,jobs2_masteryreq,jobs2_minenemylevel,jobs2_maxenemylevel,jobs2_xpamounts,jobs3_type,jobs3_rewards,jobs3_masteryreq,jobs3_minenemylevel,jobs3_maxenemylevel,jobs3_xpamounts)
+            Jobs3_xpamounts =''
+        select_sql = "SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_SyndicateMissions(Oid,Activation_date,Expiry_date,Tag,Seed,Node,Jobs1_type,Jobs1_rewards,Jobs1_masteryreq,Jobs1_minenemylevel,Jobs1_maxenemylevel,Jobs1_xpamounts,Jobs2_type,Jobs2_rewards,Jobs2_masteryreq,Jobs2_minenemylevel,Jobs2_maxenemylevel,Jobs2_xpamounts,Jobs3_type,Jobs3_rewards,Jobs3_masteryreq,Jobs3_minenemylevel,Jobs3_maxenemylevel,Jobs3_xpamounts) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (Oid,Activation_date,Expiry_date,Tag,Seed,Node,Jobs1_type,Jobs1_rewards,Jobs1_masteryreq,Jobs1_minenemylevel,Jobs1_maxenemylevel,Jobs1_xpamounts,Jobs2_type,Jobs2_rewards,Jobs2_masteryreq,Jobs2_minenemylevel,Jobs2_maxenemylevel,Jobs2_xpamounts,Jobs3_type,Jobs3_rewards,Jobs3_masteryreq,Jobs3_minenemylevel,Jobs3_maxenemylevel,Jobs3_xpamounts)
         res = opm.op_select(select_sql)
         if isinstance(res, tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
+    logger.info('SyndicateMissions')
 def worldstate_ActiveMissions():
     opm = OPMysql()
-    for _a in world_state['ActiveMissions']:
-        oid = _a['_id']['$oid']
-        activation_date = _a['Activation']['$date']['$numberLong']
-        expiry_date = _a['Expiry']['$date']['$numberLong']
+    for _a in world_State['ActiveMissions']:
+        Oid = _a['_id']['$oid']
+        Activation_date = _a['Activation']['$date']['$numberLong']
+        Expiry_date = _a['Expiry']['$date']['$numberLong']
         Region = _a['Region']
         Seed = _a['Seed']
         Node = _a['Node']
         MissionType = _a['MissionType']
         Modifier = _a['Modifier']
-        select_sql = "SELECT oid  from  warframe_worldstate_ActiveMissions WHERE oid = '%s' " % (oid)
-        insert_sql = "INSERT INTO warframe_worldstate_ActiveMissions(oid,activation_date,expiry_date,Region,Seed,Node,MissionType,Modifier) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (oid,activation_date,expiry_date,Region,Seed,Node,MissionType,Modifier)
+        select_sql = "SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_ActiveMissions(Oid,Activation_date,Expiry_date,Region,Seed,Node,MissionType,Modifier) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (Oid,Activation_date,Expiry_date,Region,Seed,Node,MissionType,Modifier)
         res = opm.op_select(select_sql)
         if isinstance(res,tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
+    logger.info('ActiveMissions')
 def worldstate_FlashSales():
     opm = OPMysql()
-    for _a in world_state['FlashSales']:
+    for _a in world_State['FlashSales']:
         TypeName = _a['TypeName']
         StartDate = _a['StartDate']['$date']['$numberLong']
         EndDate = _a['EndDate']['$date']['$numberLong']
@@ -345,11 +344,11 @@ def worldstate_FlashSales():
         if isinstance(res, tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
-
+    logger.info('FlashSales')
 
 def worldstate_Invasions():
     opm = OPMysql()
-    for _a in world_state['Invasions']:
+    for _a in world_State['Invasions']:
         Oid = _a['_id']['$oid']
         Activation_Date = _a['Activation']['$date']['$numberLong']
         Faction = _a['Faction']
@@ -383,17 +382,17 @@ def worldstate_Invasions():
         else:
             ree = opm.op_insert(update_sql)
     opm.dispose()
+    logger.info('Invasions')
 
 def wordstate_VoidTraders():
-    logger.debug("world_state['VoidTraders']↓")
-    logger.debug(world_state['VoidTraders'])
+    logger.debug("world_State['VoidTraders']↓")
+    logger.debug(world_State['VoidTraders'])
     opm = OPMysql()
-    for _a in world_state['VoidTraders']:
+    for _a in world_State['VoidTraders']:
         Oid = _a['_id']['$oid']
         Activation_date = _a['Activation']['$date']['$numberLong']
         Expiry_date = _a['Expiry']['$date']['$numberLong']
         Characters = _a['Character']
-        print(Characters)
         Characters = Characters.replace("'"," ")
         Node = _a['Node']
         select_sql = "SELECT Oid  from  warframe_worldstate_VoidTraders WHERE Oid = '%s' " % (Oid)
@@ -402,20 +401,175 @@ def wordstate_VoidTraders():
         if isinstance(res, tuple):
             ree = opm.op_insert(insert_sql)
     opm.dispose()
+    logger.info('VoidTraders')
 
+
+
+
+def wordstate_Wordstate():
+    opm = OPMysql()
+    WorldSeed = world_State['WorldSeed']
+    Version = world_State['Version']
+    MobileVersion = world_State['MobileVersion']
+    BuildLabel = world_State['BuildLabel']
+    Time = world_State['Time']
+    Date = world_State['Date']
+    try:
+        Goals = world_State['Goals']
+    except Exception as e:
+        logger.debug(e)
+        Goals = ''
+    try:
+        GlobalUpgrades = world_State['GlobalUpgrades']
+    except Exception as e:
+        logger.debug(e)
+        GlobalUpgrades = ''
+    try:
+        HubEvents = world_State['HubEvents']
+    except Exception as e:
+        logger.debug(e)
+        HubEvents = ''
+    PrimeAccessAvailability_State = world_State['PrimeAccessAvailability']['State']
+    try:
+        PrimeVaultAvailabilities_State1 = world_State['PrimeVaultAvailabilities'][0]['State']
+    except Exception as e:
+        logger.debug(e)
+        try:
+            PrimeVaultAvailabilities_State1 = world_State['PrimeVaultAvailabilities']
+        except Exception as e:
+            logger.debug(e)
+            PrimeVaultAvailabilities_State1 = 'unkown'
+
+    try:
+        PrimeVaultAvailabilities_State2 = world_State['PrimeVaultAvailabilities'][1]['State']
+    except Exception as e:
+        logger.debug(e)
+        try:
+            PrimeVaultAvailabilities_State2 = world_State['PrimeVaultAvailabilities']
+        except Exception as e:
+            logger.debug(e)
+            PrimeVaultAvailabilities_State2 = 'unkown'
+    try:
+        PrimeVaultAvailabilities_State3 = world_State['PrimeVaultAvailabilities'][2]['State']
+    except Exception as e:
+        logger.debug(e)
+        try:
+            PrimeVaultAvailabilities_State3 = world_State['PrimeVaultAvailabilities']
+        except Exception as e:
+            logger.debug(e)
+            PrimeVaultAvailabilities_State3 = 'unkown'
+    LibraryInfo_LastCompletedTargetType = world_State['LibraryInfo']['LastCompletedTargetType']
+    try:
+        PersistentEnemies = world_State['PersistentEnemies']
+    except Exception as e:
+        logger.debug(e)
+        PersistentEnemies = ''
+    try:
+        PVPAlternativeModes = world_State['PVPAlternativeModes']
+    except Exception as e:
+        logger.debug(e)
+        PVPAlternativeModes = ''
+    try:
+        PVPActiveTournaments = world_State['PVPActiveTournaments']
+    except Exception as e:
+        logger.debug(e)
+        PVPActiveTournaments = ''
+    ProjectPct = world_State['ProjectPct']
+    try:
+        TwitchPromos = world_State['TwitchPromos']
+    except Exception as e:
+        logger.debug(e)
+        TwitchPromos = ''
+
+    select_sql = "SELECT Date  from  warframe_worldstate_Wordstate WHERE Date = '%s' " % (Date)
+    insert_sql = "INSERT INTO warframe_worldstate_Wordstate(WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date ,Goals ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date ,Goals ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos)
+    res = opm.op_select(select_sql)
+    if isinstance(res, tuple):
+        ree = opm.op_insert(insert_sql)
+    opm.dispose()
+    logger.info('Wordstate')
+
+
+def wordstate_NodeOverrides():
+    opm = OPMysql()
+    for _a in world_State['NodeOverrides']:
+        Oid = _a['_id']['$oid']
+        Node = _a['Node']
+        try:
+            Seed = _a['Seed']
+        except Exception as e:
+            logger.debug(e)
+            Seed = ''
+        try:
+            Hide = _a['Hide']
+        except Exception as e:
+            logger.debug(e)
+            Hide = ''
+        try:
+            LevelOverride = _a['LevelOverride']
+        except Exception as e:
+            logger.debug(e)
+            LevelOverride = ''
+        try:
+            Activation_date = _a['Activation']['$date']['$numberLong']
+        except Exception as e:
+            logger.debug(e)
+            Activation_date = ''
+        select_sql = "SELECT Oid  from  warframe_worldstate_NodeOverrides WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_NodeOverrides(Oid ,Node,Seed ,Activation_date ,Hide ,LevelOverride ) VALUES ('%s', '%s', '%s', '%s', '%s','%s' )" % (Oid ,Node,Seed ,Activation_date ,Hide ,LevelOverride)
+        res = opm.op_select(select_sql)
+        if isinstance(res, tuple):
+            ree = opm.op_insert(insert_sql)
+    opm.dispose()
+    logger.info('NodeOverrides')
+
+
+def wordstate_DailyDeals():
+    opm = OPMysql()
+    for _a in world_State['DailyDeals']:
+        StoreItem = _a['StoreItem']
+        Activation_date = _a['Activation']['$date']['$numberLong']
+        Expiry_date = _a['Expiry']['$date']['$numberLong']
+        Discount = _a['Discount']
+        OriginalPrice = _a['OriginalPrice']
+        SalePrice = _a['SalePrice']
+        AmountTotal = _a['AmountTotal']
+        AmountSold = _a['AmountSold']
+        select_sql = "SELECT StoreItem  from  warframe_worldstate_DailyDeals WHERE StoreItem = '%s' " % (StoreItem)
+        insert_sql = "INSERT INTO warframe_worldstate_DailyDeals(StoreItem ,Activation_date ,Expiry_date ,Discount ,OriginalPrice ,SalePrice ,AmountTotal ,AmountSold ) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s'  )" % (StoreItem ,Activation_date ,Expiry_date ,Discount ,OriginalPrice ,SalePrice ,AmountTotal ,AmountSold)
+        res = opm.op_select(select_sql)
+        if isinstance(res, tuple):
+            ree = opm.op_insert(insert_sql)
+    opm.dispose()
+    logger.info('wordstate_DailyDeals')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wordstate_Sorties()
+worldstate_Events()
+wordstate_Alerts()
+worldstate_ActiveMissions()
+wordstate_SyndicateMissions()
+worldstate_FlashSales()
+wordstate_SyndicateMissions()
+worldstate_Invasions()
+wordstate_Wordstate()
 wordstate_VoidTraders()
+wordstate_NodeOverrides()
 
+wordstate_DailyDeals()
 
-#oid,activation_date,expiry_date,boss,reward,extradrops,seed,mission1_type,mission1_modifiertype,mission1_node,mission1_tilelset,mission2_type,mission2_modifiertype,mission2_node,mission2_tilelset,mission3_type,mission3_modifiertype,mission3_node,mission3_tilelset
-#wordstate_sorties()
-#worldstate_events()
-#wordstate_alerts()
-#worldstate_ActiveMissions()
-#wordstate_SyndicateMissions()
-#worldstate_FlashSales()
-#wordstate_SyndicateMissions()
-#worldstate_Invasions()
-##ssssssssssssss
 #if __name__ =# = '__main__':
 #    #申请资源
 #    opm = OPMysql()
@@ -424,4 +578,4 @@ wordstate_VoidTraders()
 #    res = opm.op_select(sql)
 #
 #    #释放资源
-#    opm.dispose()
+#    opm.dispose
