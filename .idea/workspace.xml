@@ -4,7 +4,7 @@
     <list default="true" id="076fcfc6-f419-448a-b21e-69767090e3f2" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
-      <change beforePath="$PROJECT_DIR$/log/test.log.2019-08-07_12" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/log/test.log.2019-08-08_11" afterPath="" />
       <change beforePath="$PROJECT_DIR$/warframe_api/doc/世界状态官方数据名称解读" afterPath="$PROJECT_DIR$/warframe_api/doc/世界状态官方数据名称解读" />
       <change beforePath="$PROJECT_DIR$/warframe_api/worldsate.py" afterPath="$PROJECT_DIR$/warframe_api/worldsate.py" />
       <change beforePath="$PROJECT_DIR$/warframe_api/worlstate_database_create_tables.sql" afterPath="$PROJECT_DIR$/warframe_api/worlstate_database_create_tables.sql" />
@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/warframe$configure_warframe.coverage" NAME="configure_warframe Coverage Results" MODIFIED="1556097627893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/warframe$reset.coverage" NAME="reset Coverage Results" MODIFIED="1556185124502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/warframe$mission_star.coverage" NAME="mission_star Coverage Results" MODIFIED="1557304342873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/warframe$worldsate.coverage" NAME="worldsate Coverage Results" MODIFIED="1565255877468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/warframe_api" />
+    <SUITE FILE_PATH="coverage/warframe$worldsate.coverage" NAME="worldsate Coverage Results" MODIFIED="1566548944791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/warframe_api" />
     <SUITE FILE_PATH="coverage/warframe$sql_en2zh2.coverage" NAME="sql_en2zh2 Coverage Results" MODIFIED="1557306484237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/warframe$mission_json_sql.coverage" NAME="mission-json-sql Coverage Results" MODIFIED="1557197429105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/warframe$settings.coverage" NAME="settings Coverage Results" MODIFIED="1559702413643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="F:/django_warframe/HelloWord/HelloWord" />
@@ -50,27 +50,49 @@
       <file leaf-file-name="worldsate.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/warframe_api/worldsate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="567" column="0" lean-forward="true" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
               <folding>
                 <element signature="e#61#118#0" expanded="true" />
-                <element signature="e#986#2260#0" expanded="false" />
-                <element signature="e#2273#2385#0" expanded="false" />
-                <element signature="e#2386#2523#1" expanded="false" />
-                <element signature="e#3416#4027#0" expanded="false" />
-                <element signature="e#4057#6588#0" expanded="false" />
-                <element signature="e#6619#8742#0" expanded="false" />
-                <element signature="e#14330#15604#0" expanded="false" />
-                <element signature="e#15638#18924#0" expanded="false" />
-                <element signature="e#18959#19857#0" expanded="false" />
-                <element signature="e#19893#23593#0" expanded="false" />
-                <element signature="e#23631#24819#0" expanded="false" />
-                <marker date="1565254854439" expanded="true" signature="12175:12247" ph="SELECT oid f... warframe_worldstate_SyndicateMissions" />
-                <marker date="1565254854439" expanded="true" signature="12280:12822" ph="INSERT INTO warframe_worldstate_SyndicateMissions... " />
-                <marker date="1565254854439" expanded="true" signature="13776:13845" ph="SELECT oid f... warframe_worldstate_ActiveMissions" />
-                <marker date="1565254854439" expanded="true" signature="13878:14051" ph="INSERT INTO warframe_worldstate_ActiveMissions... " />
-                <marker date="1565254854439" expanded="true" signature="25287:25364" ph="SELECT Store... warframe_worldstate_DailyDeals" />
-                <marker date="1565254854439" expanded="true" signature="25403:25606" ph="INSERT INTO warframe_worldstate_DailyDeals... " />
+                <element signature="e#987#2261#0" expanded="false" />
+                <element signature="e#2274#2386#0" expanded="false" />
+                <element signature="e#2387#2524#1" expanded="false" />
+                <element signature="e#3417#4028#0" expanded="false" />
+                <element signature="e#4058#6589#0" expanded="false" />
+                <element signature="e#6620#8743#0" expanded="false" />
+                <element signature="e#8784#13342#0" expanded="false" />
+                <element signature="e#13380#14297#0" expanded="false" />
+                <element signature="e#14331#15605#0" expanded="false" />
+                <element signature="e#15639#18925#0" expanded="false" />
+                <element signature="e#18960#19858#0" expanded="false" />
+                <element signature="e#19894#23460#0" expanded="false" />
+                <element signature="e#23498#24686#0" expanded="false" />
+                <element signature="e#24721#25756#0" expanded="false" />
+                <marker date="1566552756225" expanded="true" signature="3641:3702" ph="SELECT Oid f... warframe_worldstate_Events" />
+                <marker date="1566552756225" expanded="true" signature="3735:3828" ph="INSERT INTO warframe_worldstate_Events... " />
+                <marker date="1566552756225" expanded="true" signature="5704:5765" ph="SELECT Oid f... warframe_worldstate_Alerts" />
+                <marker date="1566552756225" expanded="true" signature="5798:6176" ph="INSERT INTO warframe_worldstate_Alerts... " />
+                <marker date="1566552756225" expanded="true" signature="7785:7847" ph="SELECT Oid f... warframe_worldstate_Sorties" />
+                <marker date="1566552756225" expanded="true" signature="7880:8303" ph="INSERT INTO warframe_worldstate_Sorties... " />
+                <marker date="1566552756225" expanded="true" signature="12176:12248" ph="SELECT Oid f... warframe_worldstate_SyndicateMissions" />
+                <marker date="1566552756225" expanded="true" signature="12281:12823" ph="INSERT INTO warframe_worldstate_SyndicateMissions... " />
+                <marker date="1566552756225" expanded="true" signature="13777:13846" ph="SELECT Oid f... warframe_worldstate_ActiveMissions" />
+                <marker date="1566552756225" expanded="true" signature="13879:14052" ph="INSERT INTO warframe_worldstate_ActiveMissions... " />
+                <marker date="1566552756225" expanded="true" signature="14902:14977" ph="SELECT TypeN... warframe_worldstate_FlashSales" />
+                <marker date="1566552756225" expanded="true" signature="15015:15271" ph="INSERT INTO warframe_worldstate_FlashSales... " />
+                <marker date="1566552756225" expanded="true" signature="16942:17006" ph="SELECT Oid f... warframe_worldstate_Invasions" />
+                <marker date="1566552756225" expanded="true" signature="17039:17517" ph="INSERT INTO warframe_worldstate_Invasions... " />
+                <marker date="1566552756225" expanded="true" signature="17877:18366" ph="UPDATE warframe_worldstate_Invasions... " />
+                <marker date="1566552756225" expanded="true" signature="19403:19469" ph="SELECT Oid f... warframe_worldstate_VoidTraders" />
+                <marker date="1566552756225" expanded="true" signature="19502:19637" ph="INSERT INTO warframe_worldstate_VoidTraders... " />
+                <marker date="1566552756225" expanded="true" signature="22365:22431" ph="SELECT Date " />
+                <marker date="1566552756225" expanded="true" signature="22461:22961" ph="INSERT INTO warframe_worldstate_Wordstate... " />
+                <marker date="1566552756225" expanded="true" signature="24213:24281" ph="SELECT Oid f... warframe_worldstate_NodeOverrides" />
+                <marker date="1566552756225" expanded="true" signature="24314:24458" ph="INSERT INTO warframe_worldstate_NodeOverrides... " />
+                <marker date="1566552756225" expanded="true" signature="25154:25231" ph="SELECT Store... warframe_worldstate_DailyDeals" />
+                <marker date="1566552756225" expanded="true" signature="25270:25473" ph="INSERT INTO warframe_worldstate_DailyDeals... " />
+                <marker date="1566552756225" expanded="true" signature="26398:26464" ph="SELECT Oid f... warframe_worldstate_VoidTraders" />
+                <marker date="1566552756225" expanded="true" signature="26497:26736" ph="INSERT INTO warframe_worldstate_VoidTraders... " />
               </folding>
             </state>
           </provider>
@@ -79,11 +101,9 @@
       <file leaf-file-name="worlstate_database_create_tables.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/warframe_api/worlstate_database_create_tables.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="67" column="45" lean-forward="false" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-              <folding>
-                <element signature="e#5431#6353#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-348">
+              <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,8 +111,8 @@
       <file leaf-file-name="世界状态官方数据名称解读" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/warframe_api/doc/世界状态官方数据名称解读">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -208,10 +228,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-32" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-265" />
+    <option name="y" value="82" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -244,6 +265,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,8 +287,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,17 +462,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-265" y="82" width="1936" height="977" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37111112" sideWeight="0.09488273" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37111112" sideWeight="0.098614074" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37111112" sideWeight="0.9051173" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37028015" sideWeight="0.9013859" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -470,28 +490,30 @@
       <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37111112" sideWeight="0.098614074" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37111112" sideWeight="0.9013859" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="数据库" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -824,14 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29670">
-          <caret line="991" column="37" lean-forward="false" selection-start-line="991" selection-start-column="37" selection-end-line="991" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -843,53 +857,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <marker date="1557305290331" expanded="true" signature="296:401" ph="UPDATE t_contents_missions s... " />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29670">
+          <caret line="991" column="37" lean-forward="false" selection-start-line="991" selection-start-column="37" selection-end-line="991" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warframe_api/doc/世界状态官方数据名称解读">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warframe_api/worlstate_database_create_tables.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="67" column="45" lean-forward="false" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
-          <folding>
-            <element signature="e#5431#6353#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="-348">
+          <caret line="179" column="42" lean-forward="true" selection-start-line="179" selection-start-column="42" selection-end-line="179" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/warframe_api/worldsate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="567" column="0" lean-forward="true" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
           <folding>
             <element signature="e#61#118#0" expanded="true" />
-            <element signature="e#986#2260#0" expanded="false" />
-            <element signature="e#2273#2385#0" expanded="false" />
-            <element signature="e#2386#2523#1" expanded="false" />
-            <element signature="e#3416#4027#0" expanded="false" />
-            <element signature="e#4057#6588#0" expanded="false" />
-            <element signature="e#6619#8742#0" expanded="false" />
-            <element signature="e#14330#15604#0" expanded="false" />
-            <element signature="e#15638#18924#0" expanded="false" />
-            <element signature="e#18959#19857#0" expanded="false" />
-            <element signature="e#19893#23593#0" expanded="false" />
-            <element signature="e#23631#24819#0" expanded="false" />
-            <marker date="1565254854439" expanded="true" signature="12175:12247" ph="SELECT oid f... warframe_worldstate_SyndicateMissions" />
-            <marker date="1565254854439" expanded="true" signature="12280:12822" ph="INSERT INTO warframe_worldstate_SyndicateMissions... " />
-            <marker date="1565254854439" expanded="true" signature="13776:13845" ph="SELECT oid f... warframe_worldstate_ActiveMissions" />
-            <marker date="1565254854439" expanded="true" signature="13878:14051" ph="INSERT INTO warframe_worldstate_ActiveMissions... " />
-            <marker date="1565254854439" expanded="true" signature="25287:25364" ph="SELECT Store... warframe_worldstate_DailyDeals" />
-            <marker date="1565254854439" expanded="true" signature="25403:25606" ph="INSERT INTO warframe_worldstate_DailyDeals... " />
+            <element signature="e#987#2261#0" expanded="false" />
+            <element signature="e#2274#2386#0" expanded="false" />
+            <element signature="e#2387#2524#1" expanded="false" />
+            <element signature="e#3417#4028#0" expanded="false" />
+            <element signature="e#4058#6589#0" expanded="false" />
+            <element signature="e#6620#8743#0" expanded="false" />
+            <element signature="e#8784#13342#0" expanded="false" />
+            <element signature="e#13380#14297#0" expanded="false" />
+            <element signature="e#14331#15605#0" expanded="false" />
+            <element signature="e#15639#18925#0" expanded="false" />
+            <element signature="e#18960#19858#0" expanded="false" />
+            <element signature="e#19894#23460#0" expanded="false" />
+            <element signature="e#23498#24686#0" expanded="false" />
+            <element signature="e#24721#25756#0" expanded="false" />
+            <marker date="1566552756225" expanded="true" signature="3641:3702" ph="SELECT Oid f... warframe_worldstate_Events" />
+            <marker date="1566552756225" expanded="true" signature="3735:3828" ph="INSERT INTO warframe_worldstate_Events... " />
+            <marker date="1566552756225" expanded="true" signature="5704:5765" ph="SELECT Oid f... warframe_worldstate_Alerts" />
+            <marker date="1566552756225" expanded="true" signature="5798:6176" ph="INSERT INTO warframe_worldstate_Alerts... " />
+            <marker date="1566552756225" expanded="true" signature="7785:7847" ph="SELECT Oid f... warframe_worldstate_Sorties" />
+            <marker date="1566552756225" expanded="true" signature="7880:8303" ph="INSERT INTO warframe_worldstate_Sorties... " />
+            <marker date="1566552756225" expanded="true" signature="12176:12248" ph="SELECT Oid f... warframe_worldstate_SyndicateMissions" />
+            <marker date="1566552756225" expanded="true" signature="12281:12823" ph="INSERT INTO warframe_worldstate_SyndicateMissions... " />
+            <marker date="1566552756225" expanded="true" signature="13777:13846" ph="SELECT Oid f... warframe_worldstate_ActiveMissions" />
+            <marker date="1566552756225" expanded="true" signature="13879:14052" ph="INSERT INTO warframe_worldstate_ActiveMissions... " />
+            <marker date="1566552756225" expanded="true" signature="14902:14977" ph="SELECT TypeN... warframe_worldstate_FlashSales" />
+            <marker date="1566552756225" expanded="true" signature="15015:15271" ph="INSERT INTO warframe_worldstate_FlashSales... " />
+            <marker date="1566552756225" expanded="true" signature="16942:17006" ph="SELECT Oid f... warframe_worldstate_Invasions" />
+            <marker date="1566552756225" expanded="true" signature="17039:17517" ph="INSERT INTO warframe_worldstate_Invasions... " />
+            <marker date="1566552756225" expanded="true" signature="17877:18366" ph="UPDATE warframe_worldstate_Invasions... " />
+            <marker date="1566552756225" expanded="true" signature="19403:19469" ph="SELECT Oid f... warframe_worldstate_VoidTraders" />
+            <marker date="1566552756225" expanded="true" signature="19502:19637" ph="INSERT INTO warframe_worldstate_VoidTraders... " />
+            <marker date="1566552756225" expanded="true" signature="22365:22431" ph="SELECT Date " />
+            <marker date="1566552756225" expanded="true" signature="22461:22961" ph="INSERT INTO warframe_worldstate_Wordstate... " />
+            <marker date="1566552756225" expanded="true" signature="24213:24281" ph="SELECT Oid f... warframe_worldstate_NodeOverrides" />
+            <marker date="1566552756225" expanded="true" signature="24314:24458" ph="INSERT INTO warframe_worldstate_NodeOverrides... " />
+            <marker date="1566552756225" expanded="true" signature="25154:25231" ph="SELECT Store... warframe_worldstate_DailyDeals" />
+            <marker date="1566552756225" expanded="true" signature="25270:25473" ph="INSERT INTO warframe_worldstate_DailyDeals... " />
+            <marker date="1566552756225" expanded="true" signature="26398:26464" ph="SELECT Oid f... warframe_worldstate_VoidTraders" />
+            <marker date="1566552756225" expanded="true" signature="26497:26736" ph="INSERT INTO warframe_worldstate_VoidTraders... " />
           </folding>
         </state>
       </provider>

@@ -177,4 +177,27 @@ CREATE TABLE `warframe_worldstate_DailyDeals` (
 `AmountSold` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='DailyDeals';
 
+CREATE TABLE `warframe_worldstate_Goals` (
+`Oid` varchar(200) NOT NULL ,
+`Activation_date` varchar(200) NOT NULL ,
+`Expiry_date` varchar(200) NOT NULL ,
+`HealthPct` varchar(200) NOT NULL ,
+`VictimNode` varchar(200) NOT NULL ,
+`Regions` varchar(200) NOT NULL ,
+`Success` varchar(200) NOT NULL ,
+`Desc` varchar(200) NOT NULL ,
+`ToolTip` varchar(200) NOT NULL ,
+`Icon` varchar(200) NOT NULL ,
+`Tag` varchar(200) NOT NULL ,
+`JobAffiliationTag` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Goals';
 
+CREATE TABLE `warframe_worldstate_Goals_Jobs` (
+`Oid` varchar(200) NOT NULL ,
+`jobType` varchar(200) NOT NULL ,
+`rewards` varchar(200) NOT NULL ,
+`masteryReq` varchar(200) NOT NULL ,
+`minEnemyLevel` varchar(200) NOT NULL ,
+`maxEnemyLevel` varchar(200) NOT NULL ,
+`xpAmounts` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Goals_Jobs';

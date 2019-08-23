@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 handler1 = logging.StreamHandler()
 handler2 = logging.FileHandler(filename="../log/test.log", encoding = 'utf-8')
 handler2 = logging.handlers.TimedRotatingFileHandler("../log/test.log", when="H", interval=1, backupCount=1, encoding = 'utf-8')
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 handler1.setLevel(logging.WARNING)
 handler2.setLevel(logging.DEBUG)
 
@@ -83,8 +83,8 @@ mysqlInfo = {
     "port": 3306
 }
 '''
-world_State = requests.get('http://192.168.6.192:8080/test1.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
-#world_State = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+#world_State = requests.get('http://192.168.6.192:8080/test1.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+world_State = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
 
 world_State = world_State.json()
 logger.info('world_State↓')
@@ -415,11 +415,6 @@ def wordstate_Wordstate():
     Time = world_State['Time']
     Date = world_State['Date']
     try:
-        Goals = world_State['Goals']
-    except Exception as e:
-        logger.debug(e)
-        Goals = ''
-    try:
         GlobalUpgrades = world_State['GlobalUpgrades']
     except Exception as e:
         logger.debug(e)
@@ -482,7 +477,7 @@ def wordstate_Wordstate():
         TwitchPromos = ''
 
     select_sql = "SELECT Date  from  warframe_worldstate_Wordstate WHERE Date = '%s' " % (Date)
-    insert_sql = "INSERT INTO warframe_worldstate_Wordstate(WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date ,Goals ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date ,Goals ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos)
+    insert_sql = "INSERT INTO warframe_worldstate_Wordstate(WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date  ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s',  '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')" % (WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos)
     res = opm.op_select(select_sql)
     if isinstance(res, tuple):
         ree = opm.op_insert(insert_sql)
@@ -545,9 +540,34 @@ def wordstate_DailyDeals():
 
 
 
+def wordstate_Goals():
+    logger.debug("world_State['Goals']↓")
+    logger.debug(world_State['Goals'])
+    opm = OPMysql()
+    for _a in world_State['Goals']:
+        Oid = _a['_id']['$oid']
+        Activation_date = _a['Activation']['$date']['$numberLong']
+        Expiry_date = _a['Expiry']['$date']['$numberLong']
+        HealthPct = _a['HealthPct']
+        VictimNode = _a['VictimNode']
+        Regions = _a['Regions']
+        Success = _a['Success']
+        Desc = _a['Desc']
+        ToolTip = _a['ToolTip']
+        Icon = _a['Icon']
+        Tag = _a['Tag']
+        JobAffiliationTag = _a['JobAffiliationTag']
+        select_sql = "SELECT Oid  from  warframe_worldstate_VoidTraders WHERE Oid = '%s' " % (Oid)
+        insert_sql = "INSERT INTO warframe_worldstate_VoidTraders(Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag ) VALUES ('%s', '%s', '%s', '%s', '%s','%s', '%s', '%s', '%s', '%s', '%s' )" % (Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag)
+        res = opm.op_select(select_sql)
+        if isinstance(res, tuple):
+            ree = opm.op_insert(insert_sql)
+    opm.dispose()
+    logger.info('VoidTraders')
 
 
 
+Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag
 
 
 

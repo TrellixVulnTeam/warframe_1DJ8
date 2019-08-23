@@ -1,0 +1,984 @@
+2019-08-21 11:44:47,584 -__main__- worldsate.py[line:90] - INFO - world_State↓
+2019-08-21 11:44:47,590 -__main__- worldsate.py[line:165] - INFO - world_State['Sorties']↓
+2019-08-21 11:44:48,819 -__main__- worldsate.py[line:195] - INFO - wordstate_Sorties
+2019-08-21 11:44:50,725 -__main__- worldsate.py[line:116] - INFO - worldstate_Events
+2019-08-21 11:44:51,118 -__main__- worldsate.py[line:120] - INFO - world_State['Alerts']
+2019-08-21 11:44:52,080 -__main__- worldsate.py[line:162] - INFO - worldstate_Alerts
+2019-08-21 11:44:54,450 -__main__- worldsate.py[line:323] - INFO - ActiveMissions
+2019-08-21 11:44:58,170 -__main__- worldsate.py[line:305] - INFO - SyndicateMissions
+2019-08-21 11:45:04,289 -__main__- worldsate.py[line:347] - INFO - FlashSales
+2019-08-21 11:45:05,600 -__main__- worldsate.py[line:305] - INFO - SyndicateMissions
+2019-08-21 11:45:08,057 -__main__- worldsate.py[line:385] - INFO - Invasions
+2019-08-21 11:47:35,814 -__main__- worldsate.py[line:90] - INFO - world_State↓
+2019-08-21 11:47:35,815 -__main__- worldsate.py[line:91] - DEBUG - {'WorldSeed': 'DxqTVYEDiayt9BUxkoCHB8TGkRWtlCwbCS/gVgTq39ZsCbPMxXIgTqZzjASUdqsgN9XSwZU2AmALFspQTd3WgVPNbBHhiQPZJsqHNSl5u8c1fAXi92JJ8PTMoXkBgKaKMl/1RaS8lmTwmBTgHtbnzBZuD1iBVu7/Ra49IC4lATp/uSNwtC6lB9gKIJCjlepQwUjVlcyHmBojFaZ1v83t5aOYf8VGRFp+hv5+4QYnD34WUbXdBYjEIkcH3Xdk3g7T2qCTEi5JmxTZXw3LQU7H2ASGUCtoNHgO5NZD/gDZ2FFpYMsnPZhGqjx8n+eGaDRzYzWXzZwTYbFBFnTmMVNJLQ==', 'Version': 10, 'MobileVersion': '4.3.6.0', 'BuildLabel': '2019.08.07.15.33/Pitlo79i5bUe1wo5M+6Yzg', 'Time': 1566359258, 'Date': 1566345600, 'Events': [{'_id': {'$oid': '5cf8af87f13e3a1509761e4e'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】警报：断罪之影开启公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190604/136903.shtml', 'Date': {'$date': {'$numberLong': '1559801719000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5cf8dbe322396007cf00b725'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】达尔沃特惠商品上新'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190606/136948.shtml', 'Date': {'$date': {'$numberLong': '1559813075000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5cf8e6f5aa04d552290caf5c'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】飞船创意装修大赛奖励发放'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190606/136950.shtml', 'Date': {'$date': {'$numberLong': '1559815892000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5cff76432239602538541fc6'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】WeGame上线百日纪念'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190611/137008.shtml', 'Date': {'$date': {'$numberLong': '1560245814000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d25c1a9f13e3a41d515cc18'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】7月11日版本更新公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190710/137837.shtml', 'Date': {'$date': {'$numberLong': '1562755444000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d269329aa04d563f8677419'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】更新问题公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190711/137884.shtml', 'Date': {'$date': {'$numberLong': '1562809106000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d269ac322396047db2b036b'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '更新登录奖励及重建中继站活动开启公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190711/137886.shtml', 'Date': {'$date': {'$numberLong': '1562809867000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d269f0522396070645baf85'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】暗影圣剑猛兽头盔显示异常'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190711/137897.shtml', 'Date': {'$date': {'$numberLong': '1562812141000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d308e6ca772a127117b0591'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '19日更新延后的通知'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190718/138116.shtml', 'Date': {'$date': {'$numberLong': '1563462866000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d31996af13e3a2a2a2224ca'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】新手福利大放送活动奖励已补发'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190719/138166.shtml', 'Date': {'$date': {'$numberLong': '1563531563000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d35d95faa04d50f193fee41'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】7月23日更新维护公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190722/138276.shtml', 'Date': {'$date': {'$numberLong': '1563810106000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d37bd72f13e3a245035387c'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】角色名免费修改公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190724/138304.shtml', 'Date': {'$date': {'$numberLong': '1563934053000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d3ec3c4a772a1754743eb56'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】畅游登录系统维护公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190729/138415.shtml', 'Date': {'$date': {'$numberLong': '1564394423000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d48dd22f13e3a4ec441ac3a'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】七夕•心动挚礼活动公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190806/138634.shtml', 'Date': {'$date': {'$numberLong': '1565056275000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d4bd440a772a178544a1dc3'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】达尔沃特惠商品上新'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190808/138696.shtml', 'Date': {'$date': {'$numberLong': '1565250586000'}}, 'Priority': False, 'MobileOnly': False}, {'_id': {'$oid': '5d529f0c22396037035b6f94'}, 'Messages': [{'LanguageCode': 'zh', 'Message': '【星际战甲】8月13日更新维护公告'}], 'Prop': 'http://wf.changyou.com/wf/announce/20190813/138793.shtml', 'Date': {'$date': {'$numberLong': '1565695741000'}}, 'Priority': False, 'MobileOnly': False}], 'Goals': [{'_id': {'$oid': '5d56aead93dca3b76bd1aa88'}, 'Activation': {'$date': {'$numberLong': '1566193359583'}}, 'Expiry': {'$date': {'$numberLong': '1568007759583'}}, 'HealthPct': 0.4827548, 'VictimNode': 'SolNode228', 'Regions': [2], 'Success': 0, 'Desc': '/Lotus/Language/GameModes/RecurringGhoulAlert', 'ToolTip': '/Lotus/Language/GameModes/RecurringGhoulAlertDesc', 'Icon': '/Lotus/Interface/Icons/Categories/IconGhouls256.png', 'Tag': 'GhoulEmergence', 'JobAffiliationTag': 'CetusSyndicate', 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/Events/GhoulAlertBountyHunt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/GhoulBountyTableARewards', 'masteryReq': 0, 'minEnemyLevel': 15, 'maxEnemyLevel': 25, 'xpAmounts': [320, 320, 320, 470]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/Events/GhoulAlertBountyExt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/GhoulBountyTableBRewards', 'masteryReq': 0, 'minEnemyLevel': 40, 'maxEnemyLevel': 50, 'xpAmounts': [500, 500, 500, 730]}]}], 'Alerts': [{'_id': {'$oid': '5d5cb0a57d62d42dc5cb1e29'}, 'Activation': {'$date': {'$numberLong': '1566355891403'}}, 'Expiry': {'$date': {'$numberLong': '1566359399651'}}, 'MissionInfo': {'missionType': 'MT_MOBILE_DEFENSE', 'faction': 'FC_CORPUS', 'location': 'SolNode118', 'levelOverride': '/Lotus/Levels/Proc/Corpus/CorpusIcePlanetMobileDefenseCaves', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/CorpusSquadC', 'extraEnemySpec': '/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusMobDefTiersB', 'minEnemyLevel': 33, 'maxEnemyLevel': 35, 'difficulty': 0.79462234224966, 'seed': 41638, 'missionReward': {'credits': 11900}}}, {'_id': {'$oid': '5d5cb7ad544af6c4d87e623d'}, 'Activation': {'$date': {'$numberLong': '1566357681996'}}, 'Expiry': {'$date': {'$numberLong': '1566361353739'}}, 'MissionInfo': {'missionType': 'MT_DEFENSE', 'faction': 'FC_CORPUS', 'location': 'SolNode72', 'levelOverride': '/Lotus/Levels/Proc/Corpus/CorpusOutpostDefense', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/CorpusSquadDefenseB', 'minEnemyLevel': 34, 'maxEnemyLevel': 44, 'difficulty': 0.95332540294925, 'seed': 189727, 'maxWaveNum': 10, 'missionReward': {'credits': 13100, 'items': ['/Lotus/StoreItems/Types/Recipes/Weapons/Skins/DaggerAxeBlueprint']}}}, {'_id': {'$oid': '5d5cbaf5a907f87d8052f779'}, 'Activation': {'$date': {'$numberLong': '1566358559665'}}, 'Expiry': {'$date': {'$numberLong': '1566361734695'}}, 'MissionInfo': {'missionType': 'MT_INTEL', 'faction': 'FC_CORPUS', 'location': 'SolNode217', 'levelOverride': '/Lotus/Levels/Proc/Corpus/CorpusIcePlanetSpy', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/CorpusSquadA', 'extraEnemySpec': '/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusIntelTiersA', 'minEnemyLevel': 24, 'maxEnemyLevel': 26, 'difficulty': 0.95262452846365, 'seed': 189073, 'maxWaveNum': 2, 'missionReward': {'credits': 9500, 'items': ['/Lotus/StoreItems/Upgrades/Mods/FusionBundles/AlertFusionBundleMedium']}}}, {'_id': {'$oid': '5d5cbe3d03d32f0cdccf3454'}, 'Activation': {'$date': {'$numberLong': '1566359395431'}}, 'Expiry': {'$date': {'$numberLong': '1566362140114'}}, 'MissionInfo': {'missionType': 'MT_DEFENSE', 'faction': 'FC_GRINEER', 'location': 'SolNode16', 'levelOverride': '/Lotus/Levels/Proc/Grineer/GrineerSettlementDefense', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/DesertGrineerDefenseA', 'minEnemyLevel': 13, 'maxEnemyLevel': 18, 'difficulty': 0.78000685871056, 'seed': 28000, 'maxWaveNum': 10, 'missionReward': {'credits': 5900, 'items': ['/Lotus/StoreItems/Types/Recipes/Helmets/StatlessV2SarynAltHelmetBlueprint']}}}], 'Sorties': [{'_id': {'$oid': '5d5b70415cb0f9d30c58dfe1'}, 'Activation': {'$date': {'$numberLong': '1566273601607'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Boss': 'SORTIE_BOSS_VOR', 'Reward': '/Lotus/Types/Game/MissionDecks/SortieRewards', 'ExtraDrops': [], 'Seed': 51400, 'Variants': [{'missionType': 'MT_ASSAULT', 'modifierType': 'SORTIE_MODIFIER_LOW_ENERGY', 'node': 'SolNode748', 'tileset': 'GrineerFortressTileset'}, {'missionType': 'MT_EVACUATION', 'modifierType': 'SORTIE_MODIFIER_HAZARD_FIRE', 'node': 'SolNode68', 'tileset': 'GrineerGalleonTileset'}, {'missionType': 'MT_ASSASSINATION', 'modifierType': 'SORTIE_MODIFIER_RIFLE_ONLY', 'node': 'SolNode108', 'tileset': 'GrineerAsteroidTileset'}]}], 'SyndicateMissions': [{'_id': {'$oid': '5d5b7005d664e3270d99a60d'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'ArbitersSyndicate', 'Seed': 51400, 'Nodes': ['SolNode58', 'SolNode223', 'SettlementNode2', 'SolNode73', 'SolNode21', 'SolNode211', 'SolNode177']}, {'_id': {'$oid': '5d5b7005d664e3270d99a60e'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'CephalonSudaSyndicate', 'Seed': 50944, 'Nodes': ['SolNode75', 'SolNode41', 'SolNode147', 'SettlementNode14', 'SolNode10', 'SolNode164', 'SolNode48']}, {'_id': {'$oid': '5d5b7005d664e3270d99a60f'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'PerrinSyndicate', 'Seed': 16923, 'Nodes': ['SolNode225', 'SolNode79', 'SolNode131', 'SolNode97', 'SolNode81', 'SolNode153', 'SolNode214']}, {'_id': {'$oid': '5d5b7005d664e3270d99a610'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'NewLokaSyndicate', 'Seed': 57670, 'Nodes': ['SolNode103', 'SolNode89', 'SolNode220', 'SolNode146', 'SolNode11', 'SettlementNode15', 'SolNode409']}, {'_id': {'$oid': '5d5b7005d664e3270d99a611'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'AssassinsSyndicate', 'Seed': 81518, 'Nodes': ['SolNode128', 'SolNode45', 'SolNode63', 'SolNode203', 'SolNode51', 'SolNode62', 'SolNode144']}, {'_id': {'$oid': '5d5b7005d664e3270d99a612'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'RedVeilSyndicate', 'Seed': 96803, 'Nodes': ['SolNode46', 'SolNode2', 'SolNode209', 'SolNode18', 'SolNode137', 'SolNode167', 'SolNode130']}, {'_id': {'$oid': '5d5b7005d664e3270d99a614'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'VentKidsSyndicate', 'Seed': 35010, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a615'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'QuillsSyndicate', 'Seed': 51821, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a616'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'EventSyndicate', 'Seed': 12126, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a613'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'SteelMeridianSyndicate', 'Seed': 11856, 'Nodes': ['SolNode106', 'SolNode66', 'SolNode39', 'SettlementNode1', 'SolNode215', 'SolNode76', 'SolNode191']}, {'_id': {'$oid': '5d5b7005d664e3270d99a617'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'VoxSyndicate', 'Seed': 98946, 'Nodes': []}, {'_id': {'$oid': '5d5cadd5a9c4175e5287145a'}, 'Activation': {'$date': {'$numberLong': '1566354901499'}}, 'Expiry': {'$date': {'$numberLong': '1566363846780'}}, 'Tag': 'CetusSyndicate', 'Seed': 47649, 'Nodes': [], 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyCap', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierATableARewards', 'masteryReq': 0, 'minEnemyLevel': 5, 'maxEnemyLevel': 15, 'xpAmounts': [390, 390, 390]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyTheft', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierBTableARewards', 'masteryReq': 1, 'minEnemyLevel': 10, 'maxEnemyLevel': 30, 'xpAmounts': [630, 630, 630]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCache', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierCTableARewards', 'masteryReq': 2, 'minEnemyLevel': 20, 'maxEnemyLevel': 40, 'xpAmounts': [580, 580, 580, 850]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCap', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierDTableARewards', 'masteryReq': 3, 'minEnemyLevel': 30, 'maxEnemyLevel': 50, 'xpAmounts': [600, 600, 600, 600, 1170]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyExt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierETableARewards', 'masteryReq': 5, 'minEnemyLevel': 40, 'maxEnemyLevel': 60, 'xpAmounts': [740, 740, 740, 740, 1450]}]}, {'_id': {'$oid': '5d5cadd5a9c4175e5287145b'}, 'Activation': {'$date': {'$numberLong': '1566354901499'}}, 'Expiry': {'$date': {'$numberLong': '1566363846780'}}, 'Tag': 'SolarisSyndicate', 'Seed': 47649, 'Nodes': [], 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusTheftJobExcavation', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierATableARewards', 'masteryReq': 0, 'minEnemyLevel': 5, 'maxEnemyLevel': 15, 'xpAmounts': [490, 490, 490]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusTheftJobResource', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierBTableARewards', 'masteryReq': 1, 'minEnemyLevel': 10, 'maxEnemyLevel': 30, 'xpAmounts': [650, 650, 650]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusPreservationJobDefense', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierCTableARewards', 'masteryReq': 2, 'minEnemyLevel': 20, 'maxEnemyLevel': 40, 'xpAmounts': [630, 630, 630, 930]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusIntelJobRecovery', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierDTableARewards', 'masteryReq': 3, 'minEnemyLevel': 30, 'maxEnemyLevel': 50, 'xpAmounts': [580, 580, 580, 580, 1150]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusSpyJobSpy', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierETableARewards', 'masteryReq': 5, 'minEnemyLevel': 40, 'maxEnemyLevel': 60, 'xpAmounts': [710, 710, 710, 710, 1390]}]}], 'ActiveMissions': [{'_id': {'$oid': '5d5cac6e9108b87ae555b4fa'}, 'Region': 10, 'Seed': 77687, 'Activation': {'$date': {'$numberLong': '1566354542017'}}, 'Expiry': {'$date': {'$numberLong': '1566361648526'}}, 'Node': 'SolNode149', 'MissionType': 'MT_DEFENSE', 'Modifier': 'VoidT2'}, {'_id': {'$oid': '5d5cac6e9108b87ae555b4fb'}, 'Region': 16, 'Seed': 26465, 'Activation': {'$date': {'$numberLong': '1566354542017'}}, 'Expiry': {'$date': {'$numberLong': '1566360828207'}}, 'Node': 'SettlementNode11', 'MissionType': 'MT_DEFENSE', 'Modifier': 'VoidT2'}, {'_id': {'$oid': '5d5cb1d1cbb7c36add4ad207'}, 'Region': 2, 'Seed': 7587, 'Activation': {'$date': {'$numberLong': '1566355921908'}}, 'Expiry': {'$date': {'$numberLong': '1566359739997'}}, 'Node': 'SolNode61', 'MissionType': 'MT_SABOTAGE', 'Modifier': 'VoidT1'}, {'_id': {'$oid': '5d5cb1d1cbb7c36add4ad208'}, 'Region': 3, 'Seed': 46385, 'Activation': {'$date': {'$numberLong': '1566355921908'}}, 'Expiry': {'$date': {'$numberLong': '1566360608897'}}, 'Node': 'SolNode59', 'MissionType': 'MT_MOBILE_DEFENSE', 'Modifier': 'VoidT1'}, {'_id': {'$oid': '5d5cb1d1cbb7c36add4ad209'}, 'Region': 4, 'Seed': 93413, 'Activation': {'$date': {'$numberLong': '1566355921908'}}, 'Expiry': {'$date': {'$numberLong': '1566360408307'}}, 'Node': 'SolNode30', 'MissionType': 'MT_MOBILE_DEFENSE', 'Modifier': 'VoidT1'}, {'_id': {'$oid': '5d5cb7e930ed2b6791fb3b8c'}, 'Region': 11, 'Seed': 51960, 'Activation': {'$date': {'$numberLong': '1566357481462'}}, 'Expiry': {'$date': {'$numberLong': '1566364433985'}}, 'Node': 'SolNode173', 'MissionType': 'MT_MOBILE_DEFENSE', 'Modifier': 'VoidT4'}, {'_id': {'$oid': '5d5cbe7988337106065cfa56'}, 'Region': 8, 'Seed': 80878, 'Activation': {'$date': {'$numberLong': '1566359161381'}}, 'Expiry': {'$date': {'$numberLong': '1566365535854'}}, 'Node': 'SolNode1', 'MissionType': 'MT_CAPTURE', 'Modifier': 'VoidT3'}, {'_id': {'$oid': '5d5cbe7988337106065cfa57'}, 'Region': 7, 'Seed': 90972, 'Activation': {'$date': {'$numberLong': '1566359161381'}}, 'Expiry': {'$date': {'$numberLong': '1566365340769'}}, 'Node': 'SolNode122', 'MissionType': 'MT_DEFENSE', 'Modifier': 'VoidT3'}, {'_id': {'$oid': '5d5cbe7988337106065cfa58'}, 'Region': 13, 'Seed': 31519, 'Activation': {'$date': {'$numberLong': '1566359161381'}}, 'Expiry': {'$date': {'$numberLong': '1566363370172'}}, 'Node': 'SolNode216', 'MissionType': 'MT_EXCAVATE', 'Modifier': 'VoidT3'}], 'GlobalUpgrades': [], 'FlashSales': [{'TypeName': '/Lotus/Types/Items/MiscItems/OrokinCatalyst', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 999, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 6, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/OrokinReactor', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 999, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 6, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Neurode', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 3, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/NeuralSensor', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 3, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/ControlModule', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 2, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/OrokinCell', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 3, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Nanospores', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Plastids', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/PolymerBundle', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/OxiumAlloy', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/AlloyPlate', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Morphic', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 3, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Tellurium', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 3, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Rubedo', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Ferrite', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Gallium', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 3, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/Research/BioComponent', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 10, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/Research/ChemComponent', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 10, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/Research/EnergyComponent', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 10, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/MiscItems/Salvage', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': False, 'Popular': True, 'ShowInMarket': True, 'BannerIndex': 998, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 7, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/Items/ShipFeatureItems/EidolonArchwingFoundryUpgradeFeatureItem', 'StartDate': {'$date': {'$numberLong': '1554134400000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 999, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 58, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/KubrowStarterKit', 'StartDate': {'$date': {'$numberLong': '1555603200000'}}, 'EndDate': {'$date': {'$numberLong': '1577808000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 926, 'Discount': 30, 'RegularOverride': 0, 'PremiumOverride': 11, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/FortunaMegaBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 711, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 320, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/GarudaBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 712, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 188, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/VenusCrpWeaponBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 713, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 133, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/NezhaDeluxeSkinBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 714, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 75, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorUmbraBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 715, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 67, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/SolarisPosterBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 716, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 65, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/HoverboardStickerBundleA', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 717, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 42, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/HoverboardStickerBundleC', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 718, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 42, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleApparatist', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 719, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 36, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleGrease', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 720, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 36, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleSmelter', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 721, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 30, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleTechnomancer', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 722, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 30, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/VentersGlyphBundle', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 723, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 30, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Objects/Tenno/Props/TnoLisetTextProjector', 'StartDate': {'$date': {'$numberLong': '1562803200000'}}, 'EndDate': {'$date': {'$numberLong': '1567296000000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 724, 'Discount': 0, 'RegularOverride': 0, 'PremiumOverride': 11, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/BoosterPacks/PremiumRareArtifactPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 750, 'Discount': 25, 'RegularOverride': 0, 'PremiumOverride': 15, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/BoosterPacks/PremiumUncommonArtifactPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 751, 'Discount': 25, 'RegularOverride': 0, 'PremiumOverride': 11, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/NidusDeluxeSkinBundle', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 752, 'Discount': 15, 'RegularOverride': 0, 'PremiumOverride': 106, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/MagDeluxeSkinBundle', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 753, 'Discount': 30, 'RegularOverride': 0, 'PremiumOverride': 52, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OberonDeluxeSkinBundle', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 754, 'Discount': 30, 'RegularOverride': 0, 'PremiumOverride': 47, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/PaladinPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 755, 'Discount': 30, 'RegularOverride': 0, 'PremiumOverride': 110, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/NidusBundle', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 756, 'Discount': 30, 'RegularOverride': 0, 'PremiumOverride': 138, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/FemaleSuitPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 757, 'Discount': 30, 'RegularOverride': 0, 'PremiumOverride': 80, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/TennoItemsBundleA', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 758, 'Discount': 65, 'RegularOverride': 0, 'PremiumOverride': 35, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/StealthPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 759, 'Discount': 65, 'RegularOverride': 0, 'PremiumOverride': 42, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/TigrisRedeemerSetPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 760, 'Discount': 65, 'RegularOverride': 0, 'PremiumOverride': 43, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleMonk', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 761, 'Discount': 15, 'RegularOverride': 0, 'PremiumOverride': 25, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/CrpCircArmorPack', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 762, 'Discount': 15, 'RegularOverride': 0, 'PremiumOverride': 23, 'BogoBuy': 0, 'BogoGet': 0}, {'TypeName': '/Lotus/Types/StoreItems/Packages/PetAttachmentsPackA', 'StartDate': {'$date': {'$numberLong': '1565827200000'}}, 'EndDate': {'$date': {'$numberLong': '1567036800000'}}, 'Featured': True, 'Popular': False, 'ShowInMarket': True, 'BannerIndex': 763, 'Discount': 15, 'RegularOverride': 0, 'PremiumOverride': 17, 'BogoBuy': 0, 'BogoGet': 0}], 'Invasions': [{'_id': {'$oid': '5d5a5e09ef4fbac79c059056'}, 'Faction': 'FC_GRINEER', 'Node': 'SettlementNode3', 'Count': -12583, 'Goal': 30000, 'LocTag': '/Lotus/Language/Menu/GrineerInvasionGeneric', 'Completed': False, 'AttackerReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/ChemComponent', 'ItemCount': 3}]}, 'AttackerMissionInfo': {'seed': 938425, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/EnergyComponent', 'ItemCount': 3}]}, 'DefenderMissionInfo': {'seed': 510858, 'faction': 'FC_GRINEER'}, 'Activation': {'$date': {'$numberLong': '1566272182954'}}}, {'_id': {'$oid': '5d5b761d7e5816fc6d3e8c00'}, 'Faction': 'FC_CORPUS', 'Node': 'SolNode93', 'Count': 15467, 'Goal': 34000, 'LocTag': '/Lotus/Language/Menu/CorpusInvasionGeneric', 'Completed': False, 'AttackerReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/EnergyComponent', 'ItemCount': 3}]}, 'AttackerMissionInfo': {'seed': 668308, 'faction': 'FC_GRINEER'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/ChemComponent', 'ItemCount': 3}]}, 'DefenderMissionInfo': {'seed': 148405, 'faction': 'FC_CORPUS'}, 'Activation': {'$date': {'$numberLong': '1566275766016'}}}, {'_id': {'$oid': '5d5bc11da3b45a0e407e290f'}, 'Faction': 'FC_INFESTATION', 'Node': 'SolNode109', 'Count': -46259, 'Goal': 46000, 'LocTag': '/Lotus/Language/Menu/InfestedInvasionGeneric', 'Completed': True, 'AttackerReward': [], 'AttackerMissionInfo': {'seed': 614544, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/EnergyComponent', 'ItemCount': 3}]}, 'DefenderMissionInfo': {'seed': 92069, 'faction': 'FC_INFESTATION'}, 'Activation': {'$date': {'$numberLong': '1566294301106'}}}, {'_id': {'$oid': '5d5bea21392d119f346181f1'}, 'Faction': 'FC_INFESTATION', 'Node': 'SolNode61', 'Count': -43682, 'Goal': 43000, 'LocTag': '/Lotus/Language/Menu/InfestedInvasionGeneric', 'Completed': True, 'AttackerReward': [], 'AttackerMissionInfo': {'seed': 422260, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/EnergyComponent', 'ItemCount': 3}]}, 'DefenderMissionInfo': {'seed': 659044, 'faction': 'FC_INFESTATION'}, 'Activation': {'$date': {'$numberLong': '1566304801743'}}}, {'_id': {'$oid': '5d5be0c1fb28a16c4ae32d11'}, 'Faction': 'FC_INFESTATION', 'Node': 'SolNode84', 'Count': -33372, 'Goal': 33000, 'LocTag': '/Lotus/Language/Menu/InfestedInvasionGeneric', 'Completed': True, 'AttackerReward': [], 'AttackerMissionInfo': {'seed': 948362, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/EnergyComponent', 'ItemCount': 3}]}, 'DefenderMissionInfo': {'seed': 930774, 'faction': 'FC_INFESTATION'}, 'Activation': {'$date': {'$numberLong': '1566309136527'}}}, {'_id': {'$oid': '5d5c1901f358dc72f260f150'}, 'Faction': 'FC_INFESTATION', 'Node': 'SolNode127', 'Count': -8761, 'Goal': 30000, 'LocTag': '/Lotus/Language/Menu/InfestedInvasionBoss', 'Completed': False, 'AttackerReward': [], 'AttackerMissionInfo': {'seed': 87795, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/MiscItems/InfestedAladCoordinate', 'ItemCount': 1}]}, 'DefenderMissionInfo': {'seed': 799888, 'faction': 'FC_INFESTATION', 'missionReward': []}, 'Activation': {'$date': {'$numberLong': '1566316801097'}}}, {'_id': {'$oid': '5d5c47e183e4d8096bb3e633'}, 'Faction': 'FC_INFESTATION', 'Node': 'SolNode125', 'Count': -42585, 'Goal': 42000, 'LocTag': '/Lotus/Language/Menu/InfestedInvasionGeneric', 'Completed': True, 'AttackerReward': [], 'AttackerMissionInfo': {'seed': 523898, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/EnergyComponent', 'ItemCount': 3}]}, 'DefenderMissionInfo': {'seed': 989591, 'faction': 'FC_INFESTATION'}, 'Activation': {'$date': {'$numberLong': '1566335625490'}}}, {'_id': {'$oid': '5d5c70e64ee80c6143c8d945'}, 'Faction': 'FC_INFESTATION', 'Node': 'SolNode53', 'Count': -5101, 'Goal': 30000, 'LocTag': '/Lotus/Language/Menu/InfestedInvasionBoss', 'Completed': False, 'AttackerReward': [], 'AttackerMissionInfo': {'seed': 982853, 'faction': 'FC_CORPUS'}, 'DefenderReward': {'countedItems': [{'ItemType': '/Lotus/Types/Items/Research/BioComponent', 'ItemCount': 1}]}, 'DefenderMissionInfo': {'seed': 729153, 'faction': 'FC_INFESTATION', 'missionReward': []}, 'Activation': {'$date': {'$numberLong': '1566339302004'}}}], 'HubEvents': [], 'NodeOverrides': [{'_id': {'$oid': '5bdb0fea6bf457d489afb42f'}, 'Node': 'SolNode802', 'Seed': 7650597}, {'_id': {'$oid': '5d278f89a3519611a4e9a5d5'}, 'Node': 'EarthHUB', 'Hide': True, 'LevelOverride': '/Lotus/Levels/Proc/Hub/RelayStationHubTwoB', 'Activation': {'$date': {'$numberLong': '1562904000000'}}}], 'BadlandNodes': [{'_id': {'$oid': '55c7a67b58b26305256da5c7'}, 'Node': 'ClanNode25', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c9e10258b2636f67884f65'}, 'Node': 'ClanNode17', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c9e5ae58b263b2678852f1'}, 'Node': 'ClanNode2', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cb735b58b263aa247b240c'}, 'Node': 'ClanNode12', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cbb08158b26328247b2ac0'}, 'Node': 'ClanNode13', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cbfe5958b2633b14d34317'}, 'Node': 'ClanNode1', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cbe7add79951c51eb0ca50'}, 'Node': 'ClanNode10', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cd648b58b2632d62e2bcd9'}, 'Node': 'ClanNode7', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55ccb92458b263b308d343b1'}, 'Node': 'ClanNode6', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c6e9a958b26346466d86a9'}, 'Node': 'ClanNode18', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55ca064bd79951a54d7b4a9d'}, 'Node': 'ClanNode8', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c700de58b263b1466d8955'}, 'Node': 'ClanNode4', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cc97f9d799511a0bb0e21b'}, 'Node': 'ClanNode5', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cce0bad799516f18b0d1ca'}, 'Node': 'ClanNode23', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cd8866d799510510bdcd0b'}, 'Node': 'ClanNode15', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c6f24ad79951bd4c56264e'}, 'Node': 'ClanNode3', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cad944d7995188566ff947'}, 'Node': 'ClanNode0', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cc0ff3d799511a0bb0cbd8'}, 'Node': 'ClanNode9', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cd9538d799510310bdcec5'}, 'Node': 'ClanNode14', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cc9aaf58b2636d14d35877'}, 'Node': 'ClanNode19', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cafa28d799519c566ffc43'}, 'Node': 'ClanNode21', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55cb765658b26350247b2416'}, 'Node': 'ClanNode11', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c97b16d79951b84b7b319e'}, 'Node': 'ClanNode16', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c8732fd79951583ac658a0'}, 'Node': 'ClanNode20', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c70055d79951cc4c562a1a'}, 'Node': 'ClanNode22', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}, {'_id': {'$oid': '55c71a9a58b26340466d8eae'}, 'Node': 'ClanNode24', 'DefenderInfo': {'IsAlliance': False, 'Id': {'$oid': '55c5edf758b26368022d6e5f'}, 'Name': '星际战甲官方氏族', 'MOTD': '', 'DeployerName': 'Sherry好开心', 'DeployerClan': '星际战甲官方氏族'}}], 'VoidTraders': [{'_id': {'$oid': '56aa1f2fd799510a547ab62b'}, 'Activation': {'$date': {'$numberLong': '1567159200000'}}, 'Expiry': {'$date': {'$numberLong': '1567332000000'}}, 'Character': "Baro'Ki Teel", 'Node': 'MercuryHUB'}], 'PrimeAccessAvailability': {'State': 'PRIME1'}, 'PrimeVaultAvailabilities': [False, False, False, False, False], 'DailyDeals': [{'StoreItem': '/Lotus/Types/StoreItems/Packages/TnCeramicArmourBundle', 'Activation': {'$date': {'$numberLong': '1566348600000'}}, 'Expiry': {'$date': {'$numberLong': '1566442200000'}}, 'Discount': 30, 'OriginalPrice': 33, 'SalePrice': 23, 'AmountTotal': 500, 'AmountSold': 4}], 'LibraryInfo': {'LastCompletedTargetType': '/Lotus/Types/Game/Library/Targets/Research7Target'}, 'PVPChallengeInstances': [{'_id': {'$oid': '5d55fb61059327a658bf1a1b'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeGameModeWins', 'startDate': {'$date': {'$numberLong': '1565916001983'}}, 'endDate': {'$date': {'$numberLong': '1566520801983'}}, 'params': [{'n': 'ScriptParamValue', 'v': 6}], 'isGenerated': True, 'PVPMode': 'PVPMODE_ALL', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_WEEKLY'}, {'_id': {'$oid': '5d55fb61059327a658bf1a1c'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeGameModeComplete', 'startDate': {'$date': {'$numberLong': '1565916001983'}}, 'endDate': {'$date': {'$numberLong': '1566520801983'}}, 'params': [{'n': 'ScriptParamValue', 'v': 20}], 'isGenerated': True, 'PVPMode': 'PVPMODE_ALL', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_WEEKLY'}, {'_id': {'$oid': '5d55fb61059327a658bf1a1d'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeOtherChallengeCompleteANY', 'startDate': {'$date': {'$numberLong': '1565916001983'}}, 'endDate': {'$date': {'$numberLong': '1566520801983'}}, 'params': [{'n': 'ScriptParamValue', 'v': 10}], 'isGenerated': True, 'PVPMode': 'PVPMODE_ALL', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_WEEKLY'}, {'_id': {'$oid': '5d55fb61059327a658bf1a1e'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeWeeklyStandardSet', 'startDate': {'$date': {'$numberLong': '1565916001983'}}, 'endDate': {'$date': {'$numberLong': '1566520801983'}}, 'params': [{'n': 'ScriptParamValue', 'v': 0}], 'isGenerated': True, 'PVPMode': 'PVPMODE_NONE', 'subChallenges': [{'$oid': '5d55fb61059327a658bf1a1b'}, {'$oid': '5d55fb61059327a658bf1a1c'}, {'$oid': '5d55fb61059327a658bf1a1d'}], 'Category': 'PVPChallengeTypeCategory_WEEKLY_ROOT'}, {'_id': {'$oid': '5d5c22614daaf25021c133ef'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeKillsSecondaryHARD', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 3}], 'isGenerated': True, 'PVPMode': 'PVPMODE_TEAMDEATHMATCH', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133f0'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeKillsMultiMEDIUM', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 4}], 'isGenerated': True, 'PVPMode': 'PVPMODE_DEATHMATCH', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133f1'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeKillsPowerHARD', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 3}], 'isGenerated': True, 'PVPMode': 'PVPMODE_DEATHMATCH', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133f2'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeSpeedballStealsHARD', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 6}], 'isGenerated': True, 'PVPMode': 'PVPMODE_SPEEDBALL', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133ec'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeFlagCaptureMEDIUM', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 4}], 'isGenerated': True, 'PVPMode': 'PVPMODE_CAPTURETHEFLAG', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133ee'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeKillsWhileInAirEASY', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 1}], 'isGenerated': True, 'PVPMode': 'PVPMODE_TEAMDEATHMATCH', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133ed'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeFlagReturnEASY', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 1}], 'isGenerated': True, 'PVPMode': 'PVPMODE_CAPTURETHEFLAG', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}, {'_id': {'$oid': '5d5c22614daaf25021c133f3'}, 'challengeTypeRefID': '/Lotus/PVPChallengeTypes/PVPTimedChallengeSpeedballPassesEASY', 'startDate': {'$date': {'$numberLong': '1566319201944'}}, 'endDate': {'$date': {'$numberLong': '1566405601944'}}, 'params': [{'n': 'ScriptParamValue', 'v': 3}], 'isGenerated': True, 'PVPMode': 'PVPMODE_SPEEDBALL', 'subChallenges': [], 'Category': 'PVPChallengeTypeCategory_DAILY'}], 'PersistentEnemies': [], 'PVPAlternativeModes': [], 'PVPActiveTournaments': [], 'ProjectPct': [540.44937945637, 641.57009033612, 0], 'ConstructionProjects': [{'Tag': 'RelayReconstructionFire', 'Node': 'EarthHUB', 'Activation': {'$date': {'$numberLong': '1562904000000'}}, 'Tasks': ['/Lotus/Types/Challenges/StarChart/RelayReconstruction/RRFireKillDeathSquad', '/Lotus/Types/Challenges/StarChart/RelayReconstruction/RRFireResourceContribution', '/Lotus/Types/Challenges/StarChart/RelayReconstruction/RRFireScanEnemies', '/Lotus/Types/Challenges/StarChart/RelayReconstruction/RRFireStructureContribution'], 'ToolTips': ['/Lotus/Language/RelayReconstruction/RelayReconstructionToolTip', '/Lotus/Language/RelayReconstruction/FireRelayFightToolTip'], 'HunterBoostTask': '/Lotus/Types/Challenges/StarChart/RelayReconstruction/RRFireKillDeathSquad'}], 'TwitchPromos': [], 'WeeklyChallenges': {'_id': {'$oid': '5d5ac78248309b10aaa3b3ac'}, 'Activation': {'$date': {'$numberLong': '1566230402125'}}, 'Expiry': {'$date': {'$numberLong': '1566777600000'}}, 'Challenges': [{'Type': '/Lotus/Types/Challenges/WeeklyChallengeKillFaction', 'MinimumEnemyLevel': 30, 'RequiredCount': 500, 'ProgressIndicatorFreq': 50, 'DamageType': 'DT_ANY', 'Script': {'Script': '/Lotus/Scripts/Challenges/EnemyFactionKill.lua', 'Function': 'MatchAttackEvent', '_faction': 'Grineer'}}, {'Type': '/Lotus/Types/Challenges/WeeklyChallengeKillEnemy', 'MinimumEnemyLevel': 30, 'RequiredCount': 50, 'ProgressIndicatorFreq': 5, 'VictimType': ['/Lotus/Types/Enemies/Infested/AiWeek/Runners/SuicideRunnerAvatar']}]}}
+2019-08-21 11:47:35,825 -__main__- worldsate.py[line:165] - INFO - world_State['Sorties']↓
+2019-08-21 11:47:35,826 -__main__- worldsate.py[line:166] - DEBUG - [{'_id': {'$oid': '5d5b70415cb0f9d30c58dfe1'}, 'Activation': {'$date': {'$numberLong': '1566273601607'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Boss': 'SORTIE_BOSS_VOR', 'Reward': '/Lotus/Types/Game/MissionDecks/SortieRewards', 'ExtraDrops': [], 'Seed': 51400, 'Variants': [{'missionType': 'MT_ASSAULT', 'modifierType': 'SORTIE_MODIFIER_LOW_ENERGY', 'node': 'SolNode748', 'tileset': 'GrineerFortressTileset'}, {'missionType': 'MT_EVACUATION', 'modifierType': 'SORTIE_MODIFIER_HAZARD_FIRE', 'node': 'SolNode68', 'tileset': 'GrineerGalleonTileset'}, {'missionType': 'MT_ASSASSINATION', 'modifierType': 'SORTIE_MODIFIER_RIFLE_ONLY', 'node': 'SolNode108', 'tileset': 'GrineerAsteroidTileset'}]}]
+2019-08-21 11:47:36,157 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:36,157 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x000000000366AEF0>
+2019-08-21 11:47:36,223 -__main__- worldsate.py[line:180] - DEBUG - {'missionType': 'MT_ASSAULT', 'modifierType': 'SORTIE_MODIFIER_LOW_ENERGY', 'node': 'SolNode748', 'tileset': 'GrineerFortressTileset'}
+2019-08-21 11:47:36,223 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:36,223 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Sorties WHERE Oid = '5d5b70415cb0f9d30c58dfe1' 
+2019-08-21 11:47:36,298 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:36,298 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b70415cb0f9d30c58dfe1'}]
+2019-08-21 11:47:36,369 -__main__- worldsate.py[line:195] - INFO - wordstate_Sorties
+2019-08-21 11:47:36,695 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:36,695 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:36,765 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:36,765 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5cf8af87f13e3a1509761e4e' 
+2019-08-21 11:47:36,832 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:36,832 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5cf8af87f13e3a1509761e4e'}]
+2019-08-21 11:47:36,832 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:36,832 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5cf8dbe322396007cf00b725' 
+2019-08-21 11:47:36,897 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:36,897 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5cf8dbe322396007cf00b725'}]
+2019-08-21 11:47:36,897 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:36,897 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5cf8e6f5aa04d552290caf5c' 
+2019-08-21 11:47:36,963 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:36,963 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5cf8e6f5aa04d552290caf5c'}]
+2019-08-21 11:47:36,963 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:36,963 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5cff76432239602538541fc6' 
+2019-08-21 11:47:37,029 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,029 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5cff76432239602538541fc6'}]
+2019-08-21 11:47:37,029 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,029 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d25c1a9f13e3a41d515cc18' 
+2019-08-21 11:47:37,094 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,094 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d25c1a9f13e3a41d515cc18'}]
+2019-08-21 11:47:37,094 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,095 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d269329aa04d563f8677419' 
+2019-08-21 11:47:37,160 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,160 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d269329aa04d563f8677419'}]
+2019-08-21 11:47:37,160 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,160 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d269ac322396047db2b036b' 
+2019-08-21 11:47:37,227 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,228 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d269ac322396047db2b036b'}]
+2019-08-21 11:47:37,228 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,228 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d269f0522396070645baf85' 
+2019-08-21 11:47:37,293 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,293 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d269f0522396070645baf85'}]
+2019-08-21 11:47:37,294 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,294 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d308e6ca772a127117b0591' 
+2019-08-21 11:47:37,360 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,360 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d308e6ca772a127117b0591'}]
+2019-08-21 11:47:37,360 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,360 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d31996af13e3a2a2a2224ca' 
+2019-08-21 11:47:37,426 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,426 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d31996af13e3a2a2a2224ca'}]
+2019-08-21 11:47:37,426 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,426 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d35d95faa04d50f193fee41' 
+2019-08-21 11:47:37,492 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,492 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d35d95faa04d50f193fee41'}]
+2019-08-21 11:47:37,492 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,493 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d37bd72f13e3a245035387c' 
+2019-08-21 11:47:37,559 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,559 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d37bd72f13e3a245035387c'}]
+2019-08-21 11:47:37,559 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,559 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d3ec3c4a772a1754743eb56' 
+2019-08-21 11:47:37,625 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,625 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d3ec3c4a772a1754743eb56'}]
+2019-08-21 11:47:37,625 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,625 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d48dd22f13e3a4ec441ac3a' 
+2019-08-21 11:47:37,693 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,693 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d48dd22f13e3a4ec441ac3a'}]
+2019-08-21 11:47:37,693 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,693 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d4bd440a772a178544a1dc3' 
+2019-08-21 11:47:37,759 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,759 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d4bd440a772a178544a1dc3'}]
+2019-08-21 11:47:37,759 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:37,759 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Events WHERE Oid = '5d529f0c22396037035b6f94' 
+2019-08-21 11:47:37,827 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:37,827 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d529f0c22396037035b6f94'}]
+2019-08-21 11:47:37,898 -__main__- worldsate.py[line:116] - INFO - worldstate_Events
+2019-08-21 11:47:38,227 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:38,227 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:38,293 -__main__- worldsate.py[line:120] - INFO - world_State['Alerts']
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:121] - DEBUG - [{'_id': {'$oid': '5d5cb0a57d62d42dc5cb1e29'}, 'Activation': {'$date': {'$numberLong': '1566355891403'}}, 'Expiry': {'$date': {'$numberLong': '1566359399651'}}, 'MissionInfo': {'missionType': 'MT_MOBILE_DEFENSE', 'faction': 'FC_CORPUS', 'location': 'SolNode118', 'levelOverride': '/Lotus/Levels/Proc/Corpus/CorpusIcePlanetMobileDefenseCaves', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/CorpusSquadC', 'extraEnemySpec': '/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusMobDefTiersB', 'minEnemyLevel': 33, 'maxEnemyLevel': 35, 'difficulty': 0.79462234224966, 'seed': 41638, 'missionReward': {'credits': 11900}}}, {'_id': {'$oid': '5d5cb7ad544af6c4d87e623d'}, 'Activation': {'$date': {'$numberLong': '1566357681996'}}, 'Expiry': {'$date': {'$numberLong': '1566361353739'}}, 'MissionInfo': {'missionType': 'MT_DEFENSE', 'faction': 'FC_CORPUS', 'location': 'SolNode72', 'levelOverride': '/Lotus/Levels/Proc/Corpus/CorpusOutpostDefense', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/CorpusSquadDefenseB', 'minEnemyLevel': 34, 'maxEnemyLevel': 44, 'difficulty': 0.95332540294925, 'seed': 189727, 'maxWaveNum': 10, 'missionReward': {'credits': 13100, 'items': ['/Lotus/StoreItems/Types/Recipes/Weapons/Skins/DaggerAxeBlueprint']}}}, {'_id': {'$oid': '5d5cbaf5a907f87d8052f779'}, 'Activation': {'$date': {'$numberLong': '1566358559665'}}, 'Expiry': {'$date': {'$numberLong': '1566361734695'}}, 'MissionInfo': {'missionType': 'MT_INTEL', 'faction': 'FC_CORPUS', 'location': 'SolNode217', 'levelOverride': '/Lotus/Levels/Proc/Corpus/CorpusIcePlanetSpy', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/CorpusSquadA', 'extraEnemySpec': '/Lotus/Types/Game/EnemySpecs/GamemodeExtraEnemySpecs/CorpusIntelTiersA', 'minEnemyLevel': 24, 'maxEnemyLevel': 26, 'difficulty': 0.95262452846365, 'seed': 189073, 'maxWaveNum': 2, 'missionReward': {'credits': 9500, 'items': ['/Lotus/StoreItems/Upgrades/Mods/FusionBundles/AlertFusionBundleMedium']}}}, {'_id': {'$oid': '5d5cbe3d03d32f0cdccf3454'}, 'Activation': {'$date': {'$numberLong': '1566359395431'}}, 'Expiry': {'$date': {'$numberLong': '1566362140114'}}, 'MissionInfo': {'missionType': 'MT_DEFENSE', 'faction': 'FC_GRINEER', 'location': 'SolNode16', 'levelOverride': '/Lotus/Levels/Proc/Grineer/GrineerSettlementDefense', 'enemySpec': '/Lotus/Types/Game/EnemySpecs/DesertGrineerDefenseA', 'minEnemyLevel': 13, 'maxEnemyLevel': 18, 'difficulty': 0.78000685871056, 'seed': 28000, 'maxWaveNum': 10, 'missionReward': {'credits': 5900, 'items': ['/Lotus/StoreItems/Types/Recipes/Helmets/StatlessV2SarynAltHelmetBlueprint']}}}]
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:139] - DEBUG - 'items'
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:144] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:149] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:154] - DEBUG - 'nightmare'
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:38,294 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Alerts WHERE Oid = '5d5cb0a57d62d42dc5cb1e29' 
+2019-08-21 11:47:38,360 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:38,360 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cb0a57d62d42dc5cb1e29'}]
+2019-08-21 11:47:38,360 -__main__- worldsate.py[line:144] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,360 -__main__- worldsate.py[line:149] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,360 -__main__- worldsate.py[line:154] - DEBUG - 'nightmare'
+2019-08-21 11:47:38,361 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:38,361 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Alerts WHERE Oid = '5d5cb7ad544af6c4d87e623d' 
+2019-08-21 11:47:38,426 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:38,427 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cb7ad544af6c4d87e623d'}]
+2019-08-21 11:47:38,427 -__main__- worldsate.py[line:144] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,427 -__main__- worldsate.py[line:149] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,427 -__main__- worldsate.py[line:154] - DEBUG - 'nightmare'
+2019-08-21 11:47:38,427 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:38,427 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Alerts WHERE Oid = '5d5cbaf5a907f87d8052f779' 
+2019-08-21 11:47:38,492 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:38,493 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cbaf5a907f87d8052f779'}]
+2019-08-21 11:47:38,493 -__main__- worldsate.py[line:144] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,493 -__main__- worldsate.py[line:149] - DEBUG - 'countedItems'
+2019-08-21 11:47:38,493 -__main__- worldsate.py[line:154] - DEBUG - 'nightmare'
+2019-08-21 11:47:38,493 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:38,493 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Alerts WHERE Oid = '5d5cbe3d03d32f0cdccf3454' 
+2019-08-21 11:47:38,559 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:38,559 -__main__- worldsate.py[line:64] - DEBUG - ()
+2019-08-21 11:47:38,559 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:38,559 -__main__- worldsate.py[line:50] - DEBUG - INSERT INTO warframe_worldstate_Alerts(Oid,Activation_date,Expiry_date,Missiontype,Faction,Location,Leveloverride,Enemyspec,Minenemylevel,Maxenemylevel,Difficulty,Seed,Mission_reward_credits,Mission_reward_items,Mission_reward_itemtype,Mission_reward_itemcount,Nightmare) VALUES ('5d5cbe3d03d32f0cdccf3454', '1566359395431', '1566362140114', 'MT_DEFENSE', 'FC_GRINEER', 'SolNode16', '/Lotus/Levels/Proc/Grineer/GrineerSettlementDefense', '/Lotus/Types/Game/EnemySpecs/DesertGrineerDefenseA', '13', '18', '0.78000685871056', '28000','5900', '/Lotus/StoreItems/Types/Recipes/Helmets/StatlessV2SarynAltHelmetBlueprint', '','','')
+2019-08-21 11:47:38,640 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:38,640 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:38,892 -__main__- worldsate.py[line:162] - INFO - worldstate_Alerts
+2019-08-21 11:47:39,216 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:39,216 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:39,281 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,281 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cac6e9108b87ae555b4fa' 
+2019-08-21 11:47:39,347 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,347 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cac6e9108b87ae555b4fa'}]
+2019-08-21 11:47:39,347 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,347 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cac6e9108b87ae555b4fb' 
+2019-08-21 11:47:39,412 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,412 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cac6e9108b87ae555b4fb'}]
+2019-08-21 11:47:39,413 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,413 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cb1d1cbb7c36add4ad207' 
+2019-08-21 11:47:39,478 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,478 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cb1d1cbb7c36add4ad207'}]
+2019-08-21 11:47:39,478 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,478 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cb1d1cbb7c36add4ad208' 
+2019-08-21 11:47:39,543 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,543 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cb1d1cbb7c36add4ad208'}]
+2019-08-21 11:47:39,544 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,544 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cb1d1cbb7c36add4ad209' 
+2019-08-21 11:47:39,610 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,649 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cb1d1cbb7c36add4ad209'}]
+2019-08-21 11:47:39,649 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,649 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cb7e930ed2b6791fb3b8c' 
+2019-08-21 11:47:39,723 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,723 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cb7e930ed2b6791fb3b8c'}]
+2019-08-21 11:47:39,723 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:39,723 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cbe7988337106065cfa56' 
+2019-08-21 11:47:39,789 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:39,789 -__main__- worldsate.py[line:64] - DEBUG - ()
+2019-08-21 11:47:39,790 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:39,790 -__main__- worldsate.py[line:50] - DEBUG - INSERT INTO warframe_worldstate_ActiveMissions(Oid,Activation_date,Expiry_date,Region,Seed,Node,MissionType,Modifier) VALUES ('5d5cbe7988337106065cfa56', '1566359161381', '1566365535854', '8', '80878', 'SolNode1', 'MT_CAPTURE', 'VoidT3')
+2019-08-21 11:47:39,868 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:39,868 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:40,021 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:40,022 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cbe7988337106065cfa57' 
+2019-08-21 11:47:40,087 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:40,088 -__main__- worldsate.py[line:64] - DEBUG - ()
+2019-08-21 11:47:40,088 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:40,088 -__main__- worldsate.py[line:50] - DEBUG - INSERT INTO warframe_worldstate_ActiveMissions(Oid,Activation_date,Expiry_date,Region,Seed,Node,MissionType,Modifier) VALUES ('5d5cbe7988337106065cfa57', '1566359161381', '1566365340769', '7', '90972', 'SolNode122', 'MT_DEFENSE', 'VoidT3')
+2019-08-21 11:47:40,166 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:40,166 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:40,284 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:40,284 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_ActiveMissions WHERE Oid = '5d5cbe7988337106065cfa58' 
+2019-08-21 11:47:40,350 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:40,350 -__main__- worldsate.py[line:64] - DEBUG - ()
+2019-08-21 11:47:40,350 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:40,350 -__main__- worldsate.py[line:50] - DEBUG - INSERT INTO warframe_worldstate_ActiveMissions(Oid,Activation_date,Expiry_date,Region,Seed,Node,MissionType,Modifier) VALUES ('5d5cbe7988337106065cfa58', '1566359161381', '1566363370172', '13', '31519', 'SolNode216', 'MT_EXCAVATE', 'VoidT3')
+2019-08-21 11:47:40,428 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:40,428 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:40,642 -__main__- worldsate.py[line:323] - INFO - ActiveMissions
+2019-08-21 11:47:40,642 -__main__- worldsate.py[line:198] - DEBUG - [{'_id': {'$oid': '5d5b7005d664e3270d99a60d'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'ArbitersSyndicate', 'Seed': 51400, 'Nodes': ['SolNode58', 'SolNode223', 'SettlementNode2', 'SolNode73', 'SolNode21', 'SolNode211', 'SolNode177']}, {'_id': {'$oid': '5d5b7005d664e3270d99a60e'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'CephalonSudaSyndicate', 'Seed': 50944, 'Nodes': ['SolNode75', 'SolNode41', 'SolNode147', 'SettlementNode14', 'SolNode10', 'SolNode164', 'SolNode48']}, {'_id': {'$oid': '5d5b7005d664e3270d99a60f'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'PerrinSyndicate', 'Seed': 16923, 'Nodes': ['SolNode225', 'SolNode79', 'SolNode131', 'SolNode97', 'SolNode81', 'SolNode153', 'SolNode214']}, {'_id': {'$oid': '5d5b7005d664e3270d99a610'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'NewLokaSyndicate', 'Seed': 57670, 'Nodes': ['SolNode103', 'SolNode89', 'SolNode220', 'SolNode146', 'SolNode11', 'SettlementNode15', 'SolNode409']}, {'_id': {'$oid': '5d5b7005d664e3270d99a611'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'AssassinsSyndicate', 'Seed': 81518, 'Nodes': ['SolNode128', 'SolNode45', 'SolNode63', 'SolNode203', 'SolNode51', 'SolNode62', 'SolNode144']}, {'_id': {'$oid': '5d5b7005d664e3270d99a612'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'RedVeilSyndicate', 'Seed': 96803, 'Nodes': ['SolNode46', 'SolNode2', 'SolNode209', 'SolNode18', 'SolNode137', 'SolNode167', 'SolNode130']}, {'_id': {'$oid': '5d5b7005d664e3270d99a614'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'VentKidsSyndicate', 'Seed': 35010, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a615'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'QuillsSyndicate', 'Seed': 51821, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a616'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'EventSyndicate', 'Seed': 12126, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a613'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'SteelMeridianSyndicate', 'Seed': 11856, 'Nodes': ['SolNode106', 'SolNode66', 'SolNode39', 'SettlementNode1', 'SolNode215', 'SolNode76', 'SolNode191']}, {'_id': {'$oid': '5d5b7005d664e3270d99a617'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'VoxSyndicate', 'Seed': 98946, 'Nodes': []}, {'_id': {'$oid': '5d5cadd5a9c4175e5287145a'}, 'Activation': {'$date': {'$numberLong': '1566354901499'}}, 'Expiry': {'$date': {'$numberLong': '1566363846780'}}, 'Tag': 'CetusSyndicate', 'Seed': 47649, 'Nodes': [], 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyCap', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierATableARewards', 'masteryReq': 0, 'minEnemyLevel': 5, 'maxEnemyLevel': 15, 'xpAmounts': [390, 390, 390]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyTheft', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierBTableARewards', 'masteryReq': 1, 'minEnemyLevel': 10, 'maxEnemyLevel': 30, 'xpAmounts': [630, 630, 630]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCache', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierCTableARewards', 'masteryReq': 2, 'minEnemyLevel': 20, 'maxEnemyLevel': 40, 'xpAmounts': [580, 580, 580, 850]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCap', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierDTableARewards', 'masteryReq': 3, 'minEnemyLevel': 30, 'maxEnemyLevel': 50, 'xpAmounts': [600, 600, 600, 600, 1170]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyExt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierETableARewards', 'masteryReq': 5, 'minEnemyLevel': 40, 'maxEnemyLevel': 60, 'xpAmounts': [740, 740, 740, 740, 1450]}]}, {'_id': {'$oid': '5d5cadd5a9c4175e5287145b'}, 'Activation': {'$date': {'$numberLong': '1566354901499'}}, 'Expiry': {'$date': {'$numberLong': '1566363846780'}}, 'Tag': 'SolarisSyndicate', 'Seed': 47649, 'Nodes': [], 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusTheftJobExcavation', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierATableARewards', 'masteryReq': 0, 'minEnemyLevel': 5, 'maxEnemyLevel': 15, 'xpAmounts': [490, 490, 490]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusTheftJobResource', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierBTableARewards', 'masteryReq': 1, 'minEnemyLevel': 10, 'maxEnemyLevel': 30, 'xpAmounts': [650, 650, 650]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusPreservationJobDefense', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierCTableARewards', 'masteryReq': 2, 'minEnemyLevel': 20, 'maxEnemyLevel': 40, 'xpAmounts': [630, 630, 630, 930]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusIntelJobRecovery', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierDTableARewards', 'masteryReq': 3, 'minEnemyLevel': 30, 'maxEnemyLevel': 50, 'xpAmounts': [580, 580, 580, 580, 1150]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusSpyJobSpy', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierETableARewards', 'masteryReq': 5, 'minEnemyLevel': 40, 'maxEnemyLevel': 60, 'xpAmounts': [710, 710, 710, 710, 1390]}]}]
+2019-08-21 11:47:40,971 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:40,971 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:41,035 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,035 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,036 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,037 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a60d' 
+2019-08-21 11:47:41,103 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,104 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a60d'}]
+2019-08-21 11:47:41,104 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,104 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,104 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,104 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,105 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,105 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,105 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,105 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,105 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,105 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,106 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a60e' 
+2019-08-21 11:47:41,171 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a60e'}]
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,172 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,173 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,174 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,174 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a60f' 
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a60f'}]
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,239 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,240 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,241 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,241 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,241 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a610' 
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a610'}]
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,306 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,307 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,308 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,308 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,308 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,308 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a611' 
+2019-08-21 11:47:41,373 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,373 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a611'}]
+2019-08-21 11:47:41,373 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,373 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,373 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,374 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,375 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,375 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,375 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,375 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,375 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,375 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,376 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a612' 
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a612'}]
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,444 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,445 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,445 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,445 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,445 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,445 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,445 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,446 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a614' 
+2019-08-21 11:47:41,511 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,511 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a614'}]
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,512 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,513 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,514 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a615' 
+2019-08-21 11:47:41,579 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,579 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a615'}]
+2019-08-21 11:47:41,579 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,579 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,580 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,581 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a616' 
+2019-08-21 11:47:41,647 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,647 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a616'}]
+2019-08-21 11:47:41,647 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,647 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,647 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,647 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,648 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,649 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a613' 
+2019-08-21 11:47:41,714 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,714 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a613'}]
+2019-08-21 11:47:41,714 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,715 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,715 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,715 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,715 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,715 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,716 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,716 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,716 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,716 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,716 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,716 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,717 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,717 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,717 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,717 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,717 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,717 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:41,718 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,718 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a617' 
+2019-08-21 11:47:41,783 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,783 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a617'}]
+2019-08-21 11:47:41,783 -__main__- worldsate.py[line:297] - DEBUG - sequence item 0: expected str instance, int found
+2019-08-21 11:47:41,783 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,783 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5cadd5a9c4175e5287145a' 
+2019-08-21 11:47:41,848 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,849 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cadd5a9c4175e5287145a'}]
+2019-08-21 11:47:41,849 -__main__- worldsate.py[line:297] - DEBUG - sequence item 0: expected str instance, int found
+2019-08-21 11:47:41,849 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:41,849 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5cadd5a9c4175e5287145b' 
+2019-08-21 11:47:41,914 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:41,915 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cadd5a9c4175e5287145b'}]
+2019-08-21 11:47:41,980 -__main__- worldsate.py[line:305] - INFO - SyndicateMissions
+2019-08-21 11:47:42,303 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:42,303 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:42,367 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,368 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/OrokinCatalyst' 
+2019-08-21 11:47:42,434 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,434 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/OrokinCatalyst'}]
+2019-08-21 11:47:42,434 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,434 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/OrokinReactor' 
+2019-08-21 11:47:42,500 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,500 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/OrokinReactor'}]
+2019-08-21 11:47:42,500 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,500 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Neurode' 
+2019-08-21 11:47:42,566 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,566 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Neurode'}]
+2019-08-21 11:47:42,566 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,566 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/NeuralSensor' 
+2019-08-21 11:47:42,632 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,632 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/NeuralSensor'}]
+2019-08-21 11:47:42,632 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,632 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/ControlModule' 
+2019-08-21 11:47:42,698 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,698 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/ControlModule'}]
+2019-08-21 11:47:42,698 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,698 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/OrokinCell' 
+2019-08-21 11:47:42,764 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,764 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/OrokinCell'}]
+2019-08-21 11:47:42,764 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,765 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Nanospores' 
+2019-08-21 11:47:42,829 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,830 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Nanospores'}]
+2019-08-21 11:47:42,830 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,830 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Plastids' 
+2019-08-21 11:47:42,895 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,895 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Plastids'}]
+2019-08-21 11:47:42,895 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,895 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/PolymerBundle' 
+2019-08-21 11:47:42,962 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:42,962 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/PolymerBundle'}]
+2019-08-21 11:47:42,962 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:42,962 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/OxiumAlloy' 
+2019-08-21 11:47:43,027 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,028 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/OxiumAlloy'}]
+2019-08-21 11:47:43,028 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,028 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/AlloyPlate' 
+2019-08-21 11:47:43,094 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,095 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/AlloyPlate'}]
+2019-08-21 11:47:43,095 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,095 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Morphic' 
+2019-08-21 11:47:43,160 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,160 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Morphic'}]
+2019-08-21 11:47:43,160 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,161 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Tellurium' 
+2019-08-21 11:47:43,226 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,226 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Tellurium'}]
+2019-08-21 11:47:43,226 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,226 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Rubedo' 
+2019-08-21 11:47:43,292 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,292 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Rubedo'}]
+2019-08-21 11:47:43,292 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,292 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Ferrite' 
+2019-08-21 11:47:43,358 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,359 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Ferrite'}]
+2019-08-21 11:47:43,359 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,359 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Gallium' 
+2019-08-21 11:47:43,425 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,425 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Gallium'}]
+2019-08-21 11:47:43,425 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,425 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/Research/BioComponent' 
+2019-08-21 11:47:43,491 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,491 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/Research/BioComponent'}]
+2019-08-21 11:47:43,491 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,491 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/Research/ChemComponent' 
+2019-08-21 11:47:43,557 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,558 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/Research/ChemComponent'}]
+2019-08-21 11:47:43,558 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,558 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/Research/EnergyComponent' 
+2019-08-21 11:47:43,624 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,624 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/Research/EnergyComponent'}]
+2019-08-21 11:47:43,624 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,624 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/MiscItems/Salvage' 
+2019-08-21 11:47:43,690 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,691 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/MiscItems/Salvage'}]
+2019-08-21 11:47:43,691 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,691 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/Items/ShipFeatureItems/EidolonArchwingFoundryUpgradeFeatureItem' 
+2019-08-21 11:47:43,756 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,757 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/Items/ShipFeatureItems/EidolonArchwingFoundryUpgradeFeatureItem'}]
+2019-08-21 11:47:43,757 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,757 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/KubrowStarterKit' 
+2019-08-21 11:47:43,823 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,823 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/KubrowStarterKit'}]
+2019-08-21 11:47:43,823 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,823 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/FortunaMegaBundle' 
+2019-08-21 11:47:43,889 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,889 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/FortunaMegaBundle'}]
+2019-08-21 11:47:43,889 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,889 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/GarudaBundle' 
+2019-08-21 11:47:43,956 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:43,956 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/GarudaBundle'}]
+2019-08-21 11:47:43,956 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:43,956 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/VenusCrpWeaponBundle' 
+2019-08-21 11:47:44,021 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,021 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/VenusCrpWeaponBundle'}]
+2019-08-21 11:47:44,022 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,022 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/NezhaDeluxeSkinBundle' 
+2019-08-21 11:47:44,088 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,088 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/NezhaDeluxeSkinBundle'}]
+2019-08-21 11:47:44,088 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,088 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OperatorUmbraBundle' 
+2019-08-21 11:47:44,154 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,154 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorUmbraBundle'}]
+2019-08-21 11:47:44,155 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,155 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/SolarisPosterBundle' 
+2019-08-21 11:47:44,221 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,221 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/SolarisPosterBundle'}]
+2019-08-21 11:47:44,221 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,221 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/HoverboardStickerBundleA' 
+2019-08-21 11:47:44,287 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,287 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/HoverboardStickerBundleA'}]
+2019-08-21 11:47:44,287 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,287 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/HoverboardStickerBundleC' 
+2019-08-21 11:47:44,352 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,352 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/HoverboardStickerBundleC'}]
+2019-08-21 11:47:44,352 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,352 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleApparatist' 
+2019-08-21 11:47:44,418 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,419 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleApparatist'}]
+2019-08-21 11:47:44,419 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,419 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleGrease' 
+2019-08-21 11:47:44,485 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,485 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleGrease'}]
+2019-08-21 11:47:44,485 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,485 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleSmelter' 
+2019-08-21 11:47:44,552 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,552 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleSmelter'}]
+2019-08-21 11:47:44,552 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,552 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleTechnomancer' 
+2019-08-21 11:47:44,618 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,618 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleTechnomancer'}]
+2019-08-21 11:47:44,618 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,619 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/VentersGlyphBundle' 
+2019-08-21 11:47:44,684 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,684 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/VentersGlyphBundle'}]
+2019-08-21 11:47:44,684 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,684 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Objects/Tenno/Props/TnoLisetTextProjector' 
+2019-08-21 11:47:44,749 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,749 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Objects/Tenno/Props/TnoLisetTextProjector'}]
+2019-08-21 11:47:44,749 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,749 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/BoosterPacks/PremiumRareArtifactPack' 
+2019-08-21 11:47:44,815 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,815 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/BoosterPacks/PremiumRareArtifactPack'}]
+2019-08-21 11:47:44,815 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,815 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/BoosterPacks/PremiumUncommonArtifactPack' 
+2019-08-21 11:47:44,882 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,882 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/BoosterPacks/PremiumUncommonArtifactPack'}]
+2019-08-21 11:47:44,882 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,882 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/NidusDeluxeSkinBundle' 
+2019-08-21 11:47:44,948 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:44,948 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/NidusDeluxeSkinBundle'}]
+2019-08-21 11:47:44,948 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:44,948 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/MagDeluxeSkinBundle' 
+2019-08-21 11:47:45,014 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,014 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/MagDeluxeSkinBundle'}]
+2019-08-21 11:47:45,014 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,015 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OberonDeluxeSkinBundle' 
+2019-08-21 11:47:45,081 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,081 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OberonDeluxeSkinBundle'}]
+2019-08-21 11:47:45,081 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,081 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/PaladinPack' 
+2019-08-21 11:47:45,147 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,147 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/PaladinPack'}]
+2019-08-21 11:47:45,147 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,147 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/NidusBundle' 
+2019-08-21 11:47:45,214 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,214 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/NidusBundle'}]
+2019-08-21 11:47:45,214 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,214 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/FemaleSuitPack' 
+2019-08-21 11:47:45,280 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,280 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/FemaleSuitPack'}]
+2019-08-21 11:47:45,280 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,280 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/TennoItemsBundleA' 
+2019-08-21 11:47:45,346 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,346 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/TennoItemsBundleA'}]
+2019-08-21 11:47:45,346 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,346 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/StealthPack' 
+2019-08-21 11:47:45,412 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,412 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/StealthPack'}]
+2019-08-21 11:47:45,413 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,413 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/TigrisRedeemerSetPack' 
+2019-08-21 11:47:45,478 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,479 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/TigrisRedeemerSetPack'}]
+2019-08-21 11:47:45,479 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,479 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleMonk' 
+2019-08-21 11:47:45,545 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,545 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/OperatorArmourBundleMonk'}]
+2019-08-21 11:47:45,545 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,545 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/CrpCircArmorPack' 
+2019-08-21 11:47:45,611 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,611 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/CrpCircArmorPack'}]
+2019-08-21 11:47:45,611 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:45,612 -__main__- worldsate.py[line:60] - DEBUG - SELECT TypeName  from  warframe_worldstate_FlashSales WHERE TypeName = '/Lotus/Types/StoreItems/Packages/PetAttachmentsPackA' 
+2019-08-21 11:47:45,677 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:45,678 -__main__- worldsate.py[line:64] - DEBUG - [{'TypeName': '/Lotus/Types/StoreItems/Packages/PetAttachmentsPackA'}]
+2019-08-21 11:47:45,742 -__main__- worldsate.py[line:347] - INFO - FlashSales
+2019-08-21 11:47:45,743 -__main__- worldsate.py[line:198] - DEBUG - [{'_id': {'$oid': '5d5b7005d664e3270d99a60d'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'ArbitersSyndicate', 'Seed': 51400, 'Nodes': ['SolNode58', 'SolNode223', 'SettlementNode2', 'SolNode73', 'SolNode21', 'SolNode211', 'SolNode177']}, {'_id': {'$oid': '5d5b7005d664e3270d99a60e'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'CephalonSudaSyndicate', 'Seed': 50944, 'Nodes': ['SolNode75', 'SolNode41', 'SolNode147', 'SettlementNode14', 'SolNode10', 'SolNode164', 'SolNode48']}, {'_id': {'$oid': '5d5b7005d664e3270d99a60f'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'PerrinSyndicate', 'Seed': 16923, 'Nodes': ['SolNode225', 'SolNode79', 'SolNode131', 'SolNode97', 'SolNode81', 'SolNode153', 'SolNode214']}, {'_id': {'$oid': '5d5b7005d664e3270d99a610'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'NewLokaSyndicate', 'Seed': 57670, 'Nodes': ['SolNode103', 'SolNode89', 'SolNode220', 'SolNode146', 'SolNode11', 'SettlementNode15', 'SolNode409']}, {'_id': {'$oid': '5d5b7005d664e3270d99a611'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'AssassinsSyndicate', 'Seed': 81518, 'Nodes': ['SolNode128', 'SolNode45', 'SolNode63', 'SolNode203', 'SolNode51', 'SolNode62', 'SolNode144']}, {'_id': {'$oid': '5d5b7005d664e3270d99a612'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'RedVeilSyndicate', 'Seed': 96803, 'Nodes': ['SolNode46', 'SolNode2', 'SolNode209', 'SolNode18', 'SolNode137', 'SolNode167', 'SolNode130']}, {'_id': {'$oid': '5d5b7005d664e3270d99a614'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'VentKidsSyndicate', 'Seed': 35010, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a615'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'QuillsSyndicate', 'Seed': 51821, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a616'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'EventSyndicate', 'Seed': 12126, 'Nodes': []}, {'_id': {'$oid': '5d5b7005d664e3270d99a613'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'SteelMeridianSyndicate', 'Seed': 11856, 'Nodes': ['SolNode106', 'SolNode66', 'SolNode39', 'SettlementNode1', 'SolNode215', 'SolNode76', 'SolNode191']}, {'_id': {'$oid': '5d5b7005d664e3270d99a617'}, 'Activation': {'$date': {'$numberLong': '1566273541230'}}, 'Expiry': {'$date': {'$numberLong': '1566359940000'}}, 'Tag': 'VoxSyndicate', 'Seed': 98946, 'Nodes': []}, {'_id': {'$oid': '5d5cadd5a9c4175e5287145a'}, 'Activation': {'$date': {'$numberLong': '1566354901499'}}, 'Expiry': {'$date': {'$numberLong': '1566363846780'}}, 'Tag': 'CetusSyndicate', 'Seed': 47649, 'Nodes': [], 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyCap', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierATableARewards', 'masteryReq': 0, 'minEnemyLevel': 5, 'maxEnemyLevel': 15, 'xpAmounts': [390, 390, 390]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyTheft', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierBTableARewards', 'masteryReq': 1, 'minEnemyLevel': 10, 'maxEnemyLevel': 30, 'xpAmounts': [630, 630, 630]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCache', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierCTableARewards', 'masteryReq': 2, 'minEnemyLevel': 20, 'maxEnemyLevel': 40, 'xpAmounts': [580, 580, 580, 850]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/ReclamationBountyCap', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierDTableARewards', 'masteryReq': 3, 'minEnemyLevel': 30, 'maxEnemyLevel': 50, 'xpAmounts': [600, 600, 600, 600, 1170]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/AttritionBountyExt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/TierETableARewards', 'masteryReq': 5, 'minEnemyLevel': 40, 'maxEnemyLevel': 60, 'xpAmounts': [740, 740, 740, 740, 1450]}]}, {'_id': {'$oid': '5d5cadd5a9c4175e5287145b'}, 'Activation': {'$date': {'$numberLong': '1566354901499'}}, 'Expiry': {'$date': {'$numberLong': '1566363846780'}}, 'Tag': 'SolarisSyndicate', 'Seed': 47649, 'Nodes': [], 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusTheftJobExcavation', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierATableARewards', 'masteryReq': 0, 'minEnemyLevel': 5, 'maxEnemyLevel': 15, 'xpAmounts': [490, 490, 490]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusTheftJobResource', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierBTableARewards', 'masteryReq': 1, 'minEnemyLevel': 10, 'maxEnemyLevel': 30, 'xpAmounts': [650, 650, 650]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusPreservationJobDefense', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierCTableARewards', 'masteryReq': 2, 'minEnemyLevel': 20, 'maxEnemyLevel': 40, 'xpAmounts': [630, 630, 630, 930]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusIntelJobRecovery', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierDTableARewards', 'masteryReq': 3, 'minEnemyLevel': 30, 'maxEnemyLevel': 50, 'xpAmounts': [580, 580, 580, 580, 1150]}, {'jobType': '/Lotus/Types/Gameplay/Venus/Jobs/VenusSpyJobSpy', 'rewards': '/Lotus/Types/Game/MissionDecks/VenusJobMissionRewards/VenusTierETableARewards', 'masteryReq': 5, 'minEnemyLevel': 40, 'maxEnemyLevel': 60, 'xpAmounts': [710, 710, 710, 710, 1390]}]}]
+2019-08-21 11:47:46,075 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:46,075 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,140 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,141 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,142 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,142 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,142 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a60d' 
+2019-08-21 11:47:46,212 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,212 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a60d'}]
+2019-08-21 11:47:46,212 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,212 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,212 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,213 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,214 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a60e' 
+2019-08-21 11:47:46,280 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,280 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a60e'}]
+2019-08-21 11:47:46,280 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,280 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,280 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,280 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,281 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,282 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,282 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,282 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,283 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,283 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,283 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,283 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a60f' 
+2019-08-21 11:47:46,348 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,348 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a60f'}]
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,349 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,350 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a610' 
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a610'}]
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,417 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,418 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,419 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,419 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a611' 
+2019-08-21 11:47:46,489 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,489 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a611'}]
+2019-08-21 11:47:46,489 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,490 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,491 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,492 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,492 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,492 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a612' 
+2019-08-21 11:47:46,558 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,558 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a612'}]
+2019-08-21 11:47:46,558 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,558 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,558 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,558 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,559 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,560 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a614' 
+2019-08-21 11:47:46,626 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,626 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a614'}]
+2019-08-21 11:47:46,626 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,626 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,626 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,627 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,628 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a615' 
+2019-08-21 11:47:46,693 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a615'}]
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,694 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,695 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,696 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,696 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,696 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a616' 
+2019-08-21 11:47:46,762 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,762 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a616'}]
+2019-08-21 11:47:46,762 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,762 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,763 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,764 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a613' 
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a613'}]
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:211] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:216] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:221] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:226] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:231] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,830 -__main__- worldsate.py[line:236] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:241] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:246] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:251] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:256] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:261] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:266] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:271] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:276] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:281] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,831 -__main__- worldsate.py[line:286] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,832 -__main__- worldsate.py[line:291] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,832 -__main__- worldsate.py[line:297] - DEBUG - 'Jobs'
+2019-08-21 11:47:46,832 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,832 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5b7005d664e3270d99a617' 
+2019-08-21 11:47:46,897 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,897 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b7005d664e3270d99a617'}]
+2019-08-21 11:47:46,897 -__main__- worldsate.py[line:297] - DEBUG - sequence item 0: expected str instance, int found
+2019-08-21 11:47:46,897 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,898 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5cadd5a9c4175e5287145a' 
+2019-08-21 11:47:46,963 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:46,964 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cadd5a9c4175e5287145a'}]
+2019-08-21 11:47:46,964 -__main__- worldsate.py[line:297] - DEBUG - sequence item 0: expected str instance, int found
+2019-08-21 11:47:46,964 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:46,964 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_SyndicateMissions WHERE Oid = '5d5cadd5a9c4175e5287145b' 
+2019-08-21 11:47:47,029 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:47,030 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5cadd5a9c4175e5287145b'}]
+2019-08-21 11:47:47,095 -__main__- worldsate.py[line:305] - INFO - SyndicateMissions
+2019-08-21 11:47:47,412 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:47,412 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:47,475 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:47,476 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5a5e09ef4fbac79c059056' 
+2019-08-21 11:47:47,542 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:47,543 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5a5e09ef4fbac79c059056'}]
+2019-08-21 11:47:47,543 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:47,543 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566272182954' ,Faction = 'FC_GRINEER' ,Node = 'SettlementNode3' ,Count = '-12583' ,Goal = '30000' ,LocTag = '/Lotus/Language/Menu/GrineerInvasionGeneric' ,Completed = 'False' ,AttackerReward_countedItems_ItemType = '/Lotus/Types/Items/Research/ChemComponent' ,AttackerReward_countedItems_ItemCount = '3' ,AttackerMissionInfo_seed = '938425' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/EnergyComponent' ,DefenderReward_countedItems_ItemCount = '3' ,DefenderMissionInfo_seed = '510858' ,DefenderMissionInfo_faction = 'FC_GRINEER' WHERE Oid = '5d5a5e09ef4fbac79c059056'
+2019-08-21 11:47:47,631 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:47,631 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:47,745 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:47,745 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5b761d7e5816fc6d3e8c00' 
+2019-08-21 11:47:47,809 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:47,809 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5b761d7e5816fc6d3e8c00'}]
+2019-08-21 11:47:47,809 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:47,809 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566275766016' ,Faction = 'FC_CORPUS' ,Node = 'SolNode93' ,Count = '15467' ,Goal = '34000' ,LocTag = '/Lotus/Language/Menu/CorpusInvasionGeneric' ,Completed = 'False' ,AttackerReward_countedItems_ItemType = '/Lotus/Types/Items/Research/EnergyComponent' ,AttackerReward_countedItems_ItemCount = '3' ,AttackerMissionInfo_seed = '668308' ,AttackerMissionInfo_faction = 'FC_GRINEER' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/ChemComponent' ,DefenderReward_countedItems_ItemCount = '3' ,DefenderMissionInfo_seed = '148405' ,DefenderMissionInfo_faction = 'FC_CORPUS' WHERE Oid = '5d5b761d7e5816fc6d3e8c00'
+2019-08-21 11:47:47,891 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:47,891 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:47,983 -__main__- worldsate.py[line:363] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:47,984 -__main__- worldsate.py[line:368] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:47,984 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:47,984 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5bc11da3b45a0e407e290f' 
+2019-08-21 11:47:48,048 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:48,048 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5bc11da3b45a0e407e290f'}]
+2019-08-21 11:47:48,048 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:48,048 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566294301106' ,Faction = 'FC_INFESTATION' ,Node = 'SolNode109' ,Count = '-46259' ,Goal = '46000' ,LocTag = '/Lotus/Language/Menu/InfestedInvasionGeneric' ,Completed = 'True' ,AttackerReward_countedItems_ItemType = '' ,AttackerReward_countedItems_ItemCount = '' ,AttackerMissionInfo_seed = '614544' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/EnergyComponent' ,DefenderReward_countedItems_ItemCount = '3' ,DefenderMissionInfo_seed = '92069' ,DefenderMissionInfo_faction = 'FC_INFESTATION' WHERE Oid = '5d5bc11da3b45a0e407e290f'
+2019-08-21 11:47:48,114 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:48,114 -__main__- worldsate.py[line:53] - DEBUG - 0
+2019-08-21 11:47:48,246 -__main__- worldsate.py[line:363] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:48,246 -__main__- worldsate.py[line:368] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:48,246 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:48,246 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5bea21392d119f346181f1' 
+2019-08-21 11:47:48,310 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:48,310 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5bea21392d119f346181f1'}]
+2019-08-21 11:47:48,310 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:48,310 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566304801743' ,Faction = 'FC_INFESTATION' ,Node = 'SolNode61' ,Count = '-43682' ,Goal = '43000' ,LocTag = '/Lotus/Language/Menu/InfestedInvasionGeneric' ,Completed = 'True' ,AttackerReward_countedItems_ItemType = '' ,AttackerReward_countedItems_ItemCount = '' ,AttackerMissionInfo_seed = '422260' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/EnergyComponent' ,DefenderReward_countedItems_ItemCount = '3' ,DefenderMissionInfo_seed = '659044' ,DefenderMissionInfo_faction = 'FC_INFESTATION' WHERE Oid = '5d5bea21392d119f346181f1'
+2019-08-21 11:47:48,385 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:48,385 -__main__- worldsate.py[line:53] - DEBUG - 0
+2019-08-21 11:47:48,533 -__main__- worldsate.py[line:363] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:48,533 -__main__- worldsate.py[line:368] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:48,533 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:48,533 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5be0c1fb28a16c4ae32d11' 
+2019-08-21 11:47:48,599 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:48,599 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5be0c1fb28a16c4ae32d11'}]
+2019-08-21 11:47:48,599 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:48,600 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566309136527' ,Faction = 'FC_INFESTATION' ,Node = 'SolNode84' ,Count = '-33372' ,Goal = '33000' ,LocTag = '/Lotus/Language/Menu/InfestedInvasionGeneric' ,Completed = 'True' ,AttackerReward_countedItems_ItemType = '' ,AttackerReward_countedItems_ItemCount = '' ,AttackerMissionInfo_seed = '948362' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/EnergyComponent' ,DefenderReward_countedItems_ItemCount = '3' ,DefenderMissionInfo_seed = '930774' ,DefenderMissionInfo_faction = 'FC_INFESTATION' WHERE Oid = '5d5be0c1fb28a16c4ae32d11'
+2019-08-21 11:47:48,669 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:48,669 -__main__- worldsate.py[line:53] - DEBUG - 0
+2019-08-21 11:47:48,774 -__main__- worldsate.py[line:363] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:48,774 -__main__- worldsate.py[line:368] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:48,774 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:48,774 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5c1901f358dc72f260f150' 
+2019-08-21 11:47:48,838 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:48,838 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5c1901f358dc72f260f150'}]
+2019-08-21 11:47:48,838 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:48,838 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566316801097' ,Faction = 'FC_INFESTATION' ,Node = 'SolNode127' ,Count = '-8761' ,Goal = '30000' ,LocTag = '/Lotus/Language/Menu/InfestedInvasionBoss' ,Completed = 'False' ,AttackerReward_countedItems_ItemType = '' ,AttackerReward_countedItems_ItemCount = '' ,AttackerMissionInfo_seed = '87795' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/MiscItems/InfestedAladCoordinate' ,DefenderReward_countedItems_ItemCount = '1' ,DefenderMissionInfo_seed = '799888' ,DefenderMissionInfo_faction = 'FC_INFESTATION' WHERE Oid = '5d5c1901f358dc72f260f150'
+2019-08-21 11:47:48,914 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:48,914 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:49,021 -__main__- worldsate.py[line:363] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:49,022 -__main__- worldsate.py[line:368] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:49,022 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:49,022 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5c47e183e4d8096bb3e633' 
+2019-08-21 11:47:49,085 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:49,086 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5c47e183e4d8096bb3e633'}]
+2019-08-21 11:47:49,086 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:49,086 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566335625490' ,Faction = 'FC_INFESTATION' ,Node = 'SolNode125' ,Count = '-42585' ,Goal = '42000' ,LocTag = '/Lotus/Language/Menu/InfestedInvasionGeneric' ,Completed = 'True' ,AttackerReward_countedItems_ItemType = '' ,AttackerReward_countedItems_ItemCount = '' ,AttackerMissionInfo_seed = '523898' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/EnergyComponent' ,DefenderReward_countedItems_ItemCount = '3' ,DefenderMissionInfo_seed = '989591' ,DefenderMissionInfo_faction = 'FC_INFESTATION' WHERE Oid = '5d5c47e183e4d8096bb3e633'
+2019-08-21 11:47:49,154 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:49,155 -__main__- worldsate.py[line:53] - DEBUG - 0
+2019-08-21 11:47:49,284 -__main__- worldsate.py[line:363] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:49,284 -__main__- worldsate.py[line:368] - DEBUG - list indices must be integers or slices, not str
+2019-08-21 11:47:49,284 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:49,284 -__main__- worldsate.py[line:60] - DEBUG - SELECT Oid  from  warframe_worldstate_Invasions WHERE Oid = '5d5c70e64ee80c6143c8d945' 
+2019-08-21 11:47:49,348 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:49,349 -__main__- worldsate.py[line:64] - DEBUG - [{'Oid': '5d5c70e64ee80c6143c8d945'}]
+2019-08-21 11:47:49,349 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:49,349 -__main__- worldsate.py[line:50] - DEBUG - UPDATE warframe_worldstate_Invasions SET Activation_Date = '1566339302004' ,Faction = 'FC_INFESTATION' ,Node = 'SolNode53' ,Count = '-5101' ,Goal = '30000' ,LocTag = '/Lotus/Language/Menu/InfestedInvasionBoss' ,Completed = 'False' ,AttackerReward_countedItems_ItemType = '' ,AttackerReward_countedItems_ItemCount = '' ,AttackerMissionInfo_seed = '982853' ,AttackerMissionInfo_faction = 'FC_CORPUS' ,DefenderReward_countedItems_ItemType = '/Lotus/Types/Items/Research/BioComponent' ,DefenderReward_countedItems_ItemCount = '1' ,DefenderMissionInfo_seed = '729153' ,DefenderMissionInfo_faction = 'FC_INFESTATION' WHERE Oid = '5d5c70e64ee80c6143c8d945'
+2019-08-21 11:47:49,425 -__main__- worldsate.py[line:52] - DEBUG - mysql sucess 
+2019-08-21 11:47:49,425 -__main__- worldsate.py[line:53] - DEBUG - 1
+2019-08-21 11:47:49,584 -__main__- worldsate.py[line:385] - INFO - Invasions
+2019-08-21 11:47:49,914 -__main__- worldsate.py[line:43] - DEBUG - 创建数据库实例，create sql connect↓
+2019-08-21 11:47:49,914 -__main__- worldsate.py[line:44] - DEBUG - <DBUtils.PooledDB.PooledDB object at 0x0000000001E68DA0>
+2019-08-21 11:47:49,979 -__main__- worldsate.py[line:436] - DEBUG - 'bool' object is not subscriptable
+2019-08-21 11:47:49,980 -__main__- worldsate.py[line:446] - DEBUG - 'bool' object is not subscriptable
+2019-08-21 11:47:49,980 -__main__- worldsate.py[line:455] - DEBUG - 'bool' object is not subscriptable
+2019-08-21 11:47:49,980 -__main__- worldsate.py[line:59] - DEBUG - op_select
+2019-08-21 11:47:49,980 -__main__- worldsate.py[line:60] - DEBUG - SELECT Date  from  warframe_worldstate_Wordstate WHERE Date = '1566345600' 
+2019-08-21 11:47:50,047 -__main__- worldsate.py[line:63] - DEBUG - op_select
+2019-08-21 11:47:50,047 -__main__- worldsate.py[line:64] - DEBUG - ()
+2019-08-21 11:47:50,047 -__main__- worldsate.py[line:49] - DEBUG - op_insert↓
+2019-08-21 11:47:50,047 -__main__- worldsate.py[line:50] - DEBUG - INSERT INTO warframe_worldstate_Wordstate(WorldSeed ,Version ,MobileVersion ,BuildLabel ,Time ,Date ,Goals ,GlobalUpgrades ,HubEvents ,PrimeAccessAvailability_State ,PrimeVaultAvailabilities_State1 ,PrimeVaultAvailabilities_State2 ,PrimeVaultAvailabilities_State3 ,LibraryInfo_LastCompletedTargetType ,PersistentEnemies ,PVPAlternativeModes ,PVPActiveTournaments ,ProjectPct ,TwitchPromos) VALUES ('DxqTVYEDiayt9BUxkoCHB8TGkRWtlCwbCS/gVgTq39ZsCbPMxXIgTqZzjASUdqsgN9XSwZU2AmALFspQTd3WgVPNbBHhiQPZJsqHNSl5u8c1fAXi92JJ8PTMoXkBgKaKMl/1RaS8lmTwmBTgHtbnzBZuD1iBVu7/Ra49IC4lATp/uSNwtC6lB9gKIJCjlepQwUjVlcyHmBojFaZ1v83t5aOYf8VGRFp+hv5+4QYnD34WUbXdBYjEIkcH3Xdk3g7T2qCTEi5JmxTZXw3LQU7H2ASGUCtoNHgO5NZD/gDZ2FFpYMsnPZhGqjx8n+eGaDRzYzWXzZwTYbFBFnTmMVNJLQ==', '10', '4.3.6.0', '2019.08.07.15.33/Pitlo79i5bUe1wo5M+6Yzg', '1566359258', '1566345600', '[{'_id': {'$oid': '5d56aead93dca3b76bd1aa88'}, 'Activation': {'$date': {'$numberLong': '1566193359583'}}, 'Expiry': {'$date': {'$numberLong': '1568007759583'}}, 'HealthPct': 0.4827548, 'VictimNode': 'SolNode228', 'Regions': [2], 'Success': 0, 'Desc': '/Lotus/Language/GameModes/RecurringGhoulAlert', 'ToolTip': '/Lotus/Language/GameModes/RecurringGhoulAlertDesc', 'Icon': '/Lotus/Interface/Icons/Categories/IconGhouls256.png', 'Tag': 'GhoulEmergence', 'JobAffiliationTag': 'CetusSyndicate', 'Jobs': [{'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/Events/GhoulAlertBountyHunt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/GhoulBountyTableARewards', 'masteryReq': 0, 'minEnemyLevel': 15, 'maxEnemyLevel': 25, 'xpAmounts': [320, 320, 320, 470]}, {'jobType': '/Lotus/Types/Gameplay/Eidolon/Jobs/Events/GhoulAlertBountyExt', 'rewards': '/Lotus/Types/Game/MissionDecks/EidolonJobMissionRewards/GhoulBountyTableBRewards', 'masteryReq': 0, 'minEnemyLevel': 40, 'maxEnemyLevel': 50, 'xpAmounts': [500, 500, 500, 730]}]}]', '[]', '[]', 'PRIME1', '[False, False, False, False, False]', '[False, False, False, False, False]', '[False, False, False, False, False]', '/Lotus/Types/Game/Library/Targets/Research7Target', '[]', '[]', '[]', '[540.44937945637, 641.57009033612, 0]', '[]')
