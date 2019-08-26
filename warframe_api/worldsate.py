@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Author:Dendi
+#  /usr/local/python3/bin/pip3 install requests pymysql
+
 import  os,json,requests,pymysql,logging,logging.handlers
 import time
 import datetime
+pymysql.install_as_MySQLdb()
 import MySQLdb
 from DBUtils.PooledDB import PooledDB
 
@@ -83,12 +86,13 @@ mysqlInfo = {
     "port": 3306
 }
 '''
-#world_State = requests.get('http://192.168.6.192:8080/test1.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
+#world_State = requests.get('http://192.168.6.192:8080/test3.json',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
 world_State = requests.get('http://content-zh.warframe.com.cn/dynamic/worldState.php',headers={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36',})
 
 world_State = world_State.json()
 logger.info('world_State↓')
 logger.debug(world_State)
+
 #飞船新闻 world_State['Events']
 #实时警报 world_State['Alerts']
 #突击任务 world_State['Sorties']
@@ -541,56 +545,82 @@ def wordstate_DailyDeals():
 
 
 def wordstate_Goals():
-    logger.debug("world_State['Goals']↓")
+    logger.info("world_State['Goals']↓")
     logger.debug(world_State['Goals'])
+    if world_State['Goals']:
+        opm = OPMysql()
+        for _a in world_State['Goals']:
+            Oid = _a['_id']['$oid']
+            Activation_date = _a['Activation']['$date']['$numberLong']
+            Expiry_date = _a['Expiry']['$date']['$numberLong']
+            HealthPct = _a['HealthPct']
+            VictimNode = _a['VictimNode']
+            Regions = _a['Regions']
+            Success = _a['Success']
+            Goals_Desc = _a['Desc']
+            ToolTip = _a['ToolTip']
+            Icon = _a['Icon']
+            Tag = _a['Tag']
+            JobAffiliationTag = _a['JobAffiliationTag']
+            select_sql = "SELECT Oid  from  warframe_worldstate_Goals WHERE Oid = '%s' " % (Oid)
+            insert_sql = "INSERT INTO warframe_worldstate_Goals(Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Goals_Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag ) VALUES ('%s', '%s', '%s', '%s', '%s','%s', '%s', '%s', '%s', '%s', '%s' , '%s')" % (
+            Oid, Activation_date, Expiry_date, HealthPct, VictimNode, Regions, Success, Goals_Desc, ToolTip, Icon, Tag,
+            JobAffiliationTag)
+            res = opm.op_select(select_sql)
+            if isinstance(res, tuple):
+                ree = opm.op_insert(insert_sql)
+
+            for _b in _a['Jobs']:
+                jobType = _b['jobType']
+                rewards = _b['rewards']
+                masteryReq = _b['masteryReq']
+                minEnemyLevel = _b['minEnemyLevel']
+                maxEnemyLevel = _b['maxEnemyLevel']
+                xpAmounts = _b['xpAmounts']
+                select_sql = "SELECT Oid,jobType  from  warframe_worldstate_Goals_Jobs WHERE Oid = '%s' and jobType = '%s'" % (
+                Oid, jobType)
+                insert_sql = "INSERT INTO warframe_worldstate_Goals_Jobs(Oid ,jobType ,rewards ,masteryReq ,minEnemyLevel ,maxEnemyLevel ,xpAmounts ) VALUES ('%s', '%s', '%s', '%s', '%s','%s', '%s' )" % (
+                Oid, jobType, rewards, masteryReq, minEnemyLevel, maxEnemyLevel, xpAmounts)
+                res = opm.op_select(select_sql)
+                if isinstance(res, tuple):
+                    ree = opm.op_insert(insert_sql)
+        opm.dispose()
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    q1 = json.dumps(world_State['Goals'])
     opm = OPMysql()
-    for _a in world_State['Goals']:
-        Oid = _a['_id']['$oid']
-        Activation_date = _a['Activation']['$date']['$numberLong']
-        Expiry_date = _a['Expiry']['$date']['$numberLong']
-        HealthPct = _a['HealthPct']
-        VictimNode = _a['VictimNode']
-        Regions = _a['Regions']
-        Success = _a['Success']
-        Desc = _a['Desc']
-        ToolTip = _a['ToolTip']
-        Icon = _a['Icon']
-        Tag = _a['Tag']
-        JobAffiliationTag = _a['JobAffiliationTag']
-        select_sql = "SELECT Oid  from  warframe_worldstate_VoidTraders WHERE Oid = '%s' " % (Oid)
-        insert_sql = "INSERT INTO warframe_worldstate_VoidTraders(Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag ) VALUES ('%s', '%s', '%s', '%s', '%s','%s', '%s', '%s', '%s', '%s', '%s' )" % (Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag)
-        res = opm.op_select(select_sql)
-        if isinstance(res, tuple):
-            ree = opm.op_insert(insert_sql)
+    r = pymysql.escape_string(q1)
+    sql = "INSERT INTO jsondata(data) VALUES  ('%s')  " % (r)
+    sesql = "select data from jsondata where id = 1 "
+    ree = opm.op_insert(sql)
+    #re2 = opm.op_select(sesql)
+    #print(type(re2))
+
     opm.dispose()
-    logger.info('VoidTraders')
+    wordstate_Goals()
+    wordstate_Sorties()
+    worldstate_Events()
+    wordstate_Alerts()
+    worldstate_ActiveMissions()
+    wordstate_SyndicateMissions()
+    worldstate_FlashSales()
 
+    wordstate_SyndicateMissions()
+    worldstate_Invasions()
+    wordstate_Wordstate()
+    wordstate_VoidTraders()
+    wordstate_NodeOverrides()
 
+    wordstate_DailyDeals()
 
-Oid ,Activation_date ,Expiry_date ,HealthPct ,VictimNode ,Regions ,Success ,Desc ,ToolTip ,Icon ,Tag ,JobAffiliationTag
-
-
-
-
-
-
-
-
-wordstate_Sorties()
-worldstate_Events()
-wordstate_Alerts()
-worldstate_ActiveMissions()
-wordstate_SyndicateMissions()
-worldstate_FlashSales()
-wordstate_SyndicateMissions()
-worldstate_Invasions()
-wordstate_Wordstate()
-wordstate_VoidTraders()
-wordstate_NodeOverrides()
-
-wordstate_DailyDeals()
-
-#if __name__ =# = '__main__':
+#if __name__ == '__main__':
 #    #申请资源
 #    opm = OPMysql()
 #
