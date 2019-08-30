@@ -1,0 +1,31 @@
+#### https://jlwf.24k.com文件服务#################
+upstream fdfs_v2 {
+	server 192.168.6.145:8888 weight=1 max_fails=2 fail_timeout=30s;
+	server 192.168.6.135:8888 weight=2 max_fails=2 fail_timeout=30s;
+}
+server {
+	listen       443 ssl;
+	server_name  jlwf.24k.com;
+	ssl		on;
+######### ### SSL log files ###  
+        access_log      logs/jlwf-acc.log;  
+        error_log       logs/jlwf-err.log;  
+###############error_page  404              /404.html;
+#       error_page  404 500 /WEB-INF/views/home/common/error.jsp;
+######## SSL cert files ###  
+        ssl_certificate      /usr/local/nginx/scrkey/24k.com/_.24k.com_bundle.crt;
+        ssl_certificate_key  /usr/local/nginx/scrkey/24k.com/_.24k.com.key;
+     
+	location ^~ / {
+        proxy_pass   http://fdfs_v2/;
+        proxy_redirect off;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+}
+}
+# http://jlwf.24k.com to rewrite https://jlwf.24k.com
+server {
+	listen       80;
+	server_name  jlwf.24k.com;
+	rewrite "^/(.*)$" https://jlwf.24k.com/$1 break;
+}

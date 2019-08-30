@@ -1,0 +1,168 @@
+server {
+      	listen       443 ssl;
+      	server_name  www.86ldj.com 86ldj.com;
+#      	ssl             on;
+######### ### SSL log files ###  
+      	access_log      logs/www.86ldj.com-access.log access;
+     	error_log       logs/www.86ldj.com-error.log;
+###############error_page  404              /404.html;
+#       error_page  404 500 /WEB-INF/views/home/common/error.jsp;
+######## SSL cert files ###  
+	ssl_certificate      /usr/local/nginx/scrkey/86ldj.com/1_www.86ldj.com_bundle.crt;
+	ssl_certificate_key  /usr/local/nginx/scrkey/86ldj.com/2_www.86ldj.com.key;
+	ssl_session_timeout 5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #按照这个协议配置
+        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE; #按照这个套件配置
+        ssl_prefer_server_ciphers on;
+         location =  /ipmJb94s37.txt {
+         alias /home/www/html/ipmJb94s37.txt ;
+        }
+#################################################
+        location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css|pdf|swf)$
+        {
+          expires 30d;
+          access_log   off;
+        if (-f $request_filename) {
+          expires 1d;
+          access_log   off;
+          break;
+         }
+         }
+        if ($request_method !~* GET|POST|HEAD) {
+                    return 444;
+                }
+         #add_header               Content-Security-Policy "default-src 'self' www.86ldj.com ; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; img-src data: https: http://ip.qgy18.com; style-src 'unsafe-inline' https:; child-src https:; connect-src 'self' https://translate.googleapis.com; frame-src https://disqus.com https://www.slideshare.net";
+         location  ^~ / {
+	 proxy_http_version       1.1;
+	 add_header               Strict-Transport-Security "max-age=31536000; includeSubDomains; preload";
+         add_header               X-Frame-Options SAMEORIGIN;
+         add_header               X-Content-Type-Options nosniff;
+         #add_header               Public-Key-Pins 'pin-sha256="YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg="; pin-sha256="aef6IF2UF6jNEwA2pNmP7kpgT6NFSdt7Tqf5HzaIGWI="; max-age=2592000; includeSubDomains';
+         #Public-Key-Pins chorme已不支持
+         add_header               Cache-Control no-cache;
+         proxy_ignore_headers     Set-Cookie;
+	 proxy_hide_header        Vary;
+         proxy_hide_header        X-Powered-By;
+         proxy_set_header         X-Via            QingDao.Aliyun;
+         proxy_set_header         Connection       "";
+	 proxy_redirect off;
+         proxy_set_header X-Real-IP $remote_addr;
+         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+         proxy_set_header Host $host;
+         client_max_body_size 10m;
+         proxy_pass  http://192.168.6.115:28140/;
+         }
+         location  ^~ /publish-admin/ {
+         proxy_pass  http://192.168.6.115:28150/publish-admin/;
+         proxy_redirect off;
+         proxy_set_header X-Real-IP $remote_addr;
+         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+         proxy_set_header Host $host;
+         client_max_body_size 10m;
+         }
+#         location  = /webscan_360_cn.html {
+#         alias /home/www/html/webscan_360_cn.html ;
+#	}
+#         location  = /baidu-verify-444D092F73.txt {
+#         alias /home/www/html/baidu-verify-444D092F73.txt ;
+#        }
+
+
+}
+server {
+       listen       80;
+       server_name  www.86ldj.com 86ldj.com;
+       access_log      logs/www.86ldj.com-access.log;
+       error_log       logs/www.86ldj.com-error.log;
+       if ($request_method !~* GET|POST|HEAD) {
+                    return 444;
+                }
+       rewrite "^/(.*)$" https://www.86ldj.com/$1 break;
+#       location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css|pdf|swf)$
+#        {
+#          expires 30d;
+#        if (-f $request_filename) {
+#          expires 1d;
+#          break;
+#         }
+#         }
+#         location  ^~ / {
+#         proxy_pass  http://192.168.6.115:28140/;
+#         proxy_redirect off;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header Host $host;
+#         client_max_body_size 10m;
+#         }
+#         location  ^~ /publish-admin/ {
+#         proxy_pass  http://192.168.6.115:28150/publish-admin/;
+#         proxy_redirect off;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header Host $host;
+#         client_max_body_size 10m;
+#         }
+#         location   /webscan_360_cn.html {
+#         alias /home/www/html/webscan_360_cn.html ;
+#        }
+#         location   /baidu-verify-444D092F73.txt {
+#         alias /home/www/html/baidu-verify-444D092F73.txt ;
+#        }
+#       rewrite "^/(.*)$" https://www.86ldj.com/$1 break;
+
+#               location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css|pdf|swf)$
+#        {
+#          expires 30d;
+#        if (-f $request_filename) {
+#          expires 1d;
+#          break;
+#         }
+#         }
+#	location  ^~ / {
+#         proxy_pass  http://192.168.6.115:28140/;
+#         proxy_redirect off;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header Host $host;
+#         client_max_body_size 10m;
+#         }
+#         location  ^~ /publish-admin/ {
+#         proxy_pass  http://192.168.6.115:28150/publish-admin/;
+#         proxy_redirect off;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header Host $host;
+#         client_max_body_size 10m;
+#         }
+#
+#         location   /.well-known/ {
+#	 alias /home/www/html/.well-known/ ;
+#         #proxy_pass  http://192.168.6.115:28140/;
+#         #proxy_redirect off;
+#         #proxy_set_header X-Real-IP $remote_addr;
+#         #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         #proxy_set_header Host $host;
+#         #client_max_body_size 10m;
+#         }
+}
+#server {
+#       listen       80;
+#       server_name  86ldj.com;
+#       #rewrite "^/(.*)$" https://www.86ldj.com/$1 break;
+#       location ~ .*\.(html|htm|gif|jpg|jpeg|bmp|png|ico|txt|js|css|pdf|swf)$
+#                       {
+#                                 expires 30d;
+#                if (-f $request_filename) {
+#                         expires 1d;
+#                            break;
+#                     }
+#                    }
+#          location   /.well-known/ {
+#          alias /home/www/html/.well-known/ ;
+#          #proxy_pass  http://192.168.6.115:28140/;
+#          #proxy_redirect off;
+#          #proxy_set_header X-Real-IP $remote_addr;
+#          #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#          #proxy_set_header Host $host;
+#            #client_max_body_size 10m;
+#          }

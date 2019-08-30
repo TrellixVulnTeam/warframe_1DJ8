@@ -1,0 +1,117 @@
+﻿  <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"
+                 channelSendOptions="8">
+
+          <Manager className="org.apache.catalina.ha.session.DeltaManager"
+                   expireSessionsOnShutdown="false"
+                   notifyListenersOnReplication="true"/>
+
+          <Channel className="org.apache.catalina.tribes.group.GroupChannel">
+            <Membership className="org.apache.catalina.tribes.membership.McastService"
+                        address="228.0.0.4" Add=4
+                        port="45564" SPor=64
+                        frequency="500"
+                        dropTime="3000"/>
+            <Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"
+                      address="auto"
+                      port="4000" RPor=40
+                      autoBind="100"
+                      selectorTimeout="5000"
+                      maxThreads="6"/>
+
+            <Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">
+              <Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender"/>
+            </Sender>
+            <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector"/>
+            <Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor"/>
+          </Channel>
+
+          <Valve className="org.apache.catalina.ha.tcp.ReplicationValve"
+                 filter=""/>
+          <Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>
+
+          <Deployer className="org.apache.catalina.ha.deploy.FarmWarDeployer"
+                    tempDir="/tmp/war-temp/"
+                    deployDir="/tmp/war-deploy/"
+                    watchDir="/tmp/war-listen/"
+                    watchEnabled="false"/>
+
+          <ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener"/>
+        </Cluster>
+
+
+
+
+
+
+整合
+    <Engine name="Catalina" defaultHost="localhost">\n          <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"\n                 channelSendOptions="8">\n\n            <Manager className="org.apache.catalina.ha.session.DeltaManager"\n                   expireSessionsOnShutdown="false"\n                   notifyListenersOnReplication="true"/>\n\n          <Channel className="org.apache.catalina.tribes.group.GroupChannel">\n            <Membership className="org.apache.catalina.tribes.membership.McastService"\n                        address="228.0.0.$Add"\n                        port="455$SPor"\n                        frequency="500"\n                        dropTime="3000"/>\n            <Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"\n                      address="auto"\n                      port="$RPor00"\n                      autoBind="100"\n                      selectorTimeout="5000"\n                      maxThreads="6"/>\n            <Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">\n              <Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender"/>\n            </Sender>\n            <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector"/>\n            <Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor"/>\n          </Channel>\n\n          <Valve className="org.apache.catalina.ha.tcp.ReplicationValve"\n                 filter=""/>\n          <Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>\n\n          <Deployer className="org.apache.catalina.ha.deploy.FarmWarDeployer"\n                    tempDir="/tmp/war-temp/"\n                    deployDir="/tmp/war-deploy/"\n                    watchDir="/tmp/war-listen/"\n                    watchEnabled="false"/>\n\n          <ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener"/>\n        </Cluster>\n
+
+
+
+#!/bin/bash
+Addd=4
+SPord=64
+RPord=40
+for i  in  crowdfunding-web-38750      ctop-admin-28110          ctop-merchant-28120       goldwallet-web-38360 goldwallet-mobile-38330    goldwallet-pc-38340        eshop-pc-38260             eshop-mobile-38220         eshop-pad-38120            goldsavev2-web-38210       business-web-28210        business-mobile-38350     finance-mobile-38310 ;
+do
+  sed -i 's#<Engine name="Catalina" defaultHost="localhost">#<Engine name="Catalina" defaultHost="localhost">\n          <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster"\n                 channelSendOptions="8">\n\n            <Manager className="org.apache.catalina.ha.session.DeltaManager"\n                   expireSessionsOnShutdown="false"\n                   notifyListenersOnReplication="true"/>\n\n          <Channel className="org.apache.catalina.tribes.group.GroupChannel">\n            <Membership className="org.apache.catalina.tribes.membership.McastService"\n                        address="228.0.0.4Addd"\n                        port="45564SPord"\n                        frequency="500"\n                        dropTime="3000"/>\n            <Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"\n                      address="auto"\n                      port="40RPord00"\n                      autoBind="100"\n                      selectorTimeout="5000"\n                      maxThreads="6"/>\n            <Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">\n              <Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender"/>\n            </Sender>\n            <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector"/>\n            <Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor"/>\n          </Channel>\n\n          <Valve className="org.apache.catalina.ha.tcp.ReplicationValve"\n                 filter=""/>\n          <Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>\n\n          <Deployer className="org.apache.catalina.ha.deploy.FarmWarDeployer"\n                    tempDir="/tmp/war-temp/"\n                    deployDir="/tmp/war-deploy/"\n                    watchDir="/tmp/war-listen/"\n                    watchEnabled="false"/>\n\n          <ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener"/>\n        </Cluster>\n#' /scripts/web-software/$i/server.xml &&\
+  sed -i "s/228.0.0.4Addd/228.0.0.$Addd/" /scripts/web-software/$i/server.xml &&\
+  sed -i "s/45564SPord/455$SPord/" /scripts/web-software/$i/server.xml &&\
+  sed -i "s/40RPord00/${RPord}00/" /scripts/web-software/$i/server.xml
+  echo "$i McastService address=228.0.0.$Addd  port=455$SPord  Receiver port=${RPord}00" >>/tmp/info_tom_session.txt
+  Addd=$(($Addd+1))
+  SPord=$(($SPord+1))
+  RPord=$(($RPord+1)) ;
+done
+
+#######检查上条脚本执行结果是否正确
+for i  in  crowdfunding-web-38750      ctop-admin-28110          ctop-merchant-28120       goldwallet-web-38360 goldwallet-mobile-38330    goldwallet-pc-38340        eshop-pc-38260             eshop-mobile-38220         eshop-pad-38120            goldsavev2-web-38210       business-web-28210        business-mobile-38350     finance-mobile-38310 ;do cat /scripts/web-software/$i/server.xml |grep -C 10  "org.apache.catalina.tribes.membership.McastService" ;done
+
+
+
+
+
+
+
+
+
+
+
+#######分发 镜像相关文件 
+for i in 113 123; do   for a in  eshop-pad-38120     goldwallet-pc-38340      eshop-mobile-38220   goldwallet-web-38360       eshop-pc-38260             goldwallet-mobile-38330; do scp -pr /scripts/web-software/$a    192.168.6.$i:/scripts/software/  ;done ;done
+for i in 115 125; do   for a in  ctop-merchant-28120  ctop-admin-28110; do scp -pr /scripts/web-software/$a    192.168.6.$i:/scripts/software/  ;done ;done   
+for i in 133 143; do   for a in  crowdfunding-web-38750 goldsavev2-web-38210 business-mobile-38350 business-web-28210 finance-mobile-38310; do scp -pr /scripts/web-software/$a    192.168.6.$i:/scripts/software/  ;done ;done
+
+
+#######删除所有容器及相关镜像（基本镜像不会删除）
+for i in `docker ps -a  |grep -v CONTAINER | awk -F'-' '{print $5}'` ;do sh /scripts/auto_rm_rmi_doker.sh $i ;done
+#######创建并启动docker容器
+ for i in `ls /scripts/software/`; do cd /scripts/software/$i/ && sh buildimage.sh && sh  creatandrun.sh ; done
+#######查看 creatandrun.sh
+for i in `ls /scripts/software/` ; do cat /scripts/software/$i/creatandrun.sh  ; done
+#######查看 server.xml session
+for i in `ls /scripts/software/`;do cat /scripts/software/$i/server.xml |grep -C 10  "org.apache.catalina.tribes.membership.McastService" ;done
+eshop-mobile         
+eshop-pad            
+eshop-pc             
+goldwallet-mobile    
+goldwallet-pc        
+goldwallet-web
+ctop-admin          
+ctop-merchant       
+business-mobile     
+business-web        
+crowdfunding-web      
+finance-mobile      
+goldsavev2-web       
+
+
+mkdir /backup_app
+cp -pr /home/hjkj/apps/*  /backup_app/
+mkdir /bakc_docker_app
+cp -pr /scripts/software/* /bakc_docker_app/
+
+
+
+
+scp -pr 192.168.6.129:/scripts/software/goldsavev2-web-38210/context.xml .

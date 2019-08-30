@@ -1,0 +1,239 @@
+#!/bin/bash
+# 举个例子 /tmp/20171222-154047-2a8a/paymentV2-web-0.0.1-SNAPSHOT.war
+LOCK_FILE="deploy.lock"
+LOCK_DIR="/var/lock/deploy"
+LOG_DIR="/var/log"
+LOG_FILE="deploy.log"
+# Lock
+function shell_lock(){
+	check_folder ${LOCK_DIR}
+    touch ${LOCK_DIR}/${LOCK_FILE}
+}
+function  shell_unlock(){
+    rm -f ${LOCK_DIR}/${LOCK_FILE}
+}
+function check_folder(){
+    local folder=$1
+    if [ ! -d $folder ] ;then 
+        mkdir -p $folder
+        Msg "$folder had been make"
+    else
+        log_info "$folder Already exists "
+    fi
+}
+function log(){
+    datetime=`date +"%F %H:%M:%S"`
+    message=$1
+    if [ -z "$2" ]
+    then
+        loglevel="INFO"
+    else
+        loglevel=$2
+    fi
+    outdir="${LOG_DIR}"
+    if [ ! -d "$outdir" ]; then
+        mkdir "$outdir"
+    fi
+    logname="${LOG_FILE}"
+    echo "$datetime [$0] [$(pwd)][$loglevel] :: $message" | tee -a "$outdir/$logname"
+}
+function log_error(){
+        log "$1" "ERROR"
+}
+function log_info(){
+        log "$1" "INFO"
+}
+function lv_se(){
+    local F1=$1
+    echo "\[\e[32;1m\]$F1\[\e[0m\]"
+}
+function Msg(){
+    if [ $? -eq 0 ];then
+    log_info "$1"
+    else
+    log_error "$1"
+    fi
+}
+function base_info(){
+ _dir_name=$(dirname  ${_name_path})
+ if [  "${_dir_name}" == "." ];then
+ 		echo "${_war_name}  _dir_name ${_dir_name}  not exists !!"
+ 		shell_unlock
+ 		exit 1
+ fi
+ #  /tmp/20171222-154047-2a8a
+ _war_name=$(basename ${_name_path})
+ _test_war_name=`echo ${_war_name}|wc -L`
+ if [ ${_test_war_name} -lt 8 ];then
+ 	echo "${_war_name} not exits ! "
+ 	shell_unlock
+ 	exit 1 	
+ fi
+}
+#  paymentV2-web-0.0.1-SNAPSHOT.war
+function choose_war_ip(){
+ _server_group_ip1="$(cat $0|grep ^##|grep ${_war_name}|awk '{print $2}')"
+ zero_dollar  "${_server_group_ip1}"  "_server_group_ip1"
+ _server_group_ip2="$(cat $0|grep ^##|grep ${_war_name}|awk '{print $3}')"
+ zero_dollar  "${_server_group_ip2}"  "_server_group_ip2"
+ _war_path_pro="$(cat $0|grep ^##|grep ${_war_name}|awk '{print $4}')"
+ zero_dollar  "${_war_path_pro}"  "_war_path_pro"
+}
+# 判断是否为空
+# zero_dollar  "${_server_group_ip2}"  "_server_group_ip2"
+function zero_dollar(){
+	local _zero=$1
+	local _dollar=$2
+	if [ -z ${_zero} ];then
+		echo "${_war_name}  ${_dollar}  not exists !!"
+		shell_unlock
+		exit 1
+	fi
+}
+# mkdir_fenfa 192.168.6.113  /tmp/20171223-163348-41b4
+function mkdir_fenfa(){
+	local host=$1
+	ssh $host "mkdir -p /tmp${_dir_name}"
+}
+function check_fenf_file(){
+	local host=$1
+	ssh $host "ls /tmp${_dir_name}"
+}
+# fenfa_package 192.168.6.113  /tmp/20171223-163348-41b4/paymentV2-web-0.0.1-SNAPSHOT.war
+function fenfa_package(){
+	local file=$1
+	local ip=$2
+	local path=$3
+	scp  $file  ${ip}:${path}
+}
+# stop_service  ${_war_path_pro}
+function stop_service(){
+	local _server=$1
+	docker stop `docker ps -a |grep ${_server}|awk '{print $1}'`
+	echo  "${_server} docker stop " 
+}
+function start_service(){
+	local _server=$1
+	docker start `docker ps -a |grep ${_server}|awk '{print $1}'`
+	echo  "${_server} docker start !! " 
+}
+# fenfa_war  ${_server_group_ip2}
+# fenfa_war 192.168.6.113
+function fenfa_war(){
+	local i=$1
+	mkdir_fenfa $i
+	fenfa_package  ${_dir_name}/${_war_name}  $i /tmp${_dir_name}/
+	check_fenf_file $i
+}
+function  fenfa_code(){
+	local Host=$1
+	_Pro_dir="/home/hjkj/apps/${_war_path_pro}.pro"
+	_War_dir="/home/hjkj/apps/${_war_path_pro}"
+	_Bak_dir1="/home/hjkj/apps/${_war_path_pro}.bak.1"
+	_Bak_dir2="/home/hjkj/apps/${_war_path_pro}.bak.2"
+	_Bak_dir3="/home/hjkj/apps/${_war_path_pro}.bak.3"
+	Maven_dir="/home/hjkj/apps/"
+	ssh ${Host} "mkdir -p ${_Pro_dir}"
+	ssh ${Host} "mkdir -p ${_Bak_dir3}"
+	ssh ${Host} "rm -fr ${_Bak_dir3}"
+	ssh ${Host} "mkdir -p ${_Bak_dir2}"
+	ssh ${Host} "mv ${_Bak_dir2} ${_Bak_dir3}"	
+	ssh ${Host} "mkdir -p ${_Bak_dir1}"
+	ssh ${Host}	"mv ${_Bak_dir1} ${_Bak_dir2}"
+	ssh ${Host} "mv /tmp${_dir_name}/${_war_name}  ${_Pro_dir}/"
+	ssh ${Host} "cd ${_Pro_dir} && unzip ${_war_name}" >>/dev/null 
+	ssh ${Host} "bash /scripts/docker_stop.sh  ${_war_path_pro}"
+	ssh ${Host} "mv  ${_War_dir}  ${_Bak_dir1}"
+	ssh ${Host} "mv  ${_Pro_dir}  ${_War_dir}"
+	ssh ${Host} "bash /scripts/docker_restart.sh  ${_war_path_pro}"
+}
+function main_1(){
+	choose_war_ip
+	fenfa_war  ${_server_group_ip1}
+	fenfa_code ${_server_group_ip1}
+}
+function main_2(){
+	choose_war_ip
+	fenfa_war  ${_server_group_ip2}
+	fenfa_code ${_server_group_ip2}
+}
+function use_age2(){
+    if [ $# -ne 2 ]
+    then
+    echo "$0 '$1' '$2' "
+    shell_unlock
+    exit 1
+    fi
+}
+function main(){
+	if [ -f "${LOCK_DIR}/${LOCK_FILE}" ];then
+    	echo "Deploy is Running" && exit;
+  	fi
+  	if [ $# -ne 2 ]
+    then
+    Msg 'use_age :"/tmp/example/example.war"  "{1|2|3}"'
+    shell_unlock
+    exit 1
+    fi
+	_name_path=$1
+	if [ "X${_name_path}" == "X" ];then
+		Msg 'use_age :"/tmp/example/example.war"  "{1|2|3}"'
+		shell_unlock
+		exit 1
+	fi
+	shell_lock
+	
+	base_info
+	action=$2
+	case "$action" in
+		1)
+		main_1
+		;;
+		2)
+		main_2
+		;;
+		3)
+		main_1
+		main_2
+		;;
+		*)
+		Msg "Usage like : `basename $0`  /tmp/example/example.war  {1 (just one ) | 2 (just sencond) |3 (both)} " 
+		shell_unlock
+		exit 1
+		;;
+	esac
+	shell_unlock
+}
+main $1 $2
+##############################项目分布
+## 192.168.6.113 192.168.6.123 goldwallet-mobile 	goldwallet-mobile-38330 	goldwallet-mobile.war
+## 192.168.6.113 192.168.6.123 goldwallet-pc     	goldwallet-pc-38340  		goldwallet-pc.war
+## 192.168.6.113 192.168.6.123 goldwallet-web    	goldwallet-web-38360 		goldwallet-web.war
+## 192.168.6.113 192.168.6.123 eshop-pc 	     	eshop-pc-38260  		goldShopV2-pc.war
+## 192.168.6.113 192.168.6.123 eshop-pad 	 	 eshop-pad-38120  		goldShopV2-pad.war
+## 192.168.6.113 192.168.6.123 eshop-mobile  	 	eshop-mobile-38220 		goldShopV2-mobile.war
+##############################
+## 192.168.6.115 192.168.6.125 ctop-admin 	  	 ctop-admin-28110  		ctop-admin.war
+## 192.168.6.115 192.168.6.125 ctop-merchant  	 	ctop-merchant-28120 		ctop-merchant.war
+## 192.168.6.115 192.168.6.125 getcode-wx 	  	 getcode-wx-28130  		getcode-wx.war
+##############################
+## 192.168.6.116 192.168.6.126 quotation-web  	 	quotation-web-15008
+## 192.168.6.116 192.168.6.126 logistics-web   	 	logistics-web-38850
+## 192.168.6.116 192.168.6.126 ctop-log  	   	 ctop-log-28130
+## 192.168.6.116 192.168.6.126 ctop-sms  	   	 ctop-sms-38230   		ctop-sms.war
+## 192.168.6.116 192.168.6.126 ctop-email 	   	 ctop-email-38240
+##############################
+## 192.168.6.118 192.168.6.127 paymentV2-web 		paymentv2-web-38110  		paymentV2-web-0.0.1-SNAPSHOT.war
+## 192.168.6.118 192.168.6.127 goldwallet-dubbo 	goldwallet-dubbo-38250 		goldwallet-dubbo.war
+## 192.168.6.118 192.168.6.127 goldsavev2-admin 	goldsavev2-admin-28330
+## 192.168.6.118 192.168.6.127 finance-batch 		finance-batch-28220   		goldReserves-batch.war
+## 192.168.6.118 192.168.6.127 crowdfunding-admin 	crowdfunding-admin-38650
+## 192.168.6.118 192.168.6.127 business-admin 		business-admin-28320
+##############################
+## 192.168.6.133 192.168.6.143 goldsavev2-web 		goldsavev2-web-38210
+## 192.168.6.133 192.168.6.143 finance-mobile 		finance-mobile-38310  		goldReserves-web.war
+## 192.168.6.133 192.168.6.143 crowdfunding-web 	crowdfunding-web-38750
+## 192.168.6.133 192.168.6.143 business-web 		business-web-28210
+## 192.168.6.133 192.168.6.143 business-mobile 		business-mobile-38350
+###############################
+## 192.168.6.138 192.168.6.138 ctop-test	 		ctop-test-66666		ctop-test.war

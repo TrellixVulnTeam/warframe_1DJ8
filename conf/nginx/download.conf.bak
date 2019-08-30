@@ -1,0 +1,28 @@
+#########ycpx.24k.com>>>>>>>>>> yc.24k.com/shop-pad####################################
+server {
+     listen       443 ssl;
+     server_name  download.24k.com;
+     ssl		on;
+######### ### SSL log files ###  
+        access_log      logs/download.24k.com-access.log;  
+        error_log       logs/download.24k.com-error.log;  
+######## SSL cert files ###  
+        ssl_certificate      /usr/local/nginx/scrkey/24k.com/_.24k.com_bundle.crt;
+        ssl_certificate_key  /usr/local/nginx/scrkey/24k.com/_.24k.com.key;
+        location ^~ / {
+        proxy_pass  http://192.168.6.11/;
+        proxy_redirect off;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $host;
+        client_max_body_size 10m;
+        }
+}
+
+# http://ycpx.24k.com to rewrite https://yc.24k.com/shop-pad
+server {
+        listen       80;
+        server_name  download.24k.com;
+        
+        rewrite "^/(.*)$" https://download.24k.com/$1 break;
+}

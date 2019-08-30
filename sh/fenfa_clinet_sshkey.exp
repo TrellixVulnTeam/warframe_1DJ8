@@ -1,0 +1,20 @@
+#!/usr/bin/expect -f
+if { $argc != 2 } {
+        send_user "usage expect scp-expect.exp file host\n"
+        exit 1
+}
+#define var 
+set file [lindex $argv 0]
+set host [lindex $argv 1]
+set password "hjkj.24k.com"
+set timeout 10
+#spawn scp /etc/hosts root@caojie.top:/etc/hosts
+#spawn scp -P22 $file caojie@$host:$dir
+#spawn ssh-copy-id -i $file "-p 22 root@$host"
+spawn ssh-copy-id -i $file  $host
+expect {
+        "*yes/no" {send "yes\r";exp_continue}
+        "*password:" {send "$password\r"}
+}
+expect eof
+~          

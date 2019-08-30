@@ -1,0 +1,20 @@
+#########ycpx.24k.com>>>>>>>>>> yc.24k.com/shop-pad####################################
+server {
+     listen       443 ssl;
+     server_name  ycpx.24k.com;
+     ssl		on;
+######### ### SSL log files ###  
+        access_log      logs/ycpx-acc.log;  
+        error_log       logs/ycpx-err.log;  
+######## SSL cert files ###  
+        ssl_certificate      /usr/local/nginx/scrkey/24k.com/_.24k.com_bundle.crt;
+        ssl_certificate_key  /usr/local/nginx/scrkey/24k.com/_.24k.com.key;
+	rewrite "^/(.*)$" https://yc.24k.com/shop-pad break;
+}
+# http://ycpx.24k.com to rewrite https://yc.24k.com/shop-pad
+server {
+        listen       80;
+        server_name  ycpx.24k.com;
+        
+        rewrite "^/(.*)$" https://yc.24k.com/shop-pad break;
+}

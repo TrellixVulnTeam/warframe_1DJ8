@@ -1,0 +1,20 @@
+windows
+218.16.123.252:8111
+administrator
+www.24k24k.com
+
+ipv4地址 114.119.116.178
+netmask 255.255.255.0
+ipv4地址 192.168.10.150
+netmask 24
+ipv4 218.16.123.252
+netmask 255.255.255.128
+gateway 218.16.123.129
+dns 202.96.128.86
+gateway 114.119.116.1
+dns 221.5.88.88 
+https://192.168.1.24/svn/yw.24k.com/
+cj
+禅道
+caoj
+654321

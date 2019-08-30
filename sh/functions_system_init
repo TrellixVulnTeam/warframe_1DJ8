@@ -1,0 +1,73 @@
+#!/bin/bash
+export PATH=$PATH:/bin:/sbin:/usr/sbin
+. /etc/init.d/functions
+#
+IP=`/sbin/ifconfig eth0 |awk -F"[ :]+" 'NR==2{print $4}'`
+DateSeverIp=`cat  /scripts/all_client_ip.txt|grep zabbix |awk -F"[\t ]+" '{print $3}'`
+#
+##### Msg function #####################################
+function Msg(){
+	if [ $? -eq 0 ];then
+	action "$1" /bin/true
+	else
+	action "$1" /bin/false
+	fi
+}
+##### Close SElinux ####################################
+function selinux(){
+	[ -f "/etc/selinux/config" ] &&{
+	sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
+	setenforce 0
+	Msg "Close SElinux"}
+}
+##### Hide Version #####################################
+function HideVersion(){
+	[ -f "/etc/issue" ] && > /etc/issue
+	[ -f "/etc/issue.net" ] && >/etc/issue.net
+	Msg "Hide sys Version info"
+}
+##### Safe sshd    #####################################
+function Safesshd(){
+	sshd_file=/etc/sshd/ssh_config
+	if [ `grep "52112" $sshd_file|wc -l` -eq 0 ];then
+	sed -ir "13 iPort 52112\nPermitRootLogin on\nPermitEmptyPasswords no\nUseDNS no\nGSSAPIAuthenticaton no" $sshd_file
+	sed -i 's/#ListenAddress 0.0.0.0/ListenAddress '${IP}':52112/g' $sshd_file
+	/etc/init.d/sshd restart >/dev/null 2>&1
+	Msg "sshd config"
+	fi
+}
+##### Open file    #####################################
+function Openfile(){
+	/bin/cp /etc/security/limits.conf  /etc/security/limits.conf.$(date +%U%T)
+    	if [ `cat /etc/security/limits.conf|grep 65535|grep -v grep |wc -l ` -lt 1 ]
+        then
+        sed -i '/#\ End\ of\ file/ i\*\t\t-\tnofile\t\t65535' /etc/security/limits.conf
+    	fi
+    	ulimit -HSn 65535
+    	Msg "open file"
+}
+##### hosts        #####################################
+function hosts(){
+	if [ -f /scripts/hosts ];then
+	echo "/scripts/hosts is not exist please slove this question"
+	sleep 300
+	exit 1
+	fi
+	/bin/cp /scripts/hosts /etc/hosts
+	Msg "/scripts/hosts ----/etc/"
+}
+##### 开机启动项精简 ##################################
+function boot(){
+	export LANG=en
+	for i in `chkconfig --list |grep 3:on|awk '{print $1}'`;do chkconfig  $i off ;done
+    	for i in  crond ntpd network rsyslog sshd;do chkconfig  $i on ;done
+	Msg "BOOT config"   	
+}
+##### function time ###################################
+function time(){
+	if [ `grep $DateSeverIp /var/spool/cron/root|grep -v grep |wc -l ` -lt 1 ]
+        then
+        echo "*/5 * * * * root /usr/sbin/ntpdate $DateSeverIp >/dev/null 2>&1 " >> /var/spool/cron/root
+    	fi
+	Msg "cron time config"
+}

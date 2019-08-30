@@ -1,0 +1,9 @@
+#!/bin/bash
+#echo $*
+aecho=`pwd`
+IP=`ip a |grep 192.168. |awk -F"[ /]+" '{print $3}'`
+FILE=/tmp/unzip.$(date +%F)
+/usr/bin/unzip2  $*  | tee  $FILE
+mail -s "$IP $HOSTNAME $aecho  \unzip $* "  yj@24k.com <$FILE      >/dev/null 2>&1
+#/usr/bin/unzip2 $*
+/bin/rm2 -rf $FILE

@@ -1,0 +1,53 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.6.111	haproxy01-6z01.24k.com	haproxy01
+192.168.6.112	lbnginx01-6z01.24k.com	lbnginx01
+192.168.6.114	zk-rds-01-6z01.24k.com	zk-rds-01
+192.168.6.113	web-tom01-6z01.24k.com	web-tom01
+192.168.6.115	adm-tom01-6z01.24k.com	adm-tom01
+192.168.6.116	ser-tom01-6z01.24k.com	ser-tom01
+192.168.6.118	api-tom01-6z01.24k.com	api-tom01
+192.168.6.121	haproxy02-6z02.24k.com	haproxy02
+192.168.6.122	lbnginx02-6z02.24k.com	lbnginx02
+192.168.6.124	zabbix-01-6z02.24k.com	zabbix-01
+192.168.6.123	web-tom02-6z02.24k.com	web-tom02
+192.168.6.125	adm-tom02-6z02.24k.com	adm-tom02
+192.168.6.126	ser-tom02-6z02.24k.com	ser-tom02
+192.168.6.127	api-tom02-6z02.24k.com	api-tom02
+192.168.6.131	mycatdb01-6z03.24k.com	mycatdb01
+192.168.6.133	web-tom03-6z03.24k.com	web-tom03
+192.168.6.134	zk-rds-02-6z03.24k.com	zk-rds-02
+192.168.6.135	fastdfs01-6z03.24k.com	fastdfs01
+192.168.6.136	mariadb01-6z03.24k.com	mariadb01
+192.168.6.137	mariadb03-6z03.24k.com	mariadb03
+192.168.6.141	mycatdb02-6z04.24k.com	mycatdb02
+192.168.6.143	web-tom04-6z04.24k.com	web-tom04
+192.168.6.144	zk-rds-03-6z04.24k.com	zk-rds-03
+192.168.6.145	fastdfs02-6z04.24k.com	fastdfs02
+192.168.6.146	mariadb02-6z04.24k.com	mariadb02
+192.168.6.147	mariadb04-6z04.24k.com	mariadb04
+192.168.6.110  fw01
+192.168.6.120  fw02
+192.168.6.130  fw03
+192.168.6.140  fw04
+192.168.6.151  mycat.com
+192.168.6.114  zookeeper.com
+192.168.6.114  zookeeper1.com zookeeper1
+192.168.6.134  zookeeper2.com zookeeper2
+192.168.6.144  zookeeper3.com zookeeper3
+192.168.6.114  redis1.com
+192.168.6.134  redis2.com
+192.168.6.144  redis3.com
+192.168.6.135  fastdfs1.com
+192.168.6.145  fastdfs2.com
+192.168.6.113  wallet-apiserver.com
+192.168.6.118  business-admin.com
+192.168.6.133  finance-mobile.com
+192.168.6.118  business-apiserver.com
+192.168.6.118  goldsave-admin.com
+192.168.6.116 quotation.com
+########################
+192.168.6.11 salt11.24k.com salt11
+192.168.6.129 backup-01-6z02.24k.com backup-01
+192.168.6.149 backup-02-6z04.24k.com backup-02
+202.104.149.146 QuoteData.go24k.com

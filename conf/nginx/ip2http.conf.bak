@@ -1,0 +1,21 @@
+#################https://jlwl.24k.cn###########
+server {
+	listen       443 ssl;
+	server_name  211.162.122.141;
+	ssl		on;
+######### ### SSL log files ###  
+        access_log      logs/ip-acc.log;  
+        error_log       logs/ip-error-passport.log;  
+###############error_page  404              /404.html;
+#       error_page  404 500 /WEB-INF/views/home/common/error.jsp;
+######## SSL cert files ###  
+        ssl_certificate      /usr/local/nginx/scrkey/24k.com/_.24k.com_bundle.crt;
+        ssl_certificate_key  /usr/local/nginx/scrkey/24k.com/_.24k.com.key;
+	rewrite "^/(.*)$" https://jlwl.24k.com break;
+}
+# http://jlwl.24k.cn to rewrite https://jlwl.24k.cn
+server {
+        listen       80;
+        server_name  211.162.122.141;
+        rewrite "^/(.*)$" https://jlwl.24k.com break;
+}

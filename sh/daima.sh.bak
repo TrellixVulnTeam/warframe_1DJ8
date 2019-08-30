@@ -1,0 +1,182 @@
+#!/bin/bash
+_name_path=$1
+# 举个例子 /tmp/20171222-154047-2a8a/paymentV2-web-0.0.1-SNAPSHOT.war
+_dir_name=$(dirname  ${_name_path})
+#  /tmp/20171222-154047-2a8a
+_war_name=$(basename ${_name_path})
+#  paymentV2-web-0.0.1-SNAPSHOT.war
+function choose_war_ip(){
+_IP_113="192.168.6.113 "
+_IP_123="192.168.6.123 "
+_IP_115="192.168.6.115 "
+_IP_125="192.168.6.125 "
+_IP_116="192.168.6.116 "
+_IP_126="192.168.6.126 "
+_IP_118="192.168.6.118 "
+_IP_127="192.168.6.127 "
+_IP_133="192.168.6.133 "
+_IP_143="192.168.6.143 "
+case "${_war_name}" in
+	goldwallet-mobile.war|goldShopV2-mobile.war|goldwallet-pc.war|goldwallet-web.war|goldShopV2-pc.war|goldShopV2-pad.war)
+	_server_group_ip1="${_IP_113}"
+	_server_group_ip2="${_IP_123}"
+	;;
+	ctop-admin.war|ctop-merchant.war|getcode-wx.war)
+	_server_group_ip1="${_IP_115}"
+	_server_group_ip2="${_IP_125}"
+	;;
+	ctop-sms.war)
+	_server_group_ip1="${_IP_116}"
+	_server_group_ip2="${_IP_126}"
+	;;
+	paymentV2-web-0.0.1-SNAPSHOT.war|goldReserves-batch.war|goldwallet-dubbo.war)
+	_server_group_ip1="${_IP_118}"
+	_server_group_ip2="${_IP_127}"
+	;;
+	goldReserves-web.war)
+	_server_group_ip1="${_IP_133}"
+	_server_group_ip2="${_IP_143}"
+ 	;;
+ 	 *)
+    Msg "Usage: `basename $0` {war path/ like `basename $0`  /tmp/20171226-201213-88d4/ctop-merchant.war }"
+    exit 1
+    ;;
+esac
+_war_pre_path="${_war_name}"
+case "${_war_pre_path}" in
+	goldwallet-mobile.war)
+	_war_path_pro="goldwallet-mobile"
+	;;
+	goldShopV2-mobile.war)
+	_war_path_pro="eshop-mobile"
+	;;
+	goldwallet-pc.war)
+	_war_path_pro="goldwallet-pc"
+	;;
+	goldwallet-web.war)
+	_war_path_pro="goldwallet-web"
+	;;
+	goldShopV2-pc.war)
+	_war_path_pro="eshop-pc"
+	;;
+	goldShopV2-pad.war)
+	_war_path_pro="eshop-pad"
+	;;
+	ctop-admin.war|ctop-merchant.war|getcode-wx.war)
+	_war_path_pro=`echo "${_war_pre_path}"|awk -F'.' '{print $1}'`
+	;;
+	ctop-sms.war)
+	_war_path_pro=`echo "${_war_pre_path}"|awk -F'.' '{print $1}'`
+	;;
+	paymentV2-web-0.0.1-SNAPSHOT.war)
+	_war_path_pro="paymentV2-web"
+	;;
+	goldReserves-batch.war)
+	_war_path_pro="finance-batch"
+	;;
+	goldwallet-dubbo.war)
+	_war_path_pro="goldwallet-dubbo"
+	;;
+	goldReserves-web.war)
+	_war_path_pro="finance-mobile"
+	;;
+	*)
+    Msg "Usage: `basename $0` {war path/ like `basename $0`  /tmp/20171226-201213-88d4/ctop-merchant.war }"
+    ;;
+esac
+}
+# mkdir_fenfa 192.168.6.113  /tmp/20171223-163348-41b4
+function mkdir_fenfa(){
+	local host=$1
+	ssh $host "mkdir -p ${_dir_name}"
+}
+function check_fenf_file(){
+	local host=$1
+	ssh $host "ls ${_dir_name}"
+}
+# fenfa_package 192.168.6.113  /tmp/20171223-163348-41b4/paymentV2-web-0.0.1-SNAPSHOT.war
+function fenfa_package(){
+	local file=$1
+	local ip=$2
+	local path=$3
+	scp  $file  ${ip}:${path}
+}
+# stop_service  ${_war_path_pro}
+function stop_service(){
+	local _server=$1
+	docker stop `docker ps -a |grep ${_server}|awk '{print $1}'`
+	echo  "${_server} docker stop " 
+}
+function start_service(){
+	local _server=$1
+	docker start `docker ps -a |grep ${_server}|awk '{print $1}'`
+	echo  "${_server} docker start !! " 
+}
+# fenfa_war  ${_server_group_ip2}
+# fenfa_war 192.168.6.113
+function fenfa_war(){
+	local i=$1
+	mkdir_fenfa $i  ${_dir_name}
+	fenfa_package  ${_dir_name}/${_war_name}  $i ${_dir_name}/
+	check_fenf_file $i
+}
+function  fenfa_code(){
+	local Host=$1
+_Pro_dir="/home/hjkj/apps/${_war_path_pro}.pro"
+_War_dir="/home/hjkj/apps/${_war_path_pro}"
+_Bak_dir1="/home/hjkj/apps/${_war_path_pro}.bak.1"
+_Bak_dir2="/home/hjkj/apps/${_war_path_pro}.bak.2"
+_Bak_dir3="/home/hjkj/apps/${_war_path_pro}.bak.3"
+Maven_dir="/home/hjkj/apps/"
+ssh ${Host} "mkdir -p ${_Pro_dir}"
+ssh ${Host} "mkdir -p ${_Bak_dir3}"
+ssh ${Host} "rm -fr ${_Bak_dir3}"
+ssh ${Host} "mkdir -p ${_Bak_dir2}"
+ssh ${Host} "mv ${_Bak_dir2} ${_Bak_dir3}"	
+ssh ${Host} "mkdir -p ${_Bak_dir1}"
+ssh ${Host}	"mv ${_Bak_dir1} ${_Bak_dir2}"
+ssh ${Host} "mv ${_dir_name}/${_war_name}  ${_Pro_dir}/"
+ssh ${Host} "cd ${_Pro_dir} && unzip ${_war_name}"
+ssh ${Host} "bash /scripts/docker_stop.sh  ${_war_path_pro}"
+ssh ${Host} "mv  ${_War_dir}  ${_Bak_dir1}"
+ssh ${Host} "mv  ${_Pro_dir}  ${_War_dir}"
+ssh ${Host} "bash /scripts/docker_restart.sh  ${_war_path_pro}"
+}
+function main(){
+	choose_war_ip
+	fenfa_war  ${_server_group_ip1}
+	fenfa_code ${_server_group_ip1}
+	fenfa_war  ${_server_group_ip2}
+	fenfa_code ${_server_group_ip2}
+}
+main
+#192.168.6.113
+#goldwallet-mobile goldwallet-mobile-38330 goldwallet-mobile.war
+#goldwallet-pc    goldwallet-pc-38340  goldwallet-pc.war
+#goldwallet-web   goldwallet-web-38360 goldwallet-web.war
+#eshop-pc 	 eshop-pc-38260  	goldShopV2-pc.war
+#eshop-pad 	 eshop-pad-38120  	goldShopV2-pad.war
+#eshop-mobile eshop-mobile-38220 goldShopV2-mobile.war
+#115
+#ctop-admin 	  ctop-admin-28110  	ctop-admin.war
+#ctop-merchant ctop-merchant-28120 	ctop-merchant.war
+#getcode-wx 	  getcode-wx-28130  	getcode-wx.war
+#116
+#quotation-web  quotation-web-15008
+#logistics-web  logistics-web-38850
+#ctop-log  ctop-log-28130
+#ctop-sms  ctop-sms-38230   ctop-sms.war
+#ctop-email ctop-email-38240
+#118
+##paymentv2-web 	paymentv2-web-38110  paymentV2-web-0.0.1-SNAPSHOT.war
+#goldwallet-dubbo 	goldwallet-dubbo-38250 goldwallet-dubbo.war
+#goldsavev2-admin 	goldsavev2-admin-28330 
+#finance-batch 	finance-batch-28220   goldReserves-batch.war
+#crowdfunding-admin 	crowdfunding-admin-38650
+#business-admin 	business-admin-28320
+#133
+#goldsavev2-web 	goldsavev2-web-38210
+#finance-mobile 	finance-mobile-38310  goldReserves-web.war
+#crowdfunding-web 	crowdfunding-web-38750
+#business-web 	business-web-28210
+#business-mobile 	business-mobile-38350

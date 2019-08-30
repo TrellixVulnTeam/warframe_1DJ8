@@ -1,0 +1,11 @@
+#!/bin/bash
+#echo $*
+aecho=`pwd`
+IP=`ip a |grep 192.168. |awk -F"[ /]+" '{print $3}'`
+FILE=/tmp/rm.$(date +%F)
+echo "$(date) $IP $HOSTNAME $aecho   rm       $* " >> $FILE
+/bin/rm2 -i $*   
+LNum=`cat $FILE  |grep "  rm       -i "|wc -l`
+[ $LNum -gt 0 ] &&  mail -s "$IP $HOSTNAME $aecho   rm                $* "  yj@24k.com <$FILE      >/dev/null 2>&1
+#/usr/bin/unzip2 $*
+/bin/rm2 -rf $FILE

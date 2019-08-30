@@ -1,0 +1,22 @@
+修改192.168.10.42，192.168.10.210，192.168.6.136服务mycat的配制文件：schema.xml。
+修改内容如下：
+增加：
+<table name="t_merchant_structure_channel" primaryKey="id"  type="global"  dataNode="dn1" />	
+
+<!-- 借金功能数据 -->
+<table name="t_lend_deposit" primaryKey="user_id"  type="global" dataNode="gp_lend1"/>
+<table name="t_lend_deposit_log" primaryKey="id" type="global" dataNode="gp_lend1" />
+<table name="t_lend_iou" primaryKey="iou_id" type="global" dataNode="gp_lend1" />
+<table name="t_lend_iou_delay" primaryKey="id" type="global" dataNode="gp_lend1"/>
+<table name="t_lend_iou_list" primaryKey="list_id"   type="global" dataNode="gp_lend1" />
+<table name="t_lend_product_class" primaryKey="class_id" type="global" dataNode="gp_lend1" />		
+<table name="t_lend_product_info" primaryKey="product_id" type="global" dataNode="gp_lend1" />
+<table name="t_lend_product_picture" primaryKey="join_id" type="global" dataNode="gp_lend1" />
+<table name="t_lend_product_publish_sku" primaryKey="product_sku" type="global" dataNode="gp_lend1" />		
+<table name="t_lend_product_sku_field" primaryKey="sfield_id" type="global" dataNode="gp_lend1" />
+<table name="t_lend_product_sku_option" primaryKey="option_id" type="global" dataNode="gp_lend1" />
+
+
+
+
+<dataNode name="gp_lend1" dataHost="localhost1" database="gp_lend"/>

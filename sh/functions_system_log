@@ -1,0 +1,35 @@
+#!/bin/bash
+# log(meg, loglevel)
+log()
+{
+    datetime=`date +"%y-%m-%d %H:%M:%S"`
+    message=$1
+    if [ -z "$2" ]
+    then
+        loglevel="INFO"
+    else
+        loglevel=$2
+    fi
+    outdir="$basedir/log"
+    if [ ! -d "$outdir" ]; then
+        mkdir "$outdir"
+    fi
+    logname=`removepostfix $filename`  
+    echo "$datetime [$0] $loglevel :: $message" | tee -a "$outdir/$logname.log"
+}
+log_error()
+{
+        log "$1" "ERROR"
+}
+log_info()
+{
+        log "$1" "INFO"
+}
+log_debug()
+{
+        log "$1" "DEGUG"
+}
+log_warn()
+{
+        log "$1" "WARN"
+}
